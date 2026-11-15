@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Campaign performance report: every ad, its cost and its results, from Mostafa Alaa's Meta Ads Manager export."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campaign Performance Report — Mostafa Alaa</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="css/report.css" />
+  </head>
+  <body>
+    <div id="pg"></div>
+    <div id="spot" aria-hidden="true"></div>
+    <button
+      id="musicBtn"
+      class="musicbtn"
+      type="button"
+      aria-pressed="false"
+      aria-label="Play music"
+    >
+      <span class="eqs" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    </button>
+    <header>
+      <div class="wrap">
+        <a class="logo" href="index.html"
+          ><svg class="sax" viewBox="0 0 140 160" aria-hidden="true">
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-width="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M28 14 L46 18 Q62 22 62 40" />
+              <path
+                d="M62 40 L62 112 Q62 142 88 142 Q114 142 114 112 L114 88"
+              />
+              <path d="M98 66 L114 90 L130 66" />
+              <path d="M94 62 L134 62" />
+            </g>
+            <g fill="currentColor">
+              <circle cx="62" cy="58" r="4.5" />
+              <circle cx="62" cy="76" r="4.5" />
+              <circle cx="62" cy="94" r="4.5" />
+              <circle cx="62" cy="112" r="4.5" />
+            </g></svg
+          ><span>Mostafa <b>Alaa</b></span></a
+        >
+        <div class="acts">
+          <a class="btn" href="index.html" data-k="back">← Portfolio</a
+          ><a
+            class="btn pri"
+            id="dl"
+            href="assets/files/Mostafa_Alaa_Campaign_Report.pdf"
+            download="Mostafa_Alaa_Campaign_Report.pdf"
+            data-k="dl"
+            >Download PDF</a
+          ><button class="btn" id="lt" type="button" lang="ar">العربية</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="eyebrow up" data-k="eyebrow" style="animation-delay: 0.05s">
+            Meta Ads Manager export · 1 Nov 2024 – 10 Nov 2026
+          </p>
+          <h1 class="up" data-k="h1" style="animation-delay: 0.15s">
+            Campaign performance <em>report</em>
+          </h1>
+          <p class="sub up" data-k="sub" style="animation-delay: 0.25s">
+            51 ad records across 34 campaign names, from the trainers’ ad
+            account.
+          </p>
+          <div class="kpis up" style="animation-delay: 0.35s">
+            <div class="kpi">
+              <b id="k1">0</b><span data-k="k1">Total spend (EGP)</span>
+            </div>
+            <div class="kpi">
+              <b id="k2">0</b
+              ><span data-k="k2">Chats started with customers</span>
+            </div>
+            <div class="kpi">
+              <b id="k3">0</b
+              ><span data-k="k3"
+                >Post interactions (likes, comments, shares)</span
+              >
+            </div>
+            <div class="kpi">
+              <b id="k4">0</b
+              ><span data-k="k4"
+                >Ad-level reach (summed, not unique people)</span
+              >
+            </div>
+          </div>
+          <p class="plain up" id="plain" style="animation-delay: 0.45s"></p>
+        </div>
+      </section>
+
+      <section class="s">
+        <div class="wrap rv">
+          <p class="eyebrow" data-k="e1">Best value</p>
+          <h2 data-k="h2a">Cheapest chats</h2>
+          <p class="sub" data-k="s1">
+            Ads that started 10 or more chats, ranked by cost per chat. Lower is
+            better.
+          </p>
+          <div class="bars" id="bars"></div>
+        </div>
+      </section>
+
+      <section class="s">
+        <div class="wrap rv">
+          <p class="eyebrow" data-k="e2">Budget</p>
+          <h2 data-k="h2b">Where the money went</h2>
+          <p class="sub" data-k="s2">
+            Grouped by the trainer name in each ad title. Ads without a trainer
+            name sit in their own group.
+          </p>
+          <div class="split">
+            <div class="donut">
+              <svg viewBox="0 0 200 200" id="donut"></svg>
+              <div class="dc">
+                <div><b id="dtot">0</b><span data-k="dsp">EGP spent</span></div>
+              </div>
+            </div>
+            <div class="leg" id="leg"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s">
+        <div class="wrap rv">
+          <p class="eyebrow" data-k="e3">Every ad</p>
+          <h2 data-k="h2c">All ad records</h2>
+          <div class="tools">
+            <input
+              id="q"
+              type="search"
+              data-k="ph"
+              placeholder="Search by ad name…"
+              aria-label="Search"
+            />
+            <div id="chips" role="group"></div>
+            <select id="gsel" aria-label="Group"></select
+            ><span class="cnt" id="cnt"></span>
+          </div>
+          <div class="tw">
+            <table>
+              <thead>
+                <tr id="th"></tr>
+              </thead>
+              <tbody id="tb"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="s">
+        <div class="wrap rv">
+          <p class="eyebrow" data-k="e4">Reading guide</p>
+          <h2 data-k="h2d">How to read the numbers</h2>
+          <div class="gl">
+            <div>
+              <b data-k="g1t"></b>
+              <p data-k="g1"></p>
+            </div>
+            <div>
+              <b data-k="g2t"></b>
+              <p data-k="g2"></p>
+            </div>
+            <div>
+              <b data-k="g3t"></b>
+              <p data-k="g3"></p>
+            </div>
+          </div>
+          <p class="note" data-k="note"></p>
+        </div>
+      </section>
+    </main>
+    <script src="js/report-data.js"></script>
+    <script src="js/jazz.js"></script>
+    <script src="js/report.js"></script>
+  </body>
+</html>
