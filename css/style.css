@@ -568,7 +568,10 @@ header.nav {
   width: 100%;
   border: 1px solid var(--gold);
   border-radius: var(--radius);
-  background: linear-gradient(135deg, #221d10, #0b0b0c);
+  background:
+    linear-gradient(rgba(11, 11, 12, 0.25), rgba(11, 11, 12, 0.5)),
+    url("../assets/images/alx-interview-poster.jpg?v=20261121") center/cover no-repeat,
+    linear-gradient(135deg, #221d10, #0b0b0c);
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -986,6 +989,39 @@ svg.sax {
 .svc .who.tm {
   border: 1px solid var(--gold);
   color: var(--gold-soft);
+}
+.svc p.q {
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+.svc .tq-img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  margin-bottom: 14px;
+}
+.certs-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 26px 0 10px;
+}
+.certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.cert {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 .sub-lead {
   color: var(--muted);

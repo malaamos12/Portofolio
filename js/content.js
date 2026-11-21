@@ -456,6 +456,34 @@
       tl.append(d);
     });
 
+  /* ---------- testimonials ---------- */
+  const quoteGrid = $("#quoteGrid");
+  if (quoteGrid && C.testimonials)
+    C.testimonials.quotes.forEach((q) => {
+      const d = el("div", "svc");
+      if (q.img) {
+        const im = el("img", "tq-img");
+        im.src = ROOT + q.img.src;
+        im.alt = q.img.alt || "";
+        im.loading = "lazy";
+        d.append(im);
+      }
+      d.append(
+        el("p", "q", "\u201C" + q.q + "\u201D"),
+        el("h3", null, q.name),
+        el("span", "who " + (q.cls || "tm"), q.tag)
+      );
+      quoteGrid.append(d);
+    });
+
+  /* ---------- certifications ---------- */
+  const certList = $("#certList");
+  if (certList && C.about.certs)
+    C.about.certs.forEach((c) => {
+      const sp = el("span", "cert", c.t + " \u00B7 " + c.org + (c.y ? ", " + c.y : ""));
+      certList.append(sp);
+    });
+
   /* ---------- section order ---------- */
   if (C.order) {
     const main = $("main");

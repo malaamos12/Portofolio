@@ -121,6 +121,67 @@ window.SITE_CONTENT = {
       },
     ],
   },
+  testimonials: {
+    eyebrow: "آراء الناس",
+    title: "مش لازم تصدقني أنا.",
+    sub: "كلام متدربين وحاضرين، توصيات من لينكدإن، والتكريم اللي خدته من ALX.",
+    quotes: [
+      {
+        q: "جايزة Outstanding Coaching Award في Pay it Forward 2025، عن تدريب مجموعة محترفين ومساعدتهم يوصلوا لأقصى إمكانياتهم.",
+        name: "ALX Arabia",
+        tag: "جايزة Lead Coach",
+        cls: "me",
+        img: {
+          src: "assets/images/testimonials/alx-award-cert.jpg?v=20261121",
+          alt: "شهادة جايزة Outstanding Coaching Award المقدمة لمصطفى علاء من Pay It Forward Club",
+        },
+      },
+      {
+        q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
+        name: "Amr A. Hussien",
+        tag: "متدرب في Pay It Forward Bootcamp",
+      },
+      {
+        q: "Thank you for sharing your insights at ALX Coaches’ Corner. This experience was truly rewarding.",
+        name: "Batoul Allaithy",
+        tag: "مشاركة في ويبينار ALX Coaches’ Corner",
+      },
+      {
+        q: "It was a pleasure meeting and learning from you all.",
+        name: "Muhammad Bahauddin Al-Muzayan",
+        tag: "متدرب في Pay It Forward Bootcamp",
+      },
+      {
+        q: "Your expertise and passion for coaching truly shone through.",
+        name: "Meran Hany",
+        tag: "مسؤولة علاقات ALX",
+      },
+      {
+        q: "Very detailed and insightful sessions, especially in digital marketing and SEO. You made a notable impact.",
+        name: "ALX Egypt",
+        tag: "تكريم ALX Egypt Community Coach",
+        img: {
+          src: "assets/images/testimonials/alx-coach-quote.jpg?v=20261121",
+          alt: "تصميم تكريم ALX Egypt Community Coach يشكر مصطفى علاء على جلساته المفصلة والمفيدة",
+        },
+      },
+      {
+        q: "I worked hand to hand alongside Mostafa. He’s a great person to learn from & he was the reason I joined the workforce in the 1st place.",
+        name: "Mohamed Sabry",
+        tag: "توصية على لينكدإن",
+      },
+      {
+        q: "Mostafa was one of the best team members I’ve worked with ever with an analytical mindset, critical thinking and Communications skills",
+        name: "Ahmed Abdin",
+        tag: "توصية على لينكدإن",
+      },
+      {
+        q: "From learners, to volunteers, to coaches, to role models, Ahmed and Mostafa show us exactly what it means to pay it forward.",
+        name: "ALX Egypt Alumni Network",
+        tag: "قصة نجاح",
+      },
+    ],
+  },
   work: {
     eyebrow: "شغل مختار",
     title: "قصص نجاح.",
@@ -547,6 +608,13 @@ window.SITE_CONTENT = {
     title: "عني باختصار",
     lead: "بدأت في السوشيال ميديا سنة 2017، ومن ساعتها اشتغلت في مجالات كتير: لياقة وعقارات وتجزئة وأكل وفن ومبادرات مجتمعية. فضولي بطبعي وبتابع الترندات أول بأول، وبحب أبني فرق شغل مبسوطة من اللي بتعمله. بدرس إدارة أعمال في جامعة عين شمس وبشتغل من القاهرة.",
     note: "فيه نتايج قديمة لعملاء مكتوبة في الـCV (زيادة مبيعات وتفاعل واشتراكات) وهي سرّية. أقدر أحكي عنها، بس مقدرش أعرض إثباتها.",
+    certsLabel: "الشهادات والاعتمادات",
+    certs: [
+      { t: "Foundations of Digital Marketing and E-commerce", org: "Google", y: "2025" },
+      { t: "Freelancing Training Program", org: "ITIDA", y: "2025" },
+      { t: "Lead Coach", org: "ALX Arabia", y: "2025" },
+      { t: "AICE", org: "ALX Arabia", y: "2024" },
+    ],
   },
   experience: {
     eyebrow: "الخبرة",
@@ -582,5 +650,5 @@ window.SITE_CONTENT = {
     viewShot: "شوف اللقطة الأصلية",
     reportLink: "شوفه في تقرير الحملات ↗",
   },
-  order: ["hero", "how", "metrics", "work", "services", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
+  order: ["hero", "how", "metrics", "work", "services", "testimonials", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
 };

@@ -123,6 +123,67 @@ window.SITE_CONTENT = {
       },
     ],
   },
+  testimonials: {
+    eyebrow: "What people say",
+    title: "Don’t take my word for it.",
+    sub: "Learner feedback, LinkedIn recommendations, and the recognition my coaching work earned.",
+    quotes: [
+      {
+        q: "Outstanding Coaching Award, Pay it Forward 2025, for coaching a group of professionals unlocking their full potential.",
+        name: "ALX Arabia",
+        tag: "Lead Coach award",
+        cls: "me",
+        img: {
+          src: "assets/images/testimonials/alx-award-cert.jpg?v=20261121",
+          alt: "Outstanding Coaching Award certificate presented to Mostafa Alaa by the Pay It Forward Club",
+        },
+      },
+      {
+        q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
+        name: "Amr A. Hussien",
+        tag: "Pay It Forward bootcamp participant",
+      },
+      {
+        q: "Thank you for sharing your insights at ALX Coaches’ Corner. This experience was truly rewarding.",
+        name: "Batoul Allaithy",
+        tag: "Webinar attendee, ALX Coaches’ Corner",
+      },
+      {
+        q: "It was a pleasure meeting and learning from you all.",
+        name: "Muhammad Bahauddin Al-Muzayan",
+        tag: "Pay It Forward bootcamp participant",
+      },
+      {
+        q: "Your expertise and passion for coaching truly shone through.",
+        name: "Meran Hany",
+        tag: "ALX Relationship Manager",
+      },
+      {
+        q: "Very detailed and insightful sessions, especially in digital marketing and SEO. You made a notable impact.",
+        name: "ALX Egypt",
+        tag: "Community Coach feature",
+        img: {
+          src: "assets/images/testimonials/alx-coach-quote.jpg?v=20261121",
+          alt: "ALX Egypt Community Coach graphic thanking Mostafa Alaa for detailed, insightful sessions",
+        },
+      },
+      {
+        q: "I worked hand to hand alongside Mostafa. He’s a great person to learn from & he was the reason I joined the workforce in the 1st place.",
+        name: "Mohamed Sabry",
+        tag: "LinkedIn recommendation",
+      },
+      {
+        q: "Mostafa was one of the best team members I’ve worked with ever with an analytical mindset, critical thinking and Communications skills",
+        name: "Ahmed Abdin",
+        tag: "LinkedIn recommendation",
+      },
+      {
+        q: "From learners, to volunteers, to coaches, to role models, Ahmed and Mostafa show us exactly what it means to pay it forward.",
+        name: "ALX Egypt Alumni Network",
+        tag: "Success Story Highlight",
+      },
+    ],
+  },
   work: {
     eyebrow: "Selected work",
     title: "Case studies.",
@@ -549,6 +610,13 @@ window.SITE_CONTENT = {
     title: "About me",
     lead: "I started in social media in 2017 and have since worked in fitness, real estate, retail, food, art and community projects. I’m curious by habit, I follow trends closely, and I like building teams that enjoy their work. I’m studying Business at Ain Shams University and I work from Cairo.",
     note: "Some older client results on my CV (sales growth, engagement, sign-ups) are confidential. I’m happy to talk about them, but I can’t share the proof.",
+    certsLabel: "Certifications",
+    certs: [
+      { t: "Foundations of Digital Marketing and E-commerce", org: "Google", y: "2025" },
+      { t: "Freelancing Training Program", org: "ITIDA", y: "2025" },
+      { t: "Lead Coach", org: "ALX Arabia", y: "2025" },
+      { t: "AICE", org: "ALX Arabia", y: "2024" },
+    ],
   },
   experience: {
     eyebrow: "Experience",
@@ -584,5 +652,5 @@ window.SITE_CONTENT = {
     viewShot: "View the original screenshot",
     reportLink: "See it in the campaign report ↗",
   },
-  order: ["hero", "how", "metrics", "work", "services", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
+  order: ["hero", "how", "metrics", "work", "services", "testimonials", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
 };
