@@ -57,7 +57,7 @@ window.SITE_CONTENT = {
       { count: 1.04, dec: 2, suf: "M", label: "ad impressions in a single account" },
       { count: 588, dec: 0, suf: "K", label: "people reached in the same account" },
       { count: 1171, dec: 0, suf: "", label: "customer chats started on the trainers’ account" },
-      { count: 300, dec: 0, suf: "+", label: "people I have coached" },
+      { count: 3, dec: 0, suf: "K+", label: "people I have coached" },
     ],
   },
   services: {
@@ -585,7 +585,7 @@ window.SITE_CONTENT = {
     stats: [
       { count: 100, suf: "+", label: "hours of coaching" },
       { count: 12, suf: "+", label: "sessions" },
-      { count: 300, suf: "+", label: "people coached" },
+      { count: 3, suf: "K+", label: "people coached" },
     ],
     videoTitle: "ALX interview",
     videoNoteHtml: "ALX interview. If the player doesn’t load, <a href=\"https://drive.google.com/file/d/1Wv0x3hvg-vOhYCic1y9MMRWo699nI9nZ/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">open it in Google Drive</a>.",

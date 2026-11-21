@@ -55,7 +55,7 @@ window.SITE_CONTENT = {
       { count: 1.04, dec: 2, suf: "M", label: "ظهور لإعلاناتي في حساب إعلاني واحد" },
       { count: 588, dec: 0, suf: "K", label: "شخص وصلتلهم الإعلانات في نفس الحساب" },
       { count: 1171, dec: 0, suf: "", label: "محادثة عميل اتفتحت على حساب المدربين" },
-      { count: 300, dec: 0, suf: "+", label: "شخص اتدرّبوا معايا" },
+      { count: 3, dec: 0, suf: "K+", label: "شخص اتدرّبوا معايا" },
     ],
   },
   services: {
@@ -583,7 +583,7 @@ window.SITE_CONTENT = {
     stats: [
       { count: 100, suf: "+", label: "ساعة تدريب" },
       { count: 12, suf: "+", label: "جلسة" },
-      { count: 300, suf: "+", label: "شخص اتدرّب" },
+      { count: 3, suf: "K+", label: "شخص اتدرّب" },
     ],
     videoTitle: "مقابلة ALX",
     videoNoteHtml: "مقابلة ALX. لو الفيديو مش بيشتغل، <a href=\"https://drive.google.com/file/d/1Wv0x3hvg-vOhYCic1y9MMRWo699nI9nZ/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">افتحه من Google Drive</a>.",
