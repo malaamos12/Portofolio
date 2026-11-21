@@ -323,14 +323,19 @@ const Jazz = (function () {
     if (!audio) return;
     clearInterval(fadeT);
     const a = audio,
-      st = (to - a.volume) / (ms / 60);
+      from = a.volume,
+      steps = Math.max(1, Math.round(ms / 60));
+    let n = 0;
     fadeT = setInterval(() => {
-      const v = a.volume + st;
-      if ((st >= 0 && v >= to) || (st < 0 && v <= to)) {
-        a.volume = Math.max(0, Math.min(1, to));
+      n++;
+      const v = n >= steps ? to : from + ((to - from) * n) / steps;
+      try {
+        a.volume = Math.max(0, Math.min(1, v));
+      } catch (e) {}
+      if (n >= steps) {
         clearInterval(fadeT);
         done && done();
-      } else a.volume = Math.max(0, Math.min(1, v));
+      }
     }, 60);
   }
   function fadeG(to, sec) {
