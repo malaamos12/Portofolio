@@ -987,6 +987,32 @@ svg.sax {
   border: 1px solid var(--gold);
   color: var(--gold-soft);
 }
+.svc p.q {
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+.certs-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 26px 0 10px;
+}
+.certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.cert {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
 .sub-lead {
   color: var(--muted);
   max-width: 44em;
