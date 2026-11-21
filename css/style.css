@@ -1421,6 +1421,7 @@ body.go .ha {
   padding: 0 24px;
 }
 .wi {
+  position: relative;
   padding: 0;
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -1437,6 +1438,22 @@ body.go .ha {
   box-shadow:
     0 0 0 1px var(--gold),
     0 16px 40px rgba(0, 0, 0, 0.5);
+}
+.wi .wi-res {
+  position: absolute;
+  inset-inline-start: 8px;
+  bottom: 8px;
+  max-width: calc(100% - 16px);
+  background: var(--gold);
+  color: #14130f;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .wi img {
   display: block;

@@ -63,7 +63,7 @@ window.SITE_CONTENT = {
   services: {
     eyebrow: "Services",
     title: "Everything your brand needs, from one team.",
-    sub: "I run the strategy and the ads myself. Behind me is a team of specialists I trust, so your brand gets everything from one place - one brief, one goal.",
+    sub: "I run the strategy and the ads myself. Behind me is a team of specialists I trust, so your brand gets everything from one place - one brief, one goal. Samples of their work are available on request.",
     items: [
       {
         icon: "target",
@@ -133,10 +133,6 @@ window.SITE_CONTENT = {
         name: "ALX Arabia",
         tag: "Lead Coach award",
         cls: "me",
-        img: {
-          src: "assets/images/testimonials/alx-award-cert.jpg?v=20261121",
-          alt: "Outstanding Coaching Award certificate presented to Mostafa Alaa by the Pay It Forward Club",
-        },
       },
       {
         q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
@@ -486,14 +482,14 @@ window.SITE_CONTENT = {
     title: "Posts I made.",
     hint: "Scroll to spin the wheel. Tap a post to enlarge it.",
     items: [
-      { src: "assets/images/post-10.jpg", id: "i-cc10", alt: "Nefr Story Love of Amarna T-shirt launch post", cap: "Nefr Story · 27 Aug 2024: Love of Amarna T-shirt with a scannable story QR" },
+      { src: "assets/images/post-10.jpg", id: "i-cc10", alt: "Nefr Story Love of Amarna T-shirt launch post", cap: "Nefr Story · 27 Aug 2024: Love of Amarna T-shirt with a scannable story QR", res: "Brand ads: 1,516 clicks · EGP 0.47 each" },
       { src: "assets/images/post-7.jpg", id: "i-cc7", alt: "Kapri Cafe post from 27 November 2024", cap: "Kapri Cafe · 27 Nov 2024" },
-      { src: "assets/images/post-6.jpg", id: "i-cc6", alt: "Kapri Cafe festive lights post from 19 December 2024", cap: "Kapri Cafe · 19 Dec 2024" },
-      { src: "assets/images/post-9.jpg", id: "i-cc9", alt: "Nefr Story hoodie launch post in Arabic", cap: "Nefr Story · 20 Dec 2024: hoodie launch with a story QR code" },
-      { src: "assets/images/post-8.jpg", id: "i-cc8", alt: "Nefr Story hoodie post with a hooded figure at a temple", cap: "Nefr Story · 21 Dec 2024: hoodie post, priced at 799 EGP" },
-      { src: "assets/images/post-5.jpg", id: "i-cc5", alt: "Kapri Cafe post from 22 December 2024", cap: "Kapri Cafe · 22 Dec 2024" },
-      { src: "assets/images/post-4.jpg", id: "i-cc4", alt: "Kapri Cafe New Year's Eve post", cap: "Kapri Cafe · 31 Dec 2024" },
-      { src: "assets/images/post-3.jpg", id: "i-cc3", alt: "Kapri Cafe post with festive lights", cap: "Kapri Cafe · 4 Jan 2025" },
+      { src: "assets/images/post-6.jpg", id: "i-cc6", alt: "Kapri Cafe festive lights post from 19 December 2024", cap: "Kapri Cafe · 19 Dec 2024", res: "Dec 19 campaign: 90 chats · EGP 6.01 each" },
+      { src: "assets/images/post-9.jpg", id: "i-cc9", alt: "Nefr Story hoodie launch post in Arabic", cap: "Nefr Story · 20 Dec 2024: hoodie launch with a story QR code", res: "Brand ads: 1,516 clicks · EGP 0.47 each" },
+      { src: "assets/images/post-8.jpg", id: "i-cc8", alt: "Nefr Story hoodie post with a hooded figure at a temple", cap: "Nefr Story · 21 Dec 2024: hoodie post, priced at 799 EGP", res: "Brand ads: 1,516 clicks · EGP 0.47 each" },
+      { src: "assets/images/post-5.jpg", id: "i-cc5", alt: "Kapri Cafe post from 22 December 2024", cap: "Kapri Cafe · 22 Dec 2024", res: "December ads: 67–90 chats" },
+      { src: "assets/images/post-4.jpg", id: "i-cc4", alt: "Kapri Cafe New Year's Eve post", cap: "Kapri Cafe · 31 Dec 2024", res: "December ads: 67–90 chats" },
+      { src: "assets/images/post-3.jpg", id: "i-cc3", alt: "Kapri Cafe post with festive lights", cap: "Kapri Cafe · 4 Jan 2025", res: "December ads: 67–90 chats" },
       { src: "assets/images/post-2.jpg", id: "i-cc2", alt: "Medium Platform carousel with Arabic mindful eating tips", cap: "Medium Platform: mindful-eating carousel (Arabic)" },
       { src: "assets/images/post-1.jpg", id: "i-cc1", alt: "Four Facebook posts: a trainer offer reel, a Medium carousel and two Kapri Cafe posts", cap: "Trainer New Year offer reel, Medium carousel and Kapri posts" },
     ],
@@ -610,12 +606,35 @@ window.SITE_CONTENT = {
     title: "About me",
     lead: "I started in social media in 2017 and have since worked in fitness, real estate, retail, food, art and community projects. I’m curious by habit, I follow trends closely, and I like building teams that enjoy their work. I’m studying Business at Ain Shams University and I work from Cairo.",
     note: "Some older client results on my CV (sales growth, engagement, sign-ups) are confidential. I’m happy to talk about them, but I can’t share the proof.",
-    certsLabel: "Certifications",
-    certs: [
-      { t: "Foundations of Digital Marketing and E-commerce", org: "Google", y: "2025" },
-      { t: "Freelancing Training Program", org: "ITIDA", y: "2025" },
+  },
+  certsec: {
+    eyebrow: "Certificates",
+    title: "The paper behind the practice.",
+    sub: "Programs I completed, with the certificates to show for them.",
+    images: [
+      {
+        src: "assets/images/certs/google-cert.jpg?v=20261121",
+        alt: "Google Foundations of Digital Marketing and E-commerce certificate issued to Mostafa Alaa Mostafa via Coursera, July 2025",
+        name: "Foundations of Digital Marketing and E-commerce",
+        tag: "Google · Coursera, 2025",
+      },
+      {
+        src: "assets/images/certs/itida-cert.jpg?v=20261121",
+        alt: "ITIDA Gigs freelance training program certificate issued to Mostafa Alaa",
+        name: "ITIDA Gigs Freelance Training Program",
+        tag: "ITIDA & EYouth, 2025",
+      },
+      {
+        src: "assets/images/certs/alx-award-cert.jpg?v=20261121",
+        alt: "Outstanding Coaching Award certificate presented to Mostafa Alaa by the Pay It Forward Club",
+        name: "Outstanding Coaching Award, Pay It Forward 2025",
+        tag: "ALX Arabia",
+      },
+    ],
+    chipsLabel: "More training",
+    chips: [
       { t: "Lead Coach", org: "ALX Arabia", y: "2025" },
-      { t: "AICE", org: "ALX Arabia", y: "2024" },
+      { t: "AICE (AI Career Essentials)", org: "ALX Arabia", y: "2024" },
     ],
   },
   experience: {
@@ -635,7 +654,7 @@ window.SITE_CONTENT = {
     call: "Book a free intro call",
     wa: "WhatsApp",
     li: "LinkedIn",
-    mail: "mostafabebo012@gmail.com",
+    mail: "mostafalaadiab@gmail.com",
     cv: "Download CV",
     pdf: "Download portfolio (PDF)",
   },
@@ -652,5 +671,5 @@ window.SITE_CONTENT = {
     viewShot: "View the original screenshot",
     reportLink: "See it in the campaign report ↗",
   },
-  order: ["hero", "how", "metrics", "work", "services", "testimonials", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
+  order: ["hero", "how", "metrics", "work", "services", "testimonials", "certs", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
 };

@@ -61,7 +61,7 @@ window.SITE_CONTENT = {
   services: {
     eyebrow: "الخدمات",
     title: "كل اللي برندك محتاجه، من فريق واحد.",
-    sub: "أنا بنفسي بمسك الاستراتيجية والإعلانات. وورايا فريق متخصصين بوثق فيهم، عشان برندك ياخد كل حاجة من مكان واحد: بريف واحد، وهدف واحد.",
+    sub: "أنا بنفسي بمسك الاستراتيجية والإعلانات. وورايا فريق متخصصين بوثق فيهم، عشان برندك ياخد كل حاجة من مكان واحد: بريف واحد، وهدف واحد. ونماذج من شغلهم متاحة عند الطلب.",
     items: [
       {
         icon: "target",
@@ -131,10 +131,6 @@ window.SITE_CONTENT = {
         name: "ALX Arabia",
         tag: "جايزة Lead Coach",
         cls: "me",
-        img: {
-          src: "assets/images/testimonials/alx-award-cert.jpg?v=20261121",
-          alt: "شهادة جايزة Outstanding Coaching Award المقدمة لمصطفى علاء من Pay It Forward Club",
-        },
       },
       {
         q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
@@ -484,14 +480,14 @@ window.SITE_CONTENT = {
     title: "بوستات عملتها.",
     hint: "اسكرول عشان العجلة تلف، ودوس على أي بوست يكبر.",
     items: [
-      { src: "assets/images/post-10.jpg", id: "i-cc10", alt: "بوست إطلاق تيشيرت \"حب العمارنة\" من نِفر ستوري", cap: "نِفر ستوري · 27 أغسطس 2024: تيشيرت \"حب العمارنة\" عليه QR كود بيفتح الحكاية" },
+      { src: "assets/images/post-10.jpg", id: "i-cc10", alt: "بوست إطلاق تيشيرت \"حب العمارنة\" من نِفر ستوري", cap: "نِفر ستوري · 27 أغسطس 2024: تيشيرت \"حب العمارنة\" عليه QR كود بيفتح الحكاية", res: "إعلانات البراند: 1,516 كليك · 0.47 جنيه للكليك" },
       { src: "assets/images/post-7.jpg", id: "i-cc7", alt: "بوست لكابرى كافيه بتاريخ 27 نوفمبر 2024", cap: "كابرى كافيه · 27 نوفمبر 2024" },
-      { src: "assets/images/post-6.jpg", id: "i-cc6", alt: "بوست لكابرى كافيه والشارع متزيّن بالأنوار، 19 ديسمبر 2024", cap: "كابرى كافيه · 19 ديسمبر 2024" },
-      { src: "assets/images/post-9.jpg", id: "i-cc9", alt: "بوست إطلاق الهودي من نِفر ستوري بالعربي", cap: "نِفر ستوري · 20 ديسمبر 2024: إطلاق الهودي ومعاه QR كود بيحكي قصته" },
-      { src: "assets/images/post-8.jpg", id: "i-cc8", alt: "بوست الهودي من نِفر ستوري وفيه شخص لابس كابوشون قدّام معبد", cap: "نِفر ستوري · 21 ديسمبر 2024: بوست الهودي بسعر 799 جنيه" },
-      { src: "assets/images/post-5.jpg", id: "i-cc5", alt: "بوست لكابرى كافيه بتاريخ 22 ديسمبر 2024", cap: "كابرى كافيه · 22 ديسمبر 2024" },
-      { src: "assets/images/post-4.jpg", id: "i-cc4", alt: "بوست ليلة رأس السنة لكابرى كافيه", cap: "كابرى كافيه · 31 ديسمبر 2024" },
-      { src: "assets/images/post-3.jpg", id: "i-cc3", alt: "بوست لكابرى كافيه بإضاءة احتفالية", cap: "كابرى كافيه · 4 يناير 2025" },
+      { src: "assets/images/post-6.jpg", id: "i-cc6", alt: "بوست لكابرى كافيه والشارع متزيّن بالأنوار، 19 ديسمبر 2024", cap: "كابرى كافيه · 19 ديسمبر 2024", res: "حملة 19 ديسمبر: 90 محادثة · 6.01 جنيه للمحادثة" },
+      { src: "assets/images/post-9.jpg", id: "i-cc9", alt: "بوست إطلاق الهودي من نِفر ستوري بالعربي", cap: "نِفر ستوري · 20 ديسمبر 2024: إطلاق الهودي ومعاه QR كود بيحكي قصته", res: "إعلانات البراند: 1,516 كليك · 0.47 جنيه للكليك" },
+      { src: "assets/images/post-8.jpg", id: "i-cc8", alt: "بوست الهودي من نِفر ستوري وفيه شخص لابس كابوشون قدّام معبد", cap: "نِفر ستوري · 21 ديسمبر 2024: بوست الهودي بسعر 799 جنيه", res: "إعلانات البراند: 1,516 كليك · 0.47 جنيه للكليك" },
+      { src: "assets/images/post-5.jpg", id: "i-cc5", alt: "بوست لكابرى كافيه بتاريخ 22 ديسمبر 2024", cap: "كابرى كافيه · 22 ديسمبر 2024", res: "إعلانات ديسمبر: 67–90 محادثة" },
+      { src: "assets/images/post-4.jpg", id: "i-cc4", alt: "بوست ليلة رأس السنة لكابرى كافيه", cap: "كابرى كافيه · 31 ديسمبر 2024", res: "إعلانات ديسمبر: 67–90 محادثة" },
+      { src: "assets/images/post-3.jpg", id: "i-cc3", alt: "بوست لكابرى كافيه بإضاءة احتفالية", cap: "كابرى كافيه · 4 يناير 2025", res: "إعلانات ديسمبر: 67–90 محادثة" },
       { src: "assets/images/post-2.jpg", id: "i-cc2", alt: "كاروسيل لمنصة Medium بتصميم احتفالي وفيه نصايح عن الأكل الواعي", cap: "منصة Medium: كاروسيل عن الأكل الواعي (بالعربي)" },
       { src: "assets/images/post-1.jpg", id: "i-cc1", alt: "أربع بوستات على فيسبوك: ريل عرض لمدرب، وكاروسيل Medium، وبوستين لكابرى كافيه", cap: "ريل عرض السنة الجديدة لمدرب، وكاروسيل Medium، وبوستات كابرى" },
     ],
@@ -608,12 +604,35 @@ window.SITE_CONTENT = {
     title: "عني باختصار",
     lead: "بدأت في السوشيال ميديا سنة 2017، ومن ساعتها اشتغلت في مجالات كتير: لياقة وعقارات وتجزئة وأكل وفن ومبادرات مجتمعية. فضولي بطبعي وبتابع الترندات أول بأول، وبحب أبني فرق شغل مبسوطة من اللي بتعمله. بدرس إدارة أعمال في جامعة عين شمس وبشتغل من القاهرة.",
     note: "فيه نتايج قديمة لعملاء مكتوبة في الـCV (زيادة مبيعات وتفاعل واشتراكات) وهي سرّية. أقدر أحكي عنها، بس مقدرش أعرض إثباتها.",
-    certsLabel: "الشهادات والاعتمادات",
-    certs: [
-      { t: "Foundations of Digital Marketing and E-commerce", org: "Google", y: "2025" },
-      { t: "Freelancing Training Program", org: "ITIDA", y: "2025" },
+  },
+  certsec: {
+    eyebrow: "الشهادات",
+    title: "الشغل ده متدعّم بشهادات.",
+    sub: "برامج خلّصتها، والشهادات بتاعتها قدامك.",
+    images: [
+      {
+        src: "assets/images/certs/google-cert.jpg?v=20261121",
+        alt: "شهادة Foundations of Digital Marketing and E-commerce من Google عبر Coursera باسم مصطفى علاء مصطفى، يوليو 2025",
+        name: "Foundations of Digital Marketing and E-commerce",
+        tag: "Google · Coursera، 2025",
+      },
+      {
+        src: "assets/images/certs/itida-cert.jpg?v=20261121",
+        alt: "شهادة برنامج ITIDA Gigs للتدريب على العمل الحر باسم مصطفى علاء",
+        name: "برنامج ITIDA Gigs للعمل الحر",
+        tag: "ITIDA & EYouth، 2025",
+      },
+      {
+        src: "assets/images/certs/alx-award-cert.jpg?v=20261121",
+        alt: "شهادة جايزة Outstanding Coaching Award المقدمة لمصطفى علاء من Pay It Forward Club",
+        name: "جايزة Outstanding Coaching Award، Pay It Forward 2025",
+        tag: "ALX Arabia",
+      },
+    ],
+    chipsLabel: "تدريبات تانية",
+    chips: [
       { t: "Lead Coach", org: "ALX Arabia", y: "2025" },
-      { t: "AICE", org: "ALX Arabia", y: "2024" },
+      { t: "AICE (AI Career Essentials)", org: "ALX Arabia", y: "2024" },
     ],
   },
   experience: {
@@ -633,7 +652,7 @@ window.SITE_CONTENT = {
     call: "احجز مكالمة تعارف مجانية",
     wa: "واتساب",
     li: "لينكدإن",
-    mail: "mostafabebo012@gmail.com",
+    mail: "mostafalaadiab@gmail.com",
     cv: "نزّل الـCV",
     pdf: "نزّل البورتفوليو (PDF)",
   },
@@ -650,5 +669,5 @@ window.SITE_CONTENT = {
     viewShot: "شوف اللقطة الأصلية",
     reportLink: "شوفه في تقرير الحملات ↗",
   },
-  order: ["hero", "how", "metrics", "work", "services", "testimonials", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
+  order: ["hero", "how", "metrics", "work", "services", "testimonials", "certs", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
 };
