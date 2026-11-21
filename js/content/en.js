@@ -54,7 +54,7 @@ window.SITE_CONTENT = {
   metrics: {
     note: "The numbers come from Meta Ads Manager reports. Each project below explains them in simple words.",
     items: [
-      { count: 1.04, dec: 2, suf: "M", label: "times my ads were shown in one ad account" },
+      { count: 1.04, dec: 2, suf: "M", label: "ad impressions in a single account" },
       { count: 588, dec: 0, suf: "K", label: "people reached in the same account" },
       { count: 1171, dec: 0, suf: "", label: "customer chats started on the trainers’ account" },
       { count: 300, dec: 0, suf: "+", label: "people I have coached" },
