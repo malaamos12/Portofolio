@@ -109,18 +109,16 @@
   const adsImg = (id) => ROOT + "assets/images/ads-" + id.replace("i-mb", "") + ".jpg";
   const usedProof = {};
   if (projWrap)
-    C.projects.forEach((p) => {
+    C.projects.forEach((p, pi) => {
       const art = el("article", "proj");
       art.id = p.id;
       const wrap = el("div", "wrap");
       const head = el("div", "head");
       const txt = el("div", "txt");
       txt.append(
-        el("p", "eyebrow", p.eyebrow),
+        el("p", "eyebrow", C.shared.caseLabel + " " + String(pi + 1).padStart(2, "0") + " · " + p.eyebrow),
         el("h3", null, esc(p.title)),
-        el("p", "plain", esc(p.plain)),
-        el("p", "pdid", esc(p.did)),
-        el("p", "pdid pres", esc(p.pres))
+        el("p", "plain", esc(p.plain))
       );
       const cover = el("div", "cover");
       const img = el("img");
@@ -184,7 +182,23 @@
       });
       inner.append(runs);
       det.append(sum, inner);
-      wrap.append(head, det);
+      const story = el("div", "story");
+      [
+        [C.shared.storyGoal, p.goal],
+        [C.shared.storyDid, p.did],
+        [C.shared.storyResult, p.pres],
+      ].forEach(([lb, v], i) => {
+        const st = el("div", i === 2 ? "st res" : "st");
+        st.append(el("b", null, esc(lb)), el("p", null, esc(v)));
+        story.append(st);
+      });
+      const band = el("div", "casestats");
+      p.kpis.forEach(([v, l]) => {
+        const k = el("div", "cstat");
+        k.append(el("b", null, esc(v)), el("span", null, esc(l)));
+        band.append(k);
+      });
+      wrap.append(head, story, band, det);
       art.append(wrap);
       projWrap.append(art);
     });
