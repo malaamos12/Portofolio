@@ -63,7 +63,7 @@ window.SITE_CONTENT = {
   services: {
     eyebrow: "Services",
     title: "Everything your brand needs, from one team.",
-    sub: "I run the strategy and the ads myself. Behind me is a team of specialists I trust, so your brand gets everything from one place - one brief, one goal.",
+    sub: "I run the strategy and the ads myself. Behind me is a team of specialists I trust, so your brand gets everything from one place - one brief, one goal. Samples of their work are available on request.",
     items: [
       {
         icon: "target",
@@ -654,7 +654,7 @@ window.SITE_CONTENT = {
     call: "Book a free intro call",
     wa: "WhatsApp",
     li: "LinkedIn",
-    mail: "mostafabebo012@gmail.com",
+    mail: "mostafalaadiab@gmail.com",
     cv: "Download CV",
     pdf: "Download portfolio (PDF)",
   },
