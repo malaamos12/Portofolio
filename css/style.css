@@ -974,6 +974,94 @@ svg.sax {
   max-width: 44em;
   margin: 0 0 8px;
 }
+/* ===== case studies: story strip, KPI band, floating WhatsApp ===== */
+.story {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 26px 0 6px;
+}
+.story .st {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px 22px;
+}
+.story .st b {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.story .st p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.65;
+}
+.story .st.res {
+  border-color: var(--gold);
+}
+.story .st.res b {
+  color: var(--gold);
+}
+.story .st.res p {
+  color: var(--text);
+  font-weight: 500;
+}
+[dir="rtl"] .story .st b {
+  letter-spacing: 0;
+}
+.casestats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin: 16px 0 26px;
+}
+.casestats .cstat b {
+  display: block;
+  font: 700 clamp(1.9rem, 3.4vw, 2.8rem)/1.1 var(--font-head);
+  color: var(--gold);
+}
+.casestats .cstat span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.wafloat {
+  position: fixed;
+  inset-inline-end: 20px;
+  bottom: 20px;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  background: rgba(11, 11, 12, 0.92);
+  backdrop-filter: blur(6px);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+.wafloat svg {
+  width: 26px;
+  height: 26px;
+  fill: var(--gold);
+}
+.wafloat:hover {
+  background: var(--gold);
+  transform: translateY(-2px);
+}
+.wafloat:hover svg {
+  fill: #121214;
+}
+@media (max-width: 860px) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+}
 .worksec {
   padding-bottom: 0;
 }
@@ -1901,4 +1989,51 @@ html[lang="ar"] .mqg {
     transform: none;
     transition: none;
   }
+}
+
+/* ---- additions: selects in forms, assumption chips, team section ---- */
+.f select {
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: 600 1rem var(--font-body);
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--gold) 50%),
+    linear-gradient(135deg, var(--gold) 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) 50%,
+    calc(100% - 14px) 50%;
+  background-size:
+    6px 6px,
+    6px 6px;
+  background-repeat: no-repeat;
+}
+[dir="rtl"] .f select {
+  background-position:
+    20px 50%,
+    14px 50%;
+}
+.f select:focus {
+  border-color: var(--gold);
+  outline: none;
+}
+.assumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.chip2 {
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 7px 14px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  background: rgba(11, 11, 12, 0.5);
+}
+#team {
+  padding: 80px 0;
 }
