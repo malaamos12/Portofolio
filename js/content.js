@@ -294,7 +294,7 @@
       el("h2", null, esc(K.title)),
       el("p", "sub-lead", esc(K.sub)),
       el("p", "note", esc(K.note)),
-      K.sources ? el("p", "note", esc(K.sources)) : null
+      ...(K.sources ? [el("p", "note", esc(K.sources))] : [])
     );
     const cr = el("div", "cr");
     const inputs = el("div", "inputs");
