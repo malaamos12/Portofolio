@@ -62,6 +62,8 @@
     identity:
       '<circle cx="24" cy="24" r="18"/><path d="M24 13 l3.2 6.6 7.3 1 -5.3 5.1 1.3 7.2 -6.2 -3.4 -6.2 3.4 1.3 -7.2 -5.3 -5.1 7.3 -1 Z"/>',
     design: '<path d="M30 8 L40 18 L18 40 L8 40 L8 30 Z"/><path d="M27 11 L37 21"/>',
+    production:
+      '<rect x="6" y="18" width="36" height="24" rx="4"/><path d="M6 26 h36"/><path d="M14 18 l6 8 M24 18 l6 8 M34 18 l6 8"/>',
     creator:
       '<rect x="7" y="9" width="34" height="24" rx="5"/><path d="M15 17 h18 M15 23 h12"/><path d="M20 33 l-4 7 8 -3"/>',
     photo:
@@ -106,6 +108,26 @@
         el("span", "who " + (s.who === "team" ? "tm" : "me"), esc(s.whoLabel))
       );
       svcGrid.append(d);
+    });
+
+  /* ---------- team ---------- */
+  const teamGrid = $("#teamGrid");
+  if (teamGrid && C.team)
+    C.team.members.forEach((m) => {
+      const d = el("div", "member");
+      const img = el("img");
+      img.src = ROOT + m.img;
+      img.alt = m.name;
+      img.loading = "lazy";
+      d.append(img, el("h3", null, esc(m.name)), el("p", "role", esc(m.role)));
+      if (m.link) {
+        const a = el("a", "mlink", esc(m.linkLabel));
+        a.href = m.link;
+        a.target = "_blank";
+        a.rel = "noopener";
+        d.append(a);
+      }
+      teamGrid.append(d);
     });
 
   /* ---------- projects ---------- */

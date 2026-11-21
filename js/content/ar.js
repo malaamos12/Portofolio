@@ -119,6 +119,25 @@ window.SITE_CONTENT = {
         who: "team",
         whoLabel: "فريقي",
       },
+      {
+        icon: "production",
+        t: "الإنتاج",
+        d: "إنتاج فيديو كامل، من الفكرة للنسخة النهائية.",
+        who: "team",
+        whoLabel: "فريقي",
+      },
+    ],
+  },
+  team: {
+    eyebrow: "الفريق",
+    members: [
+      {
+        name: "محمد دياب",
+        role: "التصوير والفيديو · الإنتاج",
+        link: "https://drive.google.com/drive/folders/1kmcrjT860MehN_CJILwxlE08FOGD42x-",
+        linkLabel: "شوف شغله",
+        img: "assets/images/team/mohamed-diab.jpg",
+      },
     ],
   },
   testimonials: {

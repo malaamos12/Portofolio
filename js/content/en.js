@@ -121,6 +121,25 @@ window.SITE_CONTENT = {
         who: "team",
         whoLabel: "My team",
       },
+      {
+        icon: "production",
+        t: "Production",
+        d: "Full video production, from the idea to the final cut.",
+        who: "team",
+        whoLabel: "My team",
+      },
+    ],
+  },
+  team: {
+    eyebrow: "The team",
+    members: [
+      {
+        name: "Mohamed Diab",
+        role: "Photography & filming · Production",
+        link: "https://drive.google.com/drive/folders/1kmcrjT860MehN_CJILwxlE08FOGD42x-",
+        linkLabel: "See his work",
+        img: "assets/images/team/mohamed-diab.jpg",
+      },
     ],
   },
   testimonials: {
