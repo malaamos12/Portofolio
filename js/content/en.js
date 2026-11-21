@@ -133,10 +133,6 @@ window.SITE_CONTENT = {
         name: "ALX Arabia",
         tag: "Lead Coach award",
         cls: "me",
-        img: {
-          src: "assets/images/testimonials/alx-award-cert.jpg?v=20261121",
-          alt: "Outstanding Coaching Award certificate presented to Mostafa Alaa by the Pay It Forward Club",
-        },
       },
       {
         q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
@@ -610,12 +606,35 @@ window.SITE_CONTENT = {
     title: "About me",
     lead: "I started in social media in 2017 and have since worked in fitness, real estate, retail, food, art and community projects. I’m curious by habit, I follow trends closely, and I like building teams that enjoy their work. I’m studying Business at Ain Shams University and I work from Cairo.",
     note: "Some older client results on my CV (sales growth, engagement, sign-ups) are confidential. I’m happy to talk about them, but I can’t share the proof.",
-    certsLabel: "Certifications",
-    certs: [
-      { t: "Foundations of Digital Marketing and E-commerce", org: "Google", y: "2025" },
-      { t: "Freelancing Training Program", org: "ITIDA", y: "2025" },
+  },
+  certsec: {
+    eyebrow: "Certificates",
+    title: "The paper behind the practice.",
+    sub: "Programs I completed, with the certificates to show for them.",
+    images: [
+      {
+        src: "assets/images/certs/google-cert.jpg?v=20261121",
+        alt: "Google Foundations of Digital Marketing and E-commerce certificate issued to Mostafa Alaa Mostafa via Coursera, July 2025",
+        name: "Foundations of Digital Marketing and E-commerce",
+        tag: "Google · Coursera, 2025",
+      },
+      {
+        src: "assets/images/certs/itida-cert.jpg?v=20261121",
+        alt: "ITIDA Gigs freelance training program certificate issued to Mostafa Alaa",
+        name: "ITIDA Gigs Freelance Training Program",
+        tag: "ITIDA & EYouth, 2025",
+      },
+      {
+        src: "assets/images/certs/alx-award-cert.jpg?v=20261121",
+        alt: "Outstanding Coaching Award certificate presented to Mostafa Alaa by the Pay It Forward Club",
+        name: "Outstanding Coaching Award, Pay It Forward 2025",
+        tag: "ALX Arabia",
+      },
+    ],
+    chipsLabel: "More training",
+    chips: [
       { t: "Lead Coach", org: "ALX Arabia", y: "2025" },
-      { t: "AICE", org: "ALX Arabia", y: "2024" },
+      { t: "AICE (AI Career Essentials)", org: "ALX Arabia", y: "2024" },
     ],
   },
   experience: {
@@ -652,5 +671,5 @@ window.SITE_CONTENT = {
     viewShot: "View the original screenshot",
     reportLink: "See it in the campaign report ↗",
   },
-  order: ["hero", "how", "metrics", "work", "services", "testimonials", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
+  order: ["hero", "how", "metrics", "work", "services", "testimonials", "certs", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
 };

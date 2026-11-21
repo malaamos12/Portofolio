@@ -131,10 +131,6 @@ window.SITE_CONTENT = {
         name: "ALX Arabia",
         tag: "جايزة Lead Coach",
         cls: "me",
-        img: {
-          src: "assets/images/testimonials/alx-award-cert.jpg?v=20261121",
-          alt: "شهادة جايزة Outstanding Coaching Award المقدمة لمصطفى علاء من Pay It Forward Club",
-        },
       },
       {
         q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
@@ -608,12 +604,35 @@ window.SITE_CONTENT = {
     title: "عني باختصار",
     lead: "بدأت في السوشيال ميديا سنة 2017، ومن ساعتها اشتغلت في مجالات كتير: لياقة وعقارات وتجزئة وأكل وفن ومبادرات مجتمعية. فضولي بطبعي وبتابع الترندات أول بأول، وبحب أبني فرق شغل مبسوطة من اللي بتعمله. بدرس إدارة أعمال في جامعة عين شمس وبشتغل من القاهرة.",
     note: "فيه نتايج قديمة لعملاء مكتوبة في الـCV (زيادة مبيعات وتفاعل واشتراكات) وهي سرّية. أقدر أحكي عنها، بس مقدرش أعرض إثباتها.",
-    certsLabel: "الشهادات والاعتمادات",
-    certs: [
-      { t: "Foundations of Digital Marketing and E-commerce", org: "Google", y: "2025" },
-      { t: "Freelancing Training Program", org: "ITIDA", y: "2025" },
+  },
+  certsec: {
+    eyebrow: "الشهادات",
+    title: "الشغل ده متدعّم بشهادات.",
+    sub: "برامج خلّصتها، والشهادات بتاعتها قدامك.",
+    images: [
+      {
+        src: "assets/images/certs/google-cert.jpg?v=20261121",
+        alt: "شهادة Foundations of Digital Marketing and E-commerce من Google عبر Coursera باسم مصطفى علاء مصطفى، يوليو 2025",
+        name: "Foundations of Digital Marketing and E-commerce",
+        tag: "Google · Coursera، 2025",
+      },
+      {
+        src: "assets/images/certs/itida-cert.jpg?v=20261121",
+        alt: "شهادة برنامج ITIDA Gigs للتدريب على العمل الحر باسم مصطفى علاء",
+        name: "برنامج ITIDA Gigs للعمل الحر",
+        tag: "ITIDA & EYouth، 2025",
+      },
+      {
+        src: "assets/images/certs/alx-award-cert.jpg?v=20261121",
+        alt: "شهادة جايزة Outstanding Coaching Award المقدمة لمصطفى علاء من Pay It Forward Club",
+        name: "جايزة Outstanding Coaching Award، Pay It Forward 2025",
+        tag: "ALX Arabia",
+      },
+    ],
+    chipsLabel: "تدريبات تانية",
+    chips: [
       { t: "Lead Coach", org: "ALX Arabia", y: "2025" },
-      { t: "AICE", org: "ALX Arabia", y: "2024" },
+      { t: "AICE (AI Career Essentials)", org: "ALX Arabia", y: "2024" },
     ],
   },
   experience: {
@@ -650,5 +669,5 @@ window.SITE_CONTENT = {
     viewShot: "شوف اللقطة الأصلية",
     reportLink: "شوفه في تقرير الحملات ↗",
   },
-  order: ["hero", "how", "metrics", "work", "services", "testimonials", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
+  order: ["hero", "how", "metrics", "work", "services", "testimonials", "certs", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
 };

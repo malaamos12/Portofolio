@@ -476,13 +476,24 @@
       quoteGrid.append(d);
     });
 
-  /* ---------- certifications ---------- */
-  const certList = $("#certList");
-  if (certList && C.about.certs)
-    C.about.certs.forEach((c) => {
-      const sp = el("span", "cert", c.t + " \u00B7 " + c.org + (c.y ? ", " + c.y : ""));
-      certList.append(sp);
+  /* ---------- certificates ---------- */
+  const certGrid = $("#certGrid");
+  if (certGrid && C.certsec) {
+    C.certsec.images.forEach((c) => {
+      const d = el("div", "svc");
+      const im = el("img", "tq-img");
+      im.src = ROOT + c.src;
+      im.alt = c.alt || "";
+      im.loading = "lazy";
+      d.append(im, el("h3", null, c.name), el("span", "who tm", c.tag));
+      certGrid.append(d);
     });
+    const certChips = $("#certChips");
+    if (certChips && C.certsec.chips)
+      C.certsec.chips.forEach((c) => {
+        certChips.append(el("span", "cert", c.t + " \u00B7 " + c.org + (c.y ? ", " + c.y : "")));
+      });
+  }
 
   /* ---------- section order ---------- */
   if (C.order) {
