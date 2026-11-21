@@ -25,6 +25,7 @@ const Jazz = (function () {
     on = false,
     wantOn = true,
     held = false,
+    booting = false,
     hid = false,
     pend = null,
     bc = null,
@@ -341,6 +342,7 @@ const Jazz = (function () {
     g.linearRampToValueAtTime(to, t + sec);
   }
   function startGen(pos) {
+    booting = false;
     if (!ctx) ctx = new AC();
     mode = "gen";
     out = build(ctx);
@@ -392,6 +394,7 @@ const Jazz = (function () {
       return;
     }
     p.then(() => {
+      booting = false;
       audio = a;
       mode = "file";
       if (ctx) {
@@ -407,6 +410,7 @@ const Jazz = (function () {
       save();
     }).catch((err) => {
       if (err && err.name === "NotAllowedError") {
+        booting = false;
         armGesture(() => start(true));
         ui();
       } else {
@@ -415,13 +419,14 @@ const Jazz = (function () {
     });
   }
   function start(user) {
-    if (on) return;
+    if (on || booting) return;
     const st = load();
     wantOn = st ? st.on !== false : true;
     if (!wantOn) {
       ui();
       return;
     }
+    booting = true;
     if (user && !ctx && AC) {
       try {
         ctx = new AC();
@@ -461,6 +466,13 @@ const Jazz = (function () {
     }
     wantOn = true;
     held = false;
+    save();
+    if (pend) {
+      ["pointerdown", "keydown", "touchend"].forEach((e) =>
+        removeEventListener(e, pend, true),
+      );
+      pend = null;
+    }
     if (!ctx && !audio) {
       start(true);
       return;
