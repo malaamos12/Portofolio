@@ -107,7 +107,7 @@ window.SITE_CONTENT = {
       pres: "Buyers messaged for about EGP 2 a chat. The best campaign started 644 conversations for EGP 1,392.",
       kpis: [["EGP 1.67", "cheapest chat"], ["644", "chats in the best campaign"], ["165K", "reached by one ad"]],
       cover: {
-        src: "assets/images/cover-realestate.jpg",
+        src: "assets/images/cover-realestate.jpg?v=20261121",
         alt: "Modern residential buildings at dusk with warm windows lighting up",
         chip: "644 chats from a single campaign",
       },
@@ -182,7 +182,7 @@ window.SITE_CONTENT = {
       pres: "About EGP 23K spent turned into 1,171 chats and 56K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer.",
       kpis: [["1,171", "chats started"], ["EGP 1.85", "cheapest chat"], ["56K", "post interactions"]],
       cover: {
-        src: "assets/images/cover-fitness.jpg",
+        src: "assets/images/cover-fitness.jpg?v=20261121",
         alt: "Facebook reel with a trainer offering six months free",
         chip: "A New Year offer for one of the trainers",
       },
@@ -298,7 +298,7 @@ window.SITE_CONTENT = {
       pres: "Kapri's December campaigns brought 67 and 90 chats at EGP 2.46 and EGP 6.01 each. Al-Noon published 18 posts on 5 platforms in two months.",
       kpis: [["EGP 2.46", "cheapest café chat"], ["18", "posts in two months"], ["5", "platforms covered"]],
       cover: {
-        src: "assets/images/cover-kapri.jpg",
+        src: "assets/images/cover-kapri.jpg?v=20261121",
         alt: "Kapri Cafe street decorated with festive lights at night",
         chip: "Kapri Cafe, December 2024",
       },
@@ -345,7 +345,7 @@ window.SITE_CONTENT = {
       pres: "One ad reached 32,621 people and brought 1,516 clicks for about EGP 710, or EGP 0.47 a click.",
       kpis: [["32,621", "people reached"], ["1,516", "clicks"], ["EGP 0.47", "cost per click"]],
       cover: {
-        src: "assets/images/cover-nefr.jpg",
+        src: "assets/images/cover-nefr.jpg?v=20261121",
         alt: "Love of Amarna T-shirt on a gold background",
         chip: "The Love of Amarna tee",
       },
