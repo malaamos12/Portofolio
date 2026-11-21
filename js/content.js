@@ -340,13 +340,14 @@
       ["rev", K.out.rev],
       ["cpa", K.out.cpa],
       ["roas", K.out.roas],
+      ["roi", K.out.roi],
     ].forEach(([k, label]) => {
       const d = el("div");
       const b = el("b", null, "0");
       const sp = el("span", null, esc(label));
       d.append(b, sp);
       out.append(d);
-      cells[k] = { b, sp, label };
+      cells[k] = { b, sp, label, d };
     });
     cr.append(inputs, ass, out);
     box.append(cl, cr);
@@ -357,7 +358,7 @@
     };
     const fmt = (n, d = 0) =>
       n.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
-    const cur = { results: 0, cust: 0, rev: 0, cpa: 0, roas: 0 };
+    const cur = { results: 0, cust: 0, rev: 0, cpa: 0, roas: 0, roi: 0 };
     function tween(k, to, d, suffix) {
       const from = cur[k];
       cur[k] = to;
@@ -388,6 +389,15 @@
         costLabel = K.costPerLead;
         convLabel = K.leadConvLabel;
         resLabel = K.out.resultsLead;
+      } else if (obj === "sales") {
+        // direct purchase campaigns: cost per sale from Egypt market ranges, scaled by CPM
+        costLo = ind.cpp[0] * mult;
+        costHi = ind.cpp[1] * mult;
+        convLo = 100;
+        convHi = 100;
+        costLabel = K.costPerSale;
+        convLabel = null;
+        resLabel = K.out.resultsSales;
       } else {
         costLo = ind.chat[0] * mult;
         costHi = ind.chat[1] * mult;
@@ -404,18 +414,21 @@
       const rev = cust * price;
       const cpa = cust > 0 ? budget / cust : 0;
       const roas = budget > 0 ? rev / budget : 0;
+      const roi = budget > 0 ? (rev - budget) / budget : 0;
       cells.results.sp.textContent = resLabel;
+      cells.cust.d.style.display = obj === "sales" ? "none" : "";
       ass.innerHTML = "";
       const mk = (t) => ass.append(el("span", "chip2", esc(t)));
       const r2 = (v) => (v >= 100 ? fmt(v, 0) : fmt(v, 1));
       mk(K.assumed);
       mk(costLabel + ": EGP " + r2(cost) + " (" + K.range + " " + r2(costLo) + "–" + r2(costHi) + ")");
-      mk(convLabel + ": " + fmt(conv, conv < 10 ? 1 : 0) + "%");
+      if (convLabel) mk(convLabel + ": " + fmt(conv, conv < 10 ? 1 : 0) + "%");
       tween("results", results, 0);
       tween("cust", cust, cust < 10 ? 1 : 0);
       tween("rev", rev, 0);
       tween("cpa", cpa, 0);
       tween("roas", roas, 1, "×");
+      tween("roi", roi * 100, 0, "%");
     }
     ["c-ind", "c-cty", "c-obj", "c-b", "c-v"].forEach((id) =>
       $("#" + id).addEventListener("input", run)
