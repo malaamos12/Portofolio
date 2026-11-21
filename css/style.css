@@ -576,13 +576,16 @@ header.nav {
   place-items: center;
   cursor: pointer;
 }
-.vid iframe {
+.vid iframe,
+.vid video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
   border-radius: var(--radius);
+  background: #000;
+  object-fit: contain;
 }
 .play {
   width: 78px;

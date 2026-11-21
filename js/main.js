@@ -384,14 +384,19 @@
   const vid = $("#vid");
   if (vid) {
     vid.addEventListener("click", function () {
-      const f = document.createElement("iframe");
-      f.src =
-        "https://drive.google.com/file/d/1Wv0x3hvg-vOhYCic1y9MMRWo699nI9nZ/preview";
-      f.title = this.dataset.title || "Video";
-      f.allow = "autoplay; fullscreen";
-      f.allowFullscreen = true;
-      this.replaceChildren(f);
+      const ROOT = document.documentElement.dataset.root || "";
+      const v = document.createElement("video");
+      v.src = ROOT + "assets/video/alx-interview.mp4?v=20261121";
+      v.poster = ROOT + "assets/images/alx-interview-poster.jpg?v=20261121";
+      v.title = this.dataset.title || "Video";
+      v.controls = true;
+      v.autoplay = true;
+      v.playsInline = true;
+      v.setAttribute("playsinline", "");
+      this.replaceChildren(v);
       this.style.cursor = "default";
+      if (window.innerWidth < 768) this.style.aspectRatio = "9 / 16";
+      v.play().catch(() => {});
     });
   }
 
