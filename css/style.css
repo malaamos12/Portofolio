@@ -969,6 +969,24 @@ svg.sax {
   color: var(--muted);
   font-size: 0.97rem;
 }
+.svc .who {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.svc .who.me {
+  background: var(--gold);
+  color: #14130f;
+}
+.svc .who.tm {
+  border: 1px solid var(--gold);
+  color: var(--gold-soft);
+}
 .sub-lead {
   color: var(--muted);
   max-width: 44em;

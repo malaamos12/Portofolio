@@ -100,7 +100,11 @@
     C.services.items.forEach((s) => {
       const d = el("div", "svc");
       d.innerHTML = icon(s.icon);
-      d.append(el("h3", null, s.t), el("p", null, esc(s.d)));
+      d.append(
+        el("h3", null, s.t),
+        el("p", null, esc(s.d)),
+        el("span", "who " + (s.who === "team" ? "tm" : "me"), esc(s.whoLabel))
+      );
       svcGrid.append(d);
     });
 
@@ -417,16 +421,6 @@
       dk.items.forEach((i) => ul.append(el("li", null, esc(i))));
       d.append(ul);
       decks.append(d);
-    });
-
-  /* ---------- team ---------- */
-  const teamGrid = $("#teamGrid");
-  if (teamGrid)
-    C.team.items.forEach((s) => {
-      const d = el("div", "svc");
-      d.innerHTML = icon(s.icon);
-      d.append(el("h3", null, s.t), el("p", null, esc(s.d)));
-      teamGrid.append(d);
     });
 
   /* ---------- music ---------- */
