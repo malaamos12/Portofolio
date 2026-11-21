@@ -1902,3 +1902,50 @@ html[lang="ar"] .mqg {
     transition: none;
   }
 }
+
+/* ---- additions: selects in forms, assumption chips, team section ---- */
+.f select {
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: 600 1rem var(--font-body);
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--gold) 50%),
+    linear-gradient(135deg, var(--gold) 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) 50%,
+    calc(100% - 14px) 50%;
+  background-size:
+    6px 6px,
+    6px 6px;
+  background-repeat: no-repeat;
+}
+[dir="rtl"] .f select {
+  background-position:
+    20px 50%,
+    14px 50%;
+}
+.f select:focus {
+  border-color: var(--gold);
+  outline: none;
+}
+.assumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.chip2 {
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 7px 14px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  background: rgba(11, 11, 12, 0.5);
+}
+#team {
+  padding: 80px 0;
+}

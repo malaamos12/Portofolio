@@ -8,21 +8,21 @@
       name="description"
       content="Marketing strategist and media buyer in Cairo. Strategy, content, paid ads and training for businesses of any size, with real campaign results."
     />
-    <link rel="canonical" href="https://malaamos12.github.io/Mostafa-Alaa/" />
+    <link rel="canonical" href="https://malaamos12.github.io/Portofolio/" />
     <link
       rel="alternate"
       hreflang="en"
-      href="https://malaamos12.github.io/Mostafa-Alaa/"
+      href="https://malaamos12.github.io/Portofolio/"
     />
     <link
       rel="alternate"
       hreflang="ar"
-      href="https://malaamos12.github.io/Mostafa-Alaa/ar/"
+      href="https://malaamos12.github.io/Portofolio/ar/"
     />
     <link
       rel="alternate"
       hreflang="x-default"
-      href="https://malaamos12.github.io/Mostafa-Alaa/"
+      href="https://malaamos12.github.io/Portofolio/"
     />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Mostafa Alaa" />
@@ -36,11 +36,11 @@
     />
     <meta
       property="og:url"
-      content="https://malaamos12.github.io/Mostafa-Alaa/"
+      content="https://malaamos12.github.io/Portofolio/"
     />
     <meta
       property="og:image"
-      content="https://malaamos12.github.io/Mostafa-Alaa/assets/images/og-image.jpg"
+      content="https://malaamos12.github.io/Portofolio/assets/images/og-image.jpg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -55,21 +55,6 @@
       name="twitter:description"
       content="Marketing strategist and media buyer in Cairo. Strategy, content, paid ads and training for businesses of any size, with real campaign results."
     />
-    <meta
-      name="twitter:image"
-      content="https://malaamos12.github.io/Mostafa-Alaa/assets/images/og-image.jpg"
-    />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <script>
-      /* If the visitor chose Arabic in the last 14 days, go straight to the Arabic page. */
-      (function () {
-        try {
-          var s = JSON.parse(localStorage.getItem("ma_lang") || "null");
-          if (s && s.l === "ar" && Date.now() - s.at < 1209600000)
-            location.replace("ar/" + location.hash);
-        } catch (e) {}
-      })();
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -84,8 +69,8 @@
         "name": "Mostafa Alaa",
         "alternateName": "مصطفى علاء",
         "jobTitle": "Marketing strategist and media buyer",
-        "url": "https://malaamos12.github.io/Mostafa-Alaa/",
-        "image": "https://malaamos12.github.io/Mostafa-Alaa/assets/images/og-image.jpg",
+        "url": "https://malaamos12.github.io/Portofolio/",
+        "image": "https://malaamos12.github.io/Portofolio/assets/images/og-image.jpg",
         "sameAs": ["https://www.linkedin.com/in/mostafalaa/"],
         "address": {
           "@type": "PostalAddress",
@@ -122,7 +107,7 @@
       </symbol>
     </svg>
     <div aria-hidden="true" id="pg"></div>
-    <a class="skip" href="#work">Skip to work</a>
+    <a class="skip" href="#work" data-k="nav.skip">Skip to work</a>
     <header class="nav">
       <div class="wrap">
         <a class="logo" href="#top"
@@ -132,50 +117,55 @@
         >
         <nav aria-label="Main">
           <ul>
-            <li><a class="l" href="#work">Work</a></li>
-            <li><a class="l" href="#mentor">Mentorship</a></li>
-            <li><a class="l" href="#music">Music</a></li>
-            <li><a class="l" href="#about">About</a></li>
-            <li><a class="l" href="#contact">Contact</a></li>
+            <li><a class="l" href="#work" data-k="nav.work">Work</a></li>
+            <li><a class="l" href="#mentor" data-k="nav.mentor">Mentorship</a></li>
+            <li><a class="l" href="#music" data-k="nav.music">Music</a></li>
+            <li><a class="l" href="#about" data-k="nav.about">About</a></li>
+            <li><a class="l" href="#contact" data-k="nav.contact">Contact</a></li>
           </ul>
         </nav>
-        <a class="btn sec" href="ar/" hreflang="ar" id="langToggle" lang="ar"
+        <a
+          class="btn sec"
+          data-href="nav.langToggleHref"
+          href="ar/"
+          hreflang="ar"
+          id="langToggle"
+          lang="ar"
+          data-k="nav.langToggle"
           >العربية</a
         >
       </div>
     </header>
     <main id="top" tabindex="-1">
-      <section class="hero">
+      <section class="hero" data-section="hero">
         <div aria-hidden="true" class="glow" id="glow"></div>
         <div class="wrap">
           <div>
-            <p class="eyebrow ha" style="--n: 0">
-              Marketing strategist and media buyer, Cairo
-            </p>
-            <h1 class="ha" style="--n: 1">
-              Marketing starts with <em>listening</em>.
-            </h1>
-            <p class="lead ha" style="--n: 2">
-              I plan, create and run marketing for all kinds of businesses:
-              strategy, content, paid ads, audience research and training. I
-              don’t stick to one platform or one industry. I pick what fits the
-              customer and the goal. I also play the saxophone, and it taught me
-              the same habit: listen first, then play.
-            </p>
+            <p class="eyebrow ha" style="--n: 0" data-k="hero.eyebrow"></p>
+            <h1 class="ha" style="--n: 1" data-kh="hero.titleHtml"></h1>
+            <p class="lead ha" style="--n: 2" data-k="hero.lead"></p>
             <div class="cta ha" style="--n: 3">
-              <a class="btn pri" href="#work">See my work</a
+              <a class="btn pri" href="#work" data-k="hero.ctaWork"></a
+              ><a
+                class="btn sec"
+                data-goatcounter-click="portfolio-pdf"
+                download="Mostafa_Alaa_Portfolio.pdf"
+                href="assets/files/Mostafa_Alaa_Portfolio.pdf"
+                data-k="hero.ctaPdf"
+              ></a
               ><a
                 class="btn sec"
                 data-goatcounter-click="cv-download"
                 download="Mostafa_Alaa_CV.pdf"
                 href="assets/files/Mostafa_Alaa_CV.pdf"
-                >Download CV</a
-              >
+                data-k="hero.ctaCv"
+              ></a>
             </div>
           </div>
-          <div class="portrait ha" style="--n: 2">
+          <div class="portrait">
             <img
-              alt="Portrait of Mostafa Alaa"
+              alt=""
+              data-attr-alt="hero.imgAlt"
               height="300"
               src="assets/images/mostafa.jpg"
               width="300"
@@ -196,1989 +186,46 @@
           d="M0 30 Q50 0 100 30 T200 30 T300 30 T400 30 T500 30 T600 30 T700 30 T800 30 T900 30 T1000 30 T1100 30 T1200 30"
         ></path>
       </svg>
-      <section class="how">
+      <section class="how" data-section="how">
         <div class="wrap">
-          <p class="eyebrow">How I work</p>
-          <h2>Three steps, every time.</h2>
-          <div class="three">
-            <div class="pr">
-              <span class="no">01</span>
-              <h3>Listen</h3>
-              <p>
-                I start with your customers, your market and your goal. No money
-                moves before that.
-              </p>
-            </div>
-            <div class="pr">
-              <span class="no">02</span>
-              <h3>Plan</h3>
-              <p>
-                Then a simple plan: who we talk to, what we say, where, and what
-                it costs.
-              </p>
-            </div>
-            <div class="pr">
-              <span class="no">03</span>
-              <h3>Create</h3>
-              <p>
-                I make the content, run the campaigns, check the results and fix
-                what isn’t working.
-              </p>
-            </div>
-          </div>
+          <p class="eyebrow" data-k="how.eyebrow"></p>
+          <h2 data-k="how.title"></h2>
+          <div class="three" id="howSteps"></div>
         </div>
       </section>
-      <div aria-hidden="true" class="marquee">
-        <div class="mq">
-          <div class="mqg">
-            <span>Strategy</span><i>✦</i><span>Content</span><i>✦</i
-            ><span>Paid ads</span><i>✦</i><span>Analytics</span><i>✦</i
-            ><span>Training</span><i>✦</i><span>Storytelling</span><i>✦</i
-            ><span>Media buying</span><i>✦</i><span>Strategy</span><i>✦</i
-            ><span>Content</span><i>✦</i><span>Paid ads</span><i>✦</i
-            ><span>Analytics</span><i>✦</i><span>Training</span><i>✦</i
-            ><span>Storytelling</span><i>✦</i><span>Media buying</span><i>✦</i>
-          </div>
-          <div class="mqg">
-            <span>Strategy</span><i>✦</i><span>Content</span><i>✦</i
-            ><span>Paid ads</span><i>✦</i><span>Analytics</span><i>✦</i
-            ><span>Training</span><i>✦</i><span>Storytelling</span><i>✦</i
-            ><span>Media buying</span><i>✦</i><span>Strategy</span><i>✦</i
-            ><span>Content</span><i>✦</i><span>Paid ads</span><i>✦</i
-            ><span>Analytics</span><i>✦</i><span>Training</span><i>✦</i
-            ><span>Storytelling</span><i>✦</i><span>Media buying</span><i>✦</i>
-          </div>
-        </div>
-      </div>
-      <div class="metrics">
-        <div class="wrap">
-          <div class="m">
-            <b data-count="1.04" data-dec="2" data-suf="M">1.04M</b
-            ><span>times my ads were shown in one ad account</span>
-          </div>
-          <div class="m">
-            <b data-count="588" data-dec="0" data-suf="K">588K</b
-            ><span>people reached in the same account</span>
-          </div>
-          <div class="m">
-            <b data-count="1171" data-dec="0" data-suf="">1,171</b
-            ><span>customer chats started on the trainers’ account</span>
-          </div>
-          <div class="m">
-            <b data-count="300" data-dec="0" data-suf="+">300+</b
-            ><span>people I have coached</span>
-          </div>
-        </div>
+      <div class="metrics" data-section="metrics">
+        <div class="wrap" id="metricsRow"></div>
         <div class="wrap" style="padding-top: 0">
-          <p class="note">
-            The numbers come from Meta Ads Manager reports. Each project below
-            explains them in simple words.
-          </p>
+          <p class="note" data-k="metrics.note"></p>
         </div>
       </div>
-      <section id="services">
+      <section id="services" data-section="services">
         <div class="wrap">
-          <p class="eyebrow">What I can do</p>
-          <h2>Help for businesses of any size.</h2>
-          <div class="svc-grid">
-            <div class="svc">
-              <svg
-                aria-hidden="true"
-                class="ico"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.2"
-                viewbox="0 0 48 48"
-              >
-                <circle cx="24" cy="24" r="18"></circle>
-                <circle cx="24" cy="24" r="11"></circle>
-                <circle cx="24" cy="24" r="3.5"></circle>
-                <path d="M24 24 L41 7 M33 7 h8 v8"></path>
-              </svg>
-              <h3>Strategy</h3>
-              <p>
-                A clear plan for who to talk to, what to say, where, and how
-                much to spend.
-              </p>
-            </div>
-            <div class="svc">
-              <svg
-                aria-hidden="true"
-                class="ico"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.2"
-                viewbox="0 0 48 48"
-              >
-                <rect height="30" rx="5" width="38" x="5" y="9"></rect>
-                <path d="M20 17 L33 24 L20 31 Z"></path>
-              </svg>
-              <h3>Content</h3>
-              <p>Posts, reels and campaigns that sound like your brand.</p>
-            </div>
-            <div class="svc">
-              <svg
-                aria-hidden="true"
-                class="ico"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.2"
-                viewbox="0 0 48 48"
-              >
-                <path d="M7 19 v10 h9 l19 10 V9 L16 19 Z"></path>
-                <path d="M16 29 l3 11"></path>
-                <path d="M40 18 q3 6 0 12"></path>
-              </svg>
-              <h3>Paid ads</h3>
-              <p>
-                Meta, Google, TikTok, LinkedIn and X ads set up to bring real
-                customers.
-              </p>
-            </div>
-            <div class="svc">
-              <svg
-                aria-hidden="true"
-                class="ico"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.2"
-                viewbox="0 0 48 48"
-              >
-                <path d="M6 41 V7"></path>
-                <path d="M6 41 H43"></path>
-                <path d="M11 33 l10 -11 8 6 14 -17"></path>
-              </svg>
-              <h3>Tracking and fixing</h3>
-              <p>
-                I watch what works, stop what doesn’t, and explain it in simple
-                language.
-              </p>
-            </div>
-            <div class="svc">
-              <svg
-                aria-hidden="true"
-                class="ico"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.2"
-                viewbox="0 0 48 48"
-              >
-                <circle cx="16" cy="15" r="6"></circle>
-                <circle cx="34" cy="17" r="5"></circle>
-                <path d="M5 39 c0 -9 6 -13 11 -13 s11 4 11 13"></path>
-                <path d="M30 28 c6 0 13 3 13 11"></path>
-              </svg>
-              <h3>Training</h3>
-              <p>Workshops and coaching for teams and new marketers.</p>
-            </div>
-          </div>
+          <p class="eyebrow" data-k="services.eyebrow"></p>
+          <h2 data-k="services.title"></h2>
+          <div class="svc-grid" id="svcGrid"></div>
         </div>
       </section>
-      <section class="worksec" id="work">
-        <div class="wrap">
-          <p class="eyebrow">Selected work</p>
-          <h2>Four projects.</h2>
-          <p class="sub-lead">
-            They are examples. I have worked in other fields too: retail, food,
-            art, education and community projects. Each one starts with a short
-            summary, and the numbers are underneath if you want them.
-          </p>
-        </div>
-      </section>
-      <article class="proj" id="realestate">
-        <div class="wrap">
-          <div class="head">
-            <div class="txt">
-              <p class="eyebrow">Real estate</p>
-              <h3>Apartments in Faisal, land in Mansoura–Talkha</h3>
-              <p class="plain">
-                People looking for a flat or a plot of land messaged the seller
-                directly. Each conversation cost about EGP 2.
-              </p>
-              <p class="pdid">
-                I ran message campaigns and engagement campaigns, tried photos
-                against video, and compared people in Mansoura with people
-                across Egypt.
-              </p>
-              <p class="pdid pres">Best campaign: 644 chats for EGP 1,392.</p>
-            </div>
-            <div class="cover svgcover">
-              <svg
-                aria-label="Illustration of apartment buildings with windows lighting up"
-                preserveaspectratio="xMidYMid slice"
-                role="img"
-                viewbox="0 0 400 320"
-              >
-                <defs>
-                  <radialgradient id="sunG">
-                    <stop offset="0" stop-color="#F3DC9B"></stop>
-                    <stop
-                      offset=".45"
-                      stop-color="#C9A24B"
-                      stop-opacity=".55"
-                    ></stop>
-                    <stop
-                      offset="1"
-                      stop-color="#C9A24B"
-                      stop-opacity="0"
-                    ></stop>
-                  </radialgradient>
-                </defs>
-                <circle
-                  class="sun"
-                  cx="300"
-                  cy="86"
-                  fill="url(#sunG)"
-                  r="70"
-                ></circle>
-                <rect
-                  class="bld"
-                  height="150"
-                  rx="3"
-                  width="62"
-                  x="18"
-                  y="126"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.75s"
-                  width="7"
-                  x="27"
-                  y="138"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.36s"
-                  width="7"
-                  x="42"
-                  y="138"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.83s"
-                  width="7"
-                  x="57"
-                  y="138"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.54s"
-                  width="7"
-                  x="72"
-                  y="138"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.17s"
-                  width="7"
-                  x="27"
-                  y="160"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.45s"
-                  width="7"
-                  x="42"
-                  y="160"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.13s"
-                  width="7"
-                  x="57"
-                  y="160"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.12s"
-                  width="7"
-                  x="72"
-                  y="160"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.74s"
-                  width="7"
-                  x="27"
-                  y="182"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.98s"
-                  width="7"
-                  x="42"
-                  y="182"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.29s"
-                  width="7"
-                  x="72"
-                  y="182"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.72s"
-                  width="7"
-                  x="27"
-                  y="204"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.54s"
-                  width="7"
-                  x="42"
-                  y="204"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.91s"
-                  width="7"
-                  x="72"
-                  y="204"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.86s"
-                  width="7"
-                  x="27"
-                  y="226"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.31s"
-                  width="7"
-                  x="42"
-                  y="226"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.03s"
-                  width="7"
-                  x="57"
-                  y="226"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.14s"
-                  width="7"
-                  x="72"
-                  y="226"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.93s"
-                  width="7"
-                  x="27"
-                  y="248"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.5s"
-                  width="7"
-                  x="42"
-                  y="248"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.22s"
-                  width="7"
-                  x="72"
-                  y="248"
-                ></rect>
-                <rect
-                  class="bld"
-                  height="215"
-                  rx="3"
-                  width="52"
-                  x="92"
-                  y="61"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.63s"
-                  width="7"
-                  x="101"
-                  y="73"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.9s"
-                  width="7"
-                  x="101"
-                  y="95"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.09s"
-                  width="7"
-                  x="116"
-                  y="95"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.44s"
-                  width="7"
-                  x="101"
-                  y="117"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.34s"
-                  width="7"
-                  x="116"
-                  y="117"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.38s"
-                  width="7"
-                  x="101"
-                  y="139"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.48s"
-                  width="7"
-                  x="116"
-                  y="139"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.9s"
-                  width="7"
-                  x="131"
-                  y="139"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.2s"
-                  width="7"
-                  x="101"
-                  y="161"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.32s"
-                  width="7"
-                  x="131"
-                  y="161"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.51s"
-                  width="7"
-                  x="101"
-                  y="183"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.97s"
-                  width="7"
-                  x="116"
-                  y="183"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.93s"
-                  width="7"
-                  x="101"
-                  y="205"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.11s"
-                  width="7"
-                  x="116"
-                  y="205"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.84s"
-                  width="7"
-                  x="131"
-                  y="205"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.29s"
-                  width="7"
-                  x="101"
-                  y="227"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.24s"
-                  width="7"
-                  x="131"
-                  y="227"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.36s"
-                  width="7"
-                  x="101"
-                  y="249"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.25s"
-                  width="7"
-                  x="116"
-                  y="249"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.42s"
-                  width="7"
-                  x="131"
-                  y="249"
-                ></rect>
-                <rect
-                  class="bld"
-                  height="120"
-                  rx="3"
-                  width="70"
-                  x="152"
-                  y="156"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.08s"
-                  width="7"
-                  x="191"
-                  y="168"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.42s"
-                  width="7"
-                  x="206"
-                  y="168"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.88s"
-                  width="7"
-                  x="176"
-                  y="190"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.17s"
-                  width="7"
-                  x="191"
-                  y="190"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.95s"
-                  width="7"
-                  x="206"
-                  y="190"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.02s"
-                  width="7"
-                  x="161"
-                  y="212"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.85s"
-                  width="7"
-                  x="176"
-                  y="212"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.77s"
-                  width="7"
-                  x="191"
-                  y="212"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.58s"
-                  width="7"
-                  x="206"
-                  y="212"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.38s"
-                  width="7"
-                  x="161"
-                  y="234"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.5s"
-                  width="7"
-                  x="176"
-                  y="234"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.99s"
-                  width="7"
-                  x="176"
-                  y="256"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.17s"
-                  width="7"
-                  x="191"
-                  y="256"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.34s"
-                  width="7"
-                  x="206"
-                  y="256"
-                ></rect>
-                <rect
-                  class="bld"
-                  height="245"
-                  rx="3"
-                  width="56"
-                  x="232"
-                  y="31"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.81s"
-                  width="7"
-                  x="241"
-                  y="43"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.26s"
-                  width="7"
-                  x="256"
-                  y="43"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.76s"
-                  width="7"
-                  x="271"
-                  y="43"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.82s"
-                  width="7"
-                  x="241"
-                  y="65"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.37s"
-                  width="7"
-                  x="256"
-                  y="65"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.74s"
-                  width="7"
-                  x="271"
-                  y="65"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.74s"
-                  width="7"
-                  x="241"
-                  y="87"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.61s"
-                  width="7"
-                  x="256"
-                  y="87"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.42s"
-                  width="7"
-                  x="256"
-                  y="109"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.51s"
-                  width="7"
-                  x="271"
-                  y="109"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.32s"
-                  width="7"
-                  x="241"
-                  y="131"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.12s"
-                  width="7"
-                  x="271"
-                  y="131"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.73s"
-                  width="7"
-                  x="256"
-                  y="153"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.14s"
-                  width="7"
-                  x="271"
-                  y="153"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.89s"
-                  width="7"
-                  x="241"
-                  y="175"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.31s"
-                  width="7"
-                  x="271"
-                  y="175"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.84s"
-                  width="7"
-                  x="241"
-                  y="197"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.9s"
-                  width="7"
-                  x="271"
-                  y="197"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.12s"
-                  width="7"
-                  x="241"
-                  y="219"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.59s"
-                  width="7"
-                  x="256"
-                  y="263"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.14s"
-                  width="7"
-                  x="271"
-                  y="263"
-                ></rect>
-                <rect
-                  class="bld"
-                  height="170"
-                  rx="3"
-                  width="60"
-                  x="298"
-                  y="106"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.4s"
-                  width="7"
-                  x="307"
-                  y="118"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.46s"
-                  width="7"
-                  x="322"
-                  y="118"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.69s"
-                  width="7"
-                  x="352"
-                  y="118"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.1s"
-                  width="7"
-                  x="337"
-                  y="140"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.98s"
-                  width="7"
-                  x="352"
-                  y="140"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.12s"
-                  width="7"
-                  x="307"
-                  y="162"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.26s"
-                  width="7"
-                  x="352"
-                  y="162"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 3.3s"
-                  width="7"
-                  x="322"
-                  y="184"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.89s"
-                  width="7"
-                  x="322"
-                  y="206"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4s"
-                  width="7"
-                  x="352"
-                  y="206"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.01s"
-                  width="7"
-                  x="322"
-                  y="228"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.64s"
-                  width="7"
-                  x="307"
-                  y="250"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.52s"
-                  width="7"
-                  x="322"
-                  y="250"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.13s"
-                  width="7"
-                  x="352"
-                  y="250"
-                ></rect>
-                <rect
-                  class="bld"
-                  height="105"
-                  rx="3"
-                  width="38"
-                  x="358"
-                  y="171"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 1.75s"
-                  width="7"
-                  x="382"
-                  y="183"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 0.65s"
-                  width="7"
-                  x="367"
-                  y="205"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.85s"
-                  width="7"
-                  x="382"
-                  y="205"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 2.63s"
-                  width="7"
-                  x="367"
-                  y="227"
-                ></rect>
-                <rect
-                  class="win"
-                  height="11"
-                  rx="1"
-                  style="animation-delay: 4.36s"
-                  width="7"
-                  x="367"
-                  y="249"
-                ></rect>
-                <rect
-                  fill="#121210"
-                  height="44"
-                  width="400"
-                  x="0"
-                  y="276"
-                ></rect>
-                <path
-                  d="M0 276 H400"
-                  stroke="#C9A24B"
-                  stroke-opacity=".5"
-                ></path></svg
-              ><span class="chip">644 chats from one campaign</span>
-            </div>
+      <div data-section="work">
+        <section class="worksec" id="work">
+          <div class="wrap">
+            <p class="eyebrow" data-k="work.eyebrow"></p>
+            <h2 data-k="work.title"></h2>
+            <p class="sub-lead" data-k="work.sub"></p>
           </div>
-          <details class="data" data-set="" open="">
-            <summary><span>The numbers and proof</span></summary>
-            <div class="inner">
-              <p class="guide">
-                <b>Quick guide.</b> A <b>chat</b> is someone messaging the
-                business after seeing the ad. <b>Reached</b> is how many people
-                saw it. <b>CPC</b> is what one click cost. Lower is better. Tap
-                a card to see the original screenshot.
-              </p>
-              <p class="note">
-                The best Mansoura–Talkha ad reached 165K people and cost EGP
-                2,481.68.
-              </p>
-              <div class="runs">
-                <article class="run">
-                  <div class="run-top"><span class="tag">Chat ads</span></div>
-                  <h4>Faisal Apartment, 40 St</h4>
-                  <div class="hero-n"><b>644</b><span>chats started</span></div>
-                  <p class="each"><b>EGP 2.16</b> <span>per chat</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 1,391.74</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>22,959</dd>
-                    </div>
-                    <div>
-                      <dt>CPC</dt>
-                      <dd>EGP 1.11</dd>
-                    </div>
-                  </dl>
-                  <button
-                    class="proof"
-                    data-cap="Faisal Apartment, 40 St: 644 chats at EGP 2.16"
-                    data-lb=""
-                    data-src="i-mb8"
-                  >
-                    <img
-                      alt="Faisal Apartment 40 St: 644 conversations at EGP 2.16"
-                      id="i-mb8"
-                      loading="lazy"
-                      src="assets/images/ads-8.jpg"
-                    /><span>View the original screenshot</span>
-                  </button>
-                </article>
-                <article class="run">
-                  <div class="run-top"><span class="tag">Chat ads</span></div>
-                  <h4>Faisal Apartment</h4>
-                  <div class="hero-n"><b>122</b><span>chats started</span></div>
-                  <p class="each"><b>EGP 1.67</b> <span>per chat</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 203.67</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>6,154</dd>
-                    </div>
-                    <div>
-                      <dt>CPC</dt>
-                      <dd>EGP 0.91</dd>
-                    </div>
-                  </dl>
-                  <button
-                    class="proof"
-                    data-cap="Faisal Apartment: 122 chats at EGP 1.67"
-                    data-lb=""
-                    data-src="i-mb9"
-                  >
-                    <img
-                      alt="Faisal Apartment: 122 conversations at EGP 1.67"
-                      id="i-mb9"
-                      loading="lazy"
-                      src="assets/images/ads-9.jpg"
-                    /><span>View the original screenshot</span>
-                  </button>
-                </article>
-                <article class="run">
-                  <div class="run-top">
-                    <span class="tag">Interaction ads</span>
-                  </div>
-                  <h4>Mansoura–Talkha</h4>
-                  <div class="hero-n">
-                    <b>19,156</b><span>post interactions</span>
-                  </div>
-                  <p class="each">
-                    <b>EGP 0.037</b> <span>per interaction</span>
-                  </p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 707.13</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>46,867</dd>
-                    </div>
-                    <div>
-                      <dt>CPC</dt>
-                      <dd>EGP 1.56</dd>
-                    </div>
-                  </dl>
-                  <button
-                    class="proof"
-                    data-cap="Mansoura–Talkha: 19,156 interactions at EGP 0.037"
-                    data-lb=""
-                    data-src="i-mb3"
-                  >
-                    <img
-                      alt="Mansoura Talkha: 19,156 engagements at EGP 0.0369"
-                      id="i-mb3"
-                      loading="lazy"
-                      src="assets/images/ads-3.jpg"
-                    /><span>View the original screenshot</span>
-                  </button>
-                </article>
-                <article class="run">
-                  <div class="run-top">
-                    <span class="tag">Interaction ads</span>
-                  </div>
-                  <h4>Mansoura–Talkha, new design</h4>
-                  <div class="hero-n">
-                    <b>618</b><span>post interactions</span>
-                  </div>
-                  <p class="each">
-                    <b>EGP 0.72</b> <span>per interaction</span>
-                  </p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 445.21</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>34,200</dd>
-                    </div>
-                    <div>
-                      <dt>CPC</dt>
-                      <dd>EGP 1.23</dd>
-                    </div>
-                  </dl>
-                  <button
-                    class="proof"
-                    data-cap="Mansoura–Talkha new design: 618 interactions at EGP 0.72"
-                    data-lb=""
-                    data-src="i-mb2"
-                  >
-                    <img
-                      alt="Mansoura Talkha new design: 618 engagements, reach 34,200"
-                      id="i-mb2"
-                      loading="lazy"
-                      src="assets/images/ads-2.jpg"
-                    /><span>View the original screenshot</span>
-                  </button>
-                </article>
-              </div>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="proj" id="fitness">
-        <div class="wrap">
-          <div class="head">
-            <div class="txt">
-              <p class="eyebrow">Fitness &amp; wellness</p>
-              <h3>Six trainers, lots of testing</h3>
-              <p class="plain">
-                I helped six trainers work out which offers and audiences
-                actually bring customers. A chat cost anywhere from under EGP 2
-                to over EGP 50, so the testing mattered more than the budget.
-              </p>
-              <p class="pdid">
-                I tried discount offers, 3-month plans, Ramadan and Eid
-                campaigns, posters, carousels and videos, lookalike audiences,
-                and Facebook against Instagram.
-              </p>
-              <p class="pdid pres">
-                About EGP 23K spent, 1,171 chats started and 56K interactions on
-                posts, between Nov 2024 and Nov 2026.
-              </p>
-            </div>
-            <div class="cover">
-              <img
-                alt="Facebook reel with a trainer offering six months free"
-                data-px=""
-                loading="lazy"
-                src="assets/images/cover-fitness.jpg"
-              /><span class="chip">A New Year offer for Sameh Akl</span>
-            </div>
-          </div>
-          <details class="data" data-set="" open="">
-            <summary><span>The numbers and proof</span></summary>
-            <div class="inner">
-              <p class="guide">
-                <b>Quick guide.</b> A <b>chat</b> is someone messaging the
-                business after seeing the ad. <b>Reached</b> is how many people
-                saw it. <b>CPC</b> is what one click cost. Lower is better. Tap
-                a card to see the original screenshot.
-              </p>
-              <p class="note">
-                One Ramadan offer video reached 41,706 people for US$20.40
-                (March 2025). On ads with 10 or more chats, the cost per chat
-                ran from EGP 1.85 to EGP 55.
-              </p>
-              <div class="runs">
-                <article class="run">
-                  <div class="run-top"><span class="tag">Chat ads</span></div>
-                  <h4>Refreshment 1</h4>
-                  <div class="hero-n"><b>64</b><span>chats started</span></div>
-                  <p class="each"><b>EGP 1.85</b> <span>per chat</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 118.61</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>18,430</dd>
-                    </div>
-                    <div>
-                      <dt>Interactions</dt>
-                      <dd>4,205</dd>
-                    </div>
-                  </dl>
-                  <a
-                    class="proof"
-                    data-goatcounter-click="open-report"
-                    data-report=""
-                    href="campaign_report.html?lang=en"
-                    ><span>See it in the campaign report ↗</span></a
-                  >
-                </article>
-                <article class="run">
-                  <div class="run-top"><span class="tag">Chat ads</span></div>
-                  <h4>Testo Old</h4>
-                  <div class="hero-n"><b>179</b><span>chats started</span></div>
-                  <p class="each"><b>EGP 7.73</b> <span>per chat</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 1,383.02</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>43,696</dd>
-                    </div>
-                    <div>
-                      <dt>Interactions</dt>
-                      <dd>996</dd>
-                    </div>
-                  </dl>
-                  <a
-                    class="proof"
-                    data-goatcounter-click="open-report"
-                    data-report=""
-                    href="campaign_report.html?lang=en"
-                    ><span>See it in the campaign report ↗</span></a
-                  >
-                </article>
-                <article class="run">
-                  <div class="run-top"><span class="tag">Chat ads</span></div>
-                  <h4>50% Offer</h4>
-                  <div class="hero-n"><b>138</b><span>chats started</span></div>
-                  <p class="each"><b>EGP 10.11</b> <span>per chat</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 1,395.10</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>20,219</dd>
-                    </div>
-                    <div>
-                      <dt>Interactions</dt>
-                      <dd>1,252</dd>
-                    </div>
-                  </dl>
-                  <a
-                    class="proof"
-                    data-goatcounter-click="open-report"
-                    data-report=""
-                    href="campaign_report.html?lang=en"
-                    ><span>See it in the campaign report ↗</span></a
-                  >
-                </article>
-                <article class="run">
-                  <div class="run-top">
-                    <span class="tag">Interaction ads</span>
-                  </div>
-                  <h4>Youssef Mahmoud, 2nd try</h4>
-                  <div class="hero-n">
-                    <b>7,546</b><span>post interactions</span>
-                  </div>
-                  <p class="each">
-                    <b>EGP 0.033</b> <span>per interaction</span>
-                  </p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 246.60</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>19,606</dd>
-                    </div>
-                  </dl>
-                  <a
-                    class="proof"
-                    data-goatcounter-click="open-report"
-                    data-report=""
-                    href="campaign_report.html?lang=en"
-                    ><span>See it in the campaign report ↗</span></a
-                  >
-                </article>
-                <article class="run">
-                  <div class="run-top">
-                    <span class="tag">Interaction ads</span>
-                  </div>
-                  <h4>Youssef Mahmoud, 2nd episode</h4>
-                  <div class="hero-n">
-                    <b>239</b><span>post interactions</span>
-                  </div>
-                  <p class="each">
-                    <b>EGP 0.72</b> <span>per interaction</span>
-                  </p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 171.76</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>4,042</dd>
-                    </div>
-                    <div>
-                      <dt>CPC</dt>
-                      <dd>EGP 10.74</dd>
-                    </div>
-                  </dl>
-                  <button
-                    class="proof"
-                    data-cap="Youssef Mahmoud, 2nd episode: 239 interactions at EGP 0.72"
-                    data-lb=""
-                    data-src="i-mb7"
-                  >
-                    <img
-                      alt="Youssef Mahmoud second episode: 239 engagements at EGP 0.72"
-                      id="i-mb7"
-                      loading="lazy"
-                      src="assets/images/ads-7.jpg"
-                    /><span>View the original screenshot</span>
-                  </button>
-                </article>
-                <article class="run">
-                  <div class="run-top"><span class="tag">Chat ads</span></div>
-                  <h4>Marwa el Saidy, Aswan &amp; Yoga Retreat</h4>
-                  <div class="hero-n"><b>65</b><span>chats started</span></div>
-                  <p class="each"><b>EGP 16.33</b> <span>per chat</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 1,061.56</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>7,755</dd>
-                    </div>
-                    <div>
-                      <dt>CPC</dt>
-                      <dd>EGP 11.17</dd>
-                    </div>
-                  </dl>
-                  <button
-                    class="proof"
-                    data-cap="Marwa el Saidy yoga retreat: 65 chats at EGP 16.33"
-                    data-lb=""
-                    data-src="i-mb15"
-                  >
-                    <img
-                      alt="Marwa el Saidy yoga retreat: 65 conversations at EGP 16.33"
-                      id="i-mb15"
-                      loading="lazy"
-                      src="assets/images/ads-15.jpg"
-                    /><span>View the original screenshot</span>
-                  </button>
-                </article>
-                <article class="run">
-                  <div class="run-top"><span class="tag">Chat ads</span></div>
-                  <h4>Sameh Akl, new offer</h4>
-                  <div class="hero-n"><b>41</b><span>chats started</span></div>
-                  <p class="each"><b>EGP 30.06</b> <span>per chat</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 1,232.37</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>14,504</dd>
-                    </div>
-                    <div>
-                      <dt>CPC</dt>
-                      <dd>EGP 11.41</dd>
-                    </div>
-                  </dl>
-                  <button
-                    class="proof"
-                    data-cap="Sameh Akl new offer: 41 chats at EGP 30.06"
-                    data-lb=""
-                    data-src="i-mb5"
-                  >
-                    <img
-                      alt="Sameh Akl new offer: 41 conversations at EGP 30.06"
-                      id="i-mb5"
-                      loading="lazy"
-                      src="assets/images/ads-5.jpg"
-                    /><span>View the original screenshot</span>
-                  </button>
-                </article>
-              </div>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="proj" id="content">
-        <div class="wrap">
-          <div class="head">
-            <div class="txt">
-              <p class="eyebrow">Content &amp; community</p>
-              <h3>A café, a mental health platform and a non-profit</h3>
-              <p class="plain">
-                Three very different brands, all posting on a schedule with
-                Arabic captions. For the café I also ran campaigns to get people
-                through the door.
-              </p>
-              <p class="pdid">
-                I planned the content calendars (reels, carousels, photo sets
-                and YouTube videos) for Kapri Cafe, the Medium mental health
-                platform and the Al-Noon Foundation for Family Care.
-              </p>
-              <p class="pdid pres">
-                Al-Noon: 18 posts on 5 platforms in two months, all published.
-                Kapri: 67 and 90 chats, at EGP 2.46 and EGP 6.01 each.
-              </p>
-            </div>
-            <div class="cover">
-              <img
-                alt="Kapri Cafe street decorated with festive lights at night"
-                data-px=""
-                loading="lazy"
-                src="assets/images/cover-kapri.jpg"
-              /><span class="chip">Kapri Cafe, December 2024</span>
-            </div>
-          </div>
-          <details class="data" data-set="" open="">
-            <summary><span>The numbers and proof</span></summary>
-            <div class="inner">
-              <p class="guide">
-                <b>Quick guide.</b> A <b>chat</b> is someone messaging the
-                business after seeing the ad. <b>Reached</b> is how many people
-                saw it. <b>CPC</b> is what one click cost. Lower is better. Tap
-                a card to see the original screenshot.
-              </p>
-              <div class="runs">
-                <article class="run">
-                  <div class="run-top"><span class="tag">Chat ads</span></div>
-                  <h4>Kapri Cafe, Dec 8</h4>
-                  <div class="hero-n"><b>67</b><span>chats started</span></div>
-                  <p class="each"><b>EGP 2.46</b> <span>per chat</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 165.15</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>6,543</dd>
-                    </div>
-                    <div>
-                      <dt>CPC</dt>
-                      <dd>EGP 1.65</dd>
-                    </div>
-                  </dl>
-                  <button
-                    class="proof"
-                    data-cap="Kapri Cafe Dec 8: 67 chats at EGP 2.46"
-                    data-lb=""
-                    data-src="i-mb11"
-                  >
-                    <img
-                      alt="Kapri Cafe Dec 8 campaign: 67 conversations at EGP 2.46"
-                      id="i-mb11"
-                      loading="lazy"
-                      src="assets/images/ads-11.jpg"
-                    /><span>View the original screenshot</span>
-                  </button>
-                </article>
-                <article class="run">
-                  <div class="run-top"><span class="tag">Chat ads</span></div>
-                  <h4>Kapri Cafe, Dec 19</h4>
-                  <div class="hero-n"><b>90</b><span>chats started</span></div>
-                  <p class="each"><b>EGP 6.01</b> <span>per chat</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 540.92</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>5,413</dd>
-                    </div>
-                    <div>
-                      <dt>CPC</dt>
-                      <dd>EGP 3.42</dd>
-                    </div>
-                  </dl>
-                  <button
-                    class="proof"
-                    data-cap="Kapri Cafe Dec 19: 90 chats at EGP 6.01"
-                    data-lb=""
-                    data-src="i-mb10"
-                  >
-                    <img
-                      alt="Kapri Cafe Dec 19 campaign: 90 conversations at EGP 6.01"
-                      id="i-mb10"
-                      loading="lazy"
-                      src="assets/images/ads-10.jpg"
-                    /><span>View the original screenshot</span>
-                  </button>
-                </article>
-              </div>
-              <p class="note">The posts themselves are in the gallery below.</p>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="proj" id="nefr">
-        <div class="wrap">
-          <div class="head">
-            <div class="txt">
-              <p class="eyebrow">My own brand</p>
-              <h3>Nefr Story</h3>
-              <p class="plain">
-                A clothing brand I started, inspired by ancient Egypt. With a
-                small budget, one ad got about 1,500 clicks for under EGP 710.
-              </p>
-              <p class="pdid">
-                I wrote the launch copy, designed the drops (every piece has a
-                QR code that opens its story) and ran video, photo and discount
-                ads.
-              </p>
-              <p class="pdid pres">
-                Best ad: 32,621 people reached, 1,516 clicks, EGP 0.47 per
-                click.
-              </p>
-            </div>
-            <div class="cover">
-              <img
-                alt="Love of Amarna T-shirt on a gold background"
-                data-px=""
-                loading="lazy"
-                src="assets/images/cover-nefr.jpg"
-              /><span class="chip">The Love of Amarna tee</span>
-            </div>
-          </div>
-          <details class="data" data-set="" open="">
-            <summary><span>The numbers and proof</span></summary>
-            <div class="inner">
-              <p class="guide">
-                <b>Quick guide.</b> A <b>chat</b> is someone messaging the
-                business after seeing the ad. <b>Reached</b> is how many people
-                saw it. <b>CPC</b> is what one click cost. Lower is better. Tap
-                a card to see the original screenshot.
-              </p>
-              <div class="runs">
-                <article class="run">
-                  <div class="run-top"><span class="tag">Click ads</span></div>
-                  <h4>Nefr Afro</h4>
-                  <div class="hero-n"><b>1,516</b><span>link clicks</span></div>
-                  <p class="each"><b>EGP 0.47</b> <span>per click</span></p>
-                  <dl class="mini">
-                    <div>
-                      <dt>Spent</dt>
-                      <dd>EGP 709.92</dd>
-                    </div>
-                    <div>
-                      <dt>Reached</dt>
-                      <dd>32,621</dd>
-                    </div>
-                    <div>
-                      <dt>Click rate</dt>
-                      <dd>3.57%</dd>
-                    </div>
-                  </dl>
-                  <p class="exp">From the Ads Manager report</p>
-                </article>
-              </div>
-              <p class="note">
-                The Instagram 30%-off ad had a 3.46% click rate.
-              </p>
-            </div>
-          </details>
-        </div>
-      </article>
-      <section class="case" id="compare">
+        </section>
+        <div id="projects"></div>
+      </div>
+      <section class="case" id="compare" data-section="compare">
         <div class="wrap">
           <details class="data" data-set="" open="">
             <summary>
-              <span
-                >For the numbers people: every chat campaign, ranked by
-                cost</span
-              >
+              <span data-k="compare.title"></span>
             </summary>
             <div class="inner">
-              <p class="guide">
-                Cost per chat for the 13 campaigns in my Ads Manager
-                screenshots. Lower is better. Tap a row to see the original
-                screenshot.
-              </p>
-              <div class="chart">
-                <button
-                  class="row"
-                  data-cap="Faisal Apartment: EGP 1.67 per chat, 122 conversations · EGP 204"
-                  data-lb=""
-                  data-src="i-mb9"
-                >
-                  <span class="lab"
-                    ><span class="nm">Faisal Apartment</span
-                    ><small>122 chats · EGP 204</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 5.6%"></span></span
-                  ><span class="v">EGP 1.67</span></button
-                ><button
-                  class="row"
-                  data-cap="Faisal Apartment, 40 St: EGP 2.16 per chat, 644 conversations · EGP 1,392"
-                  data-lb=""
-                  data-src="i-mb8"
-                >
-                  <span class="lab"
-                    ><span class="nm">Faisal Apartment, 40 St</span
-                    ><small>644 chats · EGP 1,392</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 7.2%"></span></span
-                  ><span class="v">EGP 2.16</span></button
-                ><button
-                  class="row"
-                  data-cap="Kapri Cafe, Dec 8: EGP 2.46 per chat, 67 conversations · EGP 165"
-                  data-lb=""
-                  data-src="i-mb11"
-                >
-                  <span class="lab"
-                    ><span class="nm">Kapri Cafe, Dec 8</span
-                    ><small>67 chats · EGP 165</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 8.2%"></span></span
-                  ><span class="v">EGP 2.46</span></button
-                ><button
-                  class="row"
-                  data-cap="Campaign (name not shown): EGP 2.87 per chat, 194 conversations · EGP 556"
-                  data-lb=""
-                  data-src="i-mb13"
-                >
-                  <span class="lab"
-                    ><span class="nm">Campaign (name not shown)</span
-                    ><small>194 chats · EGP 556</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 9.5%"></span></span
-                  ><span class="v">EGP 2.87</span></button
-                ><button
-                  class="row"
-                  data-cap="Campaign (name not shown): EGP 3.07 per chat, 228 conversations · EGP 700"
-                  data-lb=""
-                  data-src="i-mb14"
-                >
-                  <span class="lab"
-                    ><span class="nm">Campaign (name not shown)</span
-                    ><small>228 chats · EGP 700</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 10.2%"></span></span
-                  ><span class="v">EGP 3.07</span></button
-                ><button
-                  class="row"
-                  data-cap="Kapri Cafe, Dec 19: EGP 6.01 per chat, 90 conversations · EGP 541"
-                  data-lb=""
-                  data-src="i-mb10"
-                >
-                  <span class="lab"
-                    ><span class="nm">Kapri Cafe, Dec 19</span
-                    ><small>90 chats · EGP 541</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 20%"></span></span
-                  ><span class="v">EGP 6.01</span></button
-                ><button
-                  class="row"
-                  data-cap="Campaign (name not shown): EGP 8.98 per chat, 106 conversations · EGP 952"
-                  data-lb=""
-                  data-src="i-mb1"
-                >
-                  <span class="lab"
-                    ><span class="nm">Campaign (name not shown)</span
-                    ><small>106 chats · EGP 952</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 29.9%"></span></span
-                  ><span class="v">EGP 8.98</span></button
-                ><button
-                  class="row"
-                  data-cap="Campaign (name not shown): EGP 9.51 per chat, 62 conversations · EGP 589"
-                  data-lb=""
-                  data-src="i-mb12"
-                >
-                  <span class="lab"
-                    ><span class="nm">Campaign (name not shown)</span
-                    ><small>62 chats · EGP 589</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 31.6%"></span></span
-                  ><span class="v">EGP 9.51</span></button
-                ><button
-                  class="row"
-                  data-cap="Marwa el Saidy, yoga retreat: EGP 16.33 per chat, 65 conversations · EGP 1,062"
-                  data-lb=""
-                  data-src="i-mb15"
-                >
-                  <span class="lab"
-                    ><span class="nm">Marwa el Saidy, yoga retreat</span
-                    ><small>65 chats · EGP 1,062</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 54.3%"></span></span
-                  ><span class="v">EGP 16.33</span></button
-                ><button
-                  class="row"
-                  data-cap="Campaign (name not shown): EGP 21.28 per chat, 17 conversations · EGP 362"
-                  data-lb=""
-                  data-src="i-mb6"
-                >
-                  <span class="lab"
-                    ><span class="nm">Campaign (name not shown)</span
-                    ><small>17 chats · EGP 362</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 70.8%"></span></span
-                  ><span class="v">EGP 21.28</span></button
-                ><button
-                  class="row"
-                  data-cap="Campaign (name not shown): EGP 21.47 per chat, 56 conversations · EGP 1,203"
-                  data-lb=""
-                  data-src="i-mb17"
-                >
-                  <span class="lab"
-                    ><span class="nm">Campaign (name not shown)</span
-                    ><small>56 chats · EGP 1,203</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 71.4%"></span></span
-                  ><span class="v">EGP 21.47</span></button
-                ><button
-                  class="row"
-                  data-cap="Campaign (name not shown): EGP 23.11 per chat, 33 conversations · EGP 763"
-                  data-lb=""
-                  data-src="i-mb4"
-                >
-                  <span class="lab"
-                    ><span class="nm">Campaign (name not shown)</span
-                    ><small>33 chats · EGP 763</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 76.9%"></span></span
-                  ><span class="v">EGP 23.11</span></button
-                ><button
-                  class="row"
-                  data-cap="Sameh Akl, new offer: EGP 30.06 per chat, 41 conversations · EGP 1,232"
-                  data-lb=""
-                  data-src="i-mb5"
-                >
-                  <span class="lab"
-                    ><span class="nm">Sameh Akl, new offer</span
-                    ><small>41 chats · EGP 1,232</small></span
-                  ><span class="track"
-                    ><span class="fill" style="--w: 100%"></span></span
-                  ><span class="v">EGP 30.06</span>
-                </button>
-              </div>
-              <div hidden="" id="store">
-                <img
-                  alt="Campaign with 106 conversations at EGP 8.98"
-                  id="i-mb1"
-                  loading="lazy"
-                  src="assets/images/ads-1.jpg"
-                /><img
-                  alt="Campaign with 33 conversations at EGP 23.11"
-                  id="i-mb4"
-                  loading="lazy"
-                  src="assets/images/ads-4.jpg"
-                /><img
-                  alt="Campaign with 17 conversations at EGP 21.28"
-                  id="i-mb6"
-                  loading="lazy"
-                  src="assets/images/ads-6.jpg"
-                /><img
-                  alt="Campaign with 62 conversations at EGP 9.51"
-                  id="i-mb12"
-                  loading="lazy"
-                  src="assets/images/ads-12.jpg"
-                /><img
-                  alt="Campaign with 194 conversations at EGP 2.87"
-                  id="i-mb13"
-                  loading="lazy"
-                  src="assets/images/ads-13.jpg"
-                /><img
-                  alt="Campaign with 228 conversations at EGP 3.07"
-                  id="i-mb14"
-                  loading="lazy"
-                  src="assets/images/ads-14.jpg"
-                /><img
-                  alt="Campaign with 56 conversations at EGP 21.47"
-                  id="i-mb17"
-                  loading="lazy"
-                  src="assets/images/ads-17.jpg"
-                />
-              </div>
+              <p class="guide" data-k="compare.guide"></p>
+              <div class="chart" id="compareChart"></div>
+              <div hidden="" id="compareStore"></div>
             </div>
           </details>
         </div>
@@ -2187,329 +234,69 @@
         aria-label="Published posts"
         class="wheelsec"
         id="posts"
-        style="--n: 9"
+        data-section="posts"
       >
         <div class="stage">
           <div class="whead">
-            <p class="eyebrow">Published posts</p>
-            <h2>Posts I made.</h2>
-            <p class="hint">
-              Scroll to spin the wheel. Tap a post to enlarge it.
-            </p>
+            <p class="eyebrow" data-k="posts.eyebrow"></p>
+            <h2 data-k="posts.title"></h2>
+            <p class="hint" data-k="posts.hint"></p>
           </div>
-          <div class="wheel" data-set="">
-            <button
-              class="wi"
-              data-cap="Nefr Story · 27 Aug 2024: Love of Amarna T-shirt with a scannable story QR"
-              data-lb=""
-              data-src="i-cc10"
-              type="button"
-            >
-              <img
-                alt="Nefr Story Love of Amarna T-shirt launch post"
-                id="i-cc10"
-                loading="lazy"
-                src="assets/images/post-10.jpg"
-              /></button
-            ><button
-              class="wi"
-              data-cap="Kapri Cafe · 27 Nov 2024"
-              data-lb=""
-              data-src="i-cc7"
-              type="button"
-            >
-              <img
-                alt="Kapri Cafe post from 27 November 2024"
-                id="i-cc7"
-                loading="lazy"
-                src="assets/images/post-7.jpg"
-              /></button
-            ><button
-              class="wi"
-              data-cap="Kapri Cafe · 19 Dec 2024"
-              data-lb=""
-              data-src="i-cc6"
-              type="button"
-            >
-              <img
-                alt="Kapri Cafe festive lights post from 19 December 2024"
-                id="i-cc6"
-                loading="lazy"
-                src="assets/images/post-6.jpg"
-              /></button
-            ><button
-              class="wi"
-              data-cap="Nefr Story · 20 Dec 2024: hoodie launch with a story QR code"
-              data-lb=""
-              data-src="i-cc9"
-              type="button"
-            >
-              <img
-                alt="Nefr Story hoodie launch post in Arabic"
-                id="i-cc9"
-                loading="lazy"
-                src="assets/images/post-9.jpg"
-              /></button
-            ><button
-              class="wi"
-              data-cap="Nefr Story · 21 Dec 2024: hoodie post, priced at 799 EGP"
-              data-lb=""
-              data-src="i-cc8"
-              type="button"
-            >
-              <img
-                alt="Nefr Story hoodie post with a hooded figure at a temple"
-                id="i-cc8"
-                loading="lazy"
-                src="assets/images/post-8.jpg"
-              /></button
-            ><button
-              class="wi"
-              data-cap="Kapri Cafe · 22 Dec 2024"
-              data-lb=""
-              data-src="i-cc5"
-              type="button"
-            >
-              <img
-                alt="Kapri Cafe post from 22 December 2024"
-                id="i-cc5"
-                loading="lazy"
-                src="assets/images/post-5.jpg"
-              /></button
-            ><button
-              class="wi"
-              data-cap="Kapri Cafe · 31 Dec 2024"
-              data-lb=""
-              data-src="i-cc4"
-              type="button"
-            >
-              <img
-                alt="Kapri Cafe New Year's Eve post"
-                id="i-cc4"
-                loading="lazy"
-                src="assets/images/post-4.jpg"
-              /></button
-            ><button
-              class="wi"
-              data-cap="Kapri Cafe · 4 Jan 2025"
-              data-lb=""
-              data-src="i-cc3"
-              type="button"
-            >
-              <img
-                alt="Kapri Cafe post with festive lights"
-                id="i-cc3"
-                loading="lazy"
-                src="assets/images/post-3.jpg"
-              /></button
-            ><button
-              class="wi"
-              data-cap="Medium Platform: mindful-eating carousel (Arabic)"
-              data-lb=""
-              data-src="i-cc2"
-              type="button"
-            >
-              <img
-                alt="Medium Platform carousel with Arabic mindful eating tips"
-                id="i-cc2"
-                loading="lazy"
-                src="assets/images/post-2.jpg"
-              /></button
-            ><button
-              class="wi"
-              data-cap="Trainer New Year offer reel, Medium carousel and Kapri posts"
-              data-lb=""
-              data-src="i-cc1"
-              type="button"
-            >
-              <img
-                alt="Four Facebook posts: a trainer offer reel, a Medium carousel and two Kapri Cafe posts"
-                id="i-cc1"
-                loading="lazy"
-                src="assets/images/post-1.jpg"
-              />
-            </button>
-          </div>
+          <div class="wheel" data-set="" id="postsWheel"></div>
           <p aria-live="polite" class="wcap" id="wcap"></p>
         </div>
       </section>
-      <section class="calc" id="calc">
+      <section class="calc" id="calc" data-section="calc">
         <div class="wrap">
-          <div class="calcbox">
-            <div class="cl">
-              <p class="eyebrow">Try it yourself</p>
-              <h2>What could a chat be worth?</h2>
-              <p class="sub-lead">
-                Change any box to match your business and see what the same
-                budget could do. The cost per chat starts at the average from my
-                trainers’ account (EGP 19.74).
-              </p>
-              <div aria-label="Examples" class="presets" role="group">
-                <button class="pre" data-r="1" type="button">
-                  1 in 100 buys</button
-                ><button class="pre on" data-r="3" type="button">
-                  3 in 100 buy</button
-                ><button class="pre" data-r="6" type="button">
-                  6 in 100 buy
-                </button>
-              </div>
-              <p class="note">
-                This is an illustration, not a result from my campaigns. Online
-                sources put lead-to-sale rates anywhere from under 1% to around
-                5% depending on the industry, so use your own numbers.
-              </p>
-            </div>
-            <div class="cr">
-              <div class="inputs">
-                <div class="f">
-                  <label for="cb">Ad budget (EGP)</label
-                  ><input
-                    id="cb"
-                    inputmode="numeric"
-                    type="text"
-                    value="5000"
-                  />
-                </div>
-                <div class="f">
-                  <label for="cc">Cost per chat (EGP)</label
-                  ><input
-                    id="cc"
-                    inputmode="decimal"
-                    type="text"
-                    value="19.74"
-                  />
-                </div>
-                <div class="f">
-                  <label for="cr">Chats that become customers</label>
-                  <div class="rng">
-                    <input
-                      id="cr"
-                      max="15"
-                      min="0.5"
-                      step="0.5"
-                      type="range"
-                      value="3"
-                    /><output for="cr" id="crv">3%</output>
-                  </div>
-                </div>
-                <div class="f">
-                  <label for="cv">Average sale (EGP)</label
-                  ><input
-                    id="cv"
-                    inputmode="numeric"
-                    type="text"
-                    value="2000"
-                  />
-                </div>
-              </div>
-              <div aria-live="polite" class="out">
-                <div><b id="o-chats">0</b><span>chats</span></div>
-                <div><b id="o-cust">0</b><span>customers</span></div>
-                <div><b id="o-rev">0</b><span>revenue (EGP)</span></div>
-                <div>
-                  <b id="o-cpa">0</b><span>cost per customer (EGP)</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="calcbox" id="calcBox"></div>
         </div>
       </section>
-      <section class="reportsec">
+      <section class="reportsec" data-section="reportsec">
         <div class="wrap">
-          <div class="reportbar">
-            <div>
-              <h3>Want every number?</h3>
-              <p class="sub-lead">
-                The full campaign report lists every ad with its cost and
-                results. The first page sums it up in plain language.
-              </p>
-            </div>
-            <a
-              class="btn pri"
-              data-goatcounter-click="open-report"
-              data-report=""
-              href="campaign_report.html?lang=en"
-              >Open the report ↗</a
-            >
+          <div>
+            <h3 data-k="reportsec.title"></h3>
+            <p class="sub-lead" data-k="reportsec.sub"></p>
           </div>
+          <a
+            class="btn pri"
+            data-goatcounter-click="open-report"
+            data-report=""
+            href="campaign_report.html?lang=en"
+            data-k="reportsec.cta"
+            >Open the report ↗</a
+          >
         </div>
       </section>
-      <section class="case" id="mentor">
+      <section class="case" id="mentor" data-section="mentor">
         <div class="wrap">
-          <p class="eyebrow">Mentorship</p>
-          <h2>I teach what I do.</h2>
-          <p class="sub-lead">
-            I have been a marketing mentor at ALX Arabia since August 2024. My
-            sessions cover digital marketing, storytelling and building a
-            personal brand, and I design the learning paths for new marketers.
-          </p>
-          <div class="stats3">
-            <div class="m">
-              <b data-count="100" data-dec="0" data-suf="+">100+</b
-              ><span>hours of coaching</span>
-            </div>
-            <div class="m">
-              <b data-count="12" data-dec="0" data-suf="+">12+</b
-              ><span>sessions</span>
-            </div>
-            <div class="m">
-              <b data-count="300" data-dec="0" data-suf="+">300+</b
-              ><span>people coached</span>
-            </div>
-          </div>
+          <p class="eyebrow" data-k="mentor.eyebrow"></p>
+          <h2 data-k="mentor.title"></h2>
+          <p class="sub-lead" data-k="mentor.sub"></p>
+          <div class="stats3" id="mentorStats"></div>
           <div class="two" style="gap: 32px; align-items: start">
             <div>
               <button
                 aria-label="Play the ALX interview video"
                 class="vid"
-                data-title="ALX interview"
+                data-title=""
+                data-attr-data-title="mentor.videoTitle"
                 id="vid"
                 type="button"
               >
                 <span aria-hidden="true" class="play">▶</span>
               </button>
-              <p class="note">
-                ALX interview. If the player doesn’t load,
-                <a
-                  href="https://drive.google.com/file/d/1Wv0x3hvg-vOhYCic1y9MMRWo699nI9nZ/view?usp=sharing"
-                  rel="noopener"
-                  target="_blank"
-                  >open it in Google Drive</a
-                >.
-              </p>
+              <p class="note" data-kh="mentor.videoNoteHtml"></p>
             </div>
-            <div class="decks">
-              <div class="deck">
-                <span class="tag">Masterclass · 30 min</span>
-                <h3>Communication and Storytelling for Coaches</h3>
-                <ul>
-                  <li>Why stories stick</li>
-                  <li>Story frameworks: Hero’s Journey, PAS, BAB</li>
-                  <li>Building a story bank</li>
-                </ul>
-              </div>
-              <div class="deck">
-                <span class="tag">Townhall</span>
-                <h3>Building a Growth Mindset</h3>
-                <ul>
-                  <li>Fixed vs growth mindset</li>
-                  <li>Personal branding on LinkedIn, GitHub and X</li>
-                  <li>A 30-second pitch, written and shared live</li>
-                </ul>
-              </div>
-              <div class="deck">
-                <span class="tag">Workshop</span>
-                <h3>
-                  Content Creation and Media Buying on Facebook and Instagram
-                </h3>
-                <ul>
-                  <li>Content strategy for Reels, Stories and posts</li>
-                  <li>Targeting, carousel and video ads</li>
-                  <li>Reading reach, clicks, saves and impressions</li>
-                </ul>
-              </div>
-            </div>
+            <div class="decks" id="mentorDecks"></div>
           </div>
+        </div>
+      </section>
+      <section id="team" data-section="team">
+        <div class="wrap">
+          <p class="eyebrow" data-k="team.eyebrow"></p>
+          <h2 data-k="team.title"></h2>
+          <p class="sub-lead" data-k="team.sub"></p>
+          <div class="svc-grid" id="teamGrid"></div>
         </div>
       </section>
       <svg
@@ -2522,7 +309,7 @@
           d="M0 30 Q50 0 100 30 T200 30 T300 30 T400 30 T500 30 T600 30 T700 30 T800 30 T900 30 T1000 30 T1100 30 T1200 30"
         ></path>
       </svg>
-      <section class="music case" id="music">
+      <section class="music case" id="music" data-section="music">
         <div class="wrap">
           <div>
             <svg aria-hidden="true" class="bigsax" viewbox="0 0 140 160">
@@ -2533,155 +320,45 @@
             </div>
           </div>
           <div>
-            <p class="eyebrow">Away from work</p>
-            <h2>I play the saxophone.</h2>
-            <div class="mu">
-              <h3>Listening</h3>
-              <p>
-                A player hears the room before the first note. I try to hear the
-                customer before the first ad.
-              </p>
-            </div>
-            <div class="mu">
-              <h3>Structure and room to improvise</h3>
-              <p>
-                Music has a structure and some freedom inside it. A campaign
-                works the same way: a plan first, then quick tests and changes.
-              </p>
-            </div>
-            <div class="mu">
-              <h3>Timing</h3>
-              <p>
-                A good note at the wrong moment still sounds wrong. A good offer
-                at the wrong time does too.
-              </p>
-            </div>
-            <div class="mu">
-              <h3>Practice</h3>
-              <p>
-                Skill comes from repeating things. Testing and tuning campaigns
-                is the same habit.
-              </p>
-            </div>
+            <p class="eyebrow" data-k="music.eyebrow"></p>
+            <h2 data-k="music.title"></h2>
+            <div id="musicItems"></div>
           </div>
         </div>
       </section>
-      <section id="skills">
+      <section id="skills" data-section="skills">
         <div class="wrap">
-          <p class="eyebrow">Skills and tools</p>
-          <h2>What I work with.</h2>
-          <div class="skills">
-            <div class="sk">
-              <h3>Social media marketing</h3>
-              <ul class="chips">
-                <li>Instagram</li>
-                <li>TikTok</li>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>LinkedIn</li>
-              </ul>
-            </div>
-            <div class="sk">
-              <h3>Paid advertising</h3>
-              <ul class="chips">
-                <li>Meta Ads</li>
-                <li>LinkedIn Ads</li>
-                <li>Google Ads</li>
-                <li>TikTok Ads</li>
-                <li>Twitter Ads</li>
-              </ul>
-            </div>
-            <div class="sk">
-              <h3>Tools and analytics</h3>
-              <ul class="chips">
-                <li>Canva</li>
-                <li>Meta Creator Studio</li>
-                <li>Google Suite</li>
-                <li>Microsoft Office</li>
-                <li>Cross-platform analytics</li>
-              </ul>
-            </div>
-            <div class="sk">
-              <h3>Languages</h3>
-              <ul class="chips">
-                <li>Arabic (native)</li>
-                <li>English (fluent)</li>
-              </ul>
-            </div>
-          </div>
+          <p class="eyebrow" data-k="skills.eyebrow"></p>
+          <h2 data-k="skills.title"></h2>
+          <div class="skills" id="skillsGrid"></div>
         </div>
       </section>
-      <section class="case" id="about">
+      <section class="case" id="about" data-section="about">
         <div class="wrap two">
           <div>
-            <p class="eyebrow">About</p>
-            <h2>About me</h2>
-            <p class="sub-lead">
-              I started in social media in 2017 and have since worked in
-              fitness, real estate, retail, food, art and community projects.
-              I’m curious by habit, I follow trends closely, and I like building
-              teams that enjoy their work. I’m studying Business at Ain Shams
-              University and I work from Cairo.
-            </p>
-            <p class="note">
-              Some older client results on my CV (sales growth, engagement,
-              sign-ups) are confidential. I’m happy to talk about them, but I
-              can’t share the proof.
-            </p>
+            <p class="eyebrow" data-k="about.eyebrow"></p>
+            <h2 data-k="about.title"></h2>
+            <p class="sub-lead" data-k="about.lead"></p>
+            <p class="note" data-k="about.note"></p>
           </div>
           <div>
-            <p class="eyebrow">Experience</p>
-            <div class="tl">
-              <div>
-                <time>08/2024 – now</time
-                ><span>Marketing Mentor<small>ALX Arabia</small></span>
-              </div>
-              <div>
-                <time>01/2024 – now</time
-                ><span
-                  >Media Buyer, fitness industry<small>Freelance</small></span
-                >
-              </div>
-              <div>
-                <time>11/2024 – 02/2025</time
-                ><span>Media Buyer<small>Aqar Masr</small></span>
-              </div>
-              <div>
-                <time>09/2024 – 03/2025</time
-                ><span>Social Media Manager<small>Kapri Cafe</small></span>
-              </div>
-              <div>
-                <time>12/2019 – 11/2023</time
-                ><span>Social Media Manager<small>Kemet</small></span>
-              </div>
-              <div>
-                <time>2017 – 2021</time
-                ><span
-                  >Media buying and social media roles<small
-                    >7ENNA, Jamilah Accessories, Venus, Fitness Garage, Tuhfajyh
-                    Gallery and others</small
-                  ></span
-                >
-              </div>
-            </div>
+            <p class="eyebrow" data-k="experience.eyebrow"></p>
+            <div class="tl" id="expTimeline"></div>
           </div>
         </div>
       </section>
     </main>
     <section class="contact" id="contact">
       <div class="wrap">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s talk</h2>
-        <p style="color: var(--muted); max-width: 34em; margin: 0 auto">
-          Hiring for a marketing role, or need help with your brand? Message me
-          on WhatsApp or LinkedIn, or send an email.
-        </p>
+        <p class="eyebrow" data-k="contact.eyebrow"></p>
+        <h2 data-k="contact.title"></h2>
         <div class="cta">
           <a
             class="btn pri"
             data-goatcounter-click="whatsapp"
             href="https://wa.me/201001498032"
             id="wa"
+            data-k="contact.wa"
             >WhatsApp</a
           ><a
             class="btn sec"
@@ -2690,30 +367,41 @@
             id="li"
             rel="me noopener"
             target="_blank"
+            data-k="contact.li"
             >LinkedIn</a
           ><a
             class="btn sec"
             data-goatcounter-click="email"
             href="mailto:mostafabebo012@gmail.com"
             id="mail"
+            data-k="contact.mail"
             >mostafabebo012@gmail.com</a
           ><a
             class="btn sec"
             data-goatcounter-click="cv-download"
             download="Mostafa_Alaa_CV.pdf"
             href="assets/files/Mostafa_Alaa_CV.pdf"
+            data-k="contact.cv"
             >Download CV</a
+          ><a
+            class="btn sec"
+            data-goatcounter-click="portfolio-pdf"
+            download="Mostafa_Alaa_Portfolio.pdf"
+            href="assets/files/Mostafa_Alaa_Portfolio.pdf"
+            data-k="contact.pdf"
+            >Download portfolio (PDF)</a
           >
         </div>
       </div>
     </section>
     <footer>
       <div class="wrap">
-        © 2026 Mostafa Alaa · Cairo, Egypt ·
+        <span data-k="footer.text"></span>
         <a
           href="https://www.linkedin.com/in/mostafalaa/"
           rel="me noopener"
           target="_blank"
+          data-k="footer.linkedin"
           >LinkedIn</a
         >
       </div>
@@ -2736,7 +424,7 @@
       role="dialog"
     >
       <div class="lgbox">
-        <h2 id="lgt">Choose your language</h2>
+        <h2 id="lgt" data-k="gate.title">Choose your language</h2>
         <p
           dir="rtl"
           lang="ar"
@@ -2745,6 +433,7 @@
             font-size: 1.5rem;
             color: var(--text);
           "
+          data-k="gate.sub"
         >
           اختار لغتك
         </p>
@@ -2759,15 +448,17 @@
     </div>
     <dialog aria-label="Image viewer" id="lb">
       <div class="lbbar">
-        <button id="pv"><span>← Prev</span></button
-        ><button id="cl"><span>Close (Esc)</span></button
-        ><button id="nx"><span>Next →</span></button>
+        <button id="pv"><span data-k="lb.prev">← Prev</span></button
+        ><button id="cl"><span data-k="lb.close">Close (Esc)</span></button
+        ><button id="nx"><span data-k="lb.next">Next →</span></button>
       </div>
       <img alt="" id="lbi" />
       <p id="lbc"></p>
     </dialog>
 
     <!-- Analytics: paste your tracking snippet here (see README, "Visitor analytics"). -->
+    <script src="js/content/en.js"></script>
+    <script src="js/content.js"></script>
     <script src="js/jazz.js"></script>
     <script src="js/main.js"></script>
   </body>
