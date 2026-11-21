@@ -576,7 +576,6 @@ window.SITE_CONTENT = {
       roas: "return on ad spend",
     },
     note: "These are market benchmarks, not promises. Your real numbers depend on your product, your pricing, your season and your follow-up - some items will beat these, some won't. In a consultation, we'll tell you honestly what it'll take to hit them.",
-    sources: "Sources: my own campaign data in Egypt (EGP 1.67–55 per chat), LocaliQ/WordStream 2025 Facebook Ads CPL report, Lebesgue 2026 country CPM comparison, and 2025–2026 Egypt purchase-conversion ranges per industry. Scaled by market CPM.",
   },
   reportsec: {
     title: "Want every number?",
