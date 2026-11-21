@@ -138,6 +138,13 @@ window.SITE_CONTENT = {
         linkLabel: "شوف شغله",
         img: "assets/images/team/mohamed-diab.jpg",
       },
+      {
+        name: "سما أبو العزم",
+        role: "التصميم والهوية",
+        link: "https://www.behance.net/samaabuelazm",
+        linkLabel: "شوف شغلها",
+        img: "assets/images/team/sama-abuelazm.jpg",
+      },
     ],
   },
   testimonials: {

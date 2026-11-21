@@ -140,6 +140,13 @@ window.SITE_CONTENT = {
         linkLabel: "See his work",
         img: "assets/images/team/mohamed-diab.jpg",
       },
+      {
+        name: "Sama Abuelazm",
+        role: "Design & identity",
+        link: "https://www.behance.net/samaabuelazm",
+        linkLabel: "See her work",
+        img: "assets/images/team/sama-abuelazm.jpg",
+      },
     ],
   },
   testimonials: {
