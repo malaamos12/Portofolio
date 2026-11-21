@@ -255,6 +255,7 @@
       im.loading = "lazy";
       im.src = ROOT + p.src;
       b.append(im);
+      if (p.res) b.append(el("span", "wi-res", p.res));
       wheel.append(b);
     });
   }
