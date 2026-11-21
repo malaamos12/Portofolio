@@ -1003,21 +1003,23 @@ svg.sax {
   margin-top: 22px;
 }
 .member {
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 18px;
-  background: rgba(255, 255, 255, 0.02);
+  text-align: center;
 }
 .member img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
+  width: min(220px, 60vw);
+  aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  padding: 8px;
+  margin: 0 auto;
   display: block;
+  transform: rotate(-3deg);
+  animation: float 7s ease-in-out infinite;
 }
 .member h3 {
   font: 600 1.1rem var(--font-body);
-  margin: 14px 0 4px;
+  margin: 18px 0 4px;
 }
 .member .role {
   margin: 0;
