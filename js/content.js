@@ -461,6 +461,13 @@
   if (quoteGrid && C.testimonials)
     C.testimonials.quotes.forEach((q) => {
       const d = el("div", "svc");
+      if (q.img) {
+        const im = el("img", "tq-img");
+        im.src = ROOT + q.img.src;
+        im.alt = q.img.alt || "";
+        im.loading = "lazy";
+        d.append(im);
+      }
       d.append(
         el("p", "q", "\u201C" + q.q + "\u201D"),
         el("h3", null, q.name),

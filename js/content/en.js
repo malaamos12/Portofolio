@@ -126,8 +126,47 @@ window.SITE_CONTENT = {
   testimonials: {
     eyebrow: "What people say",
     title: "Don’t take my word for it.",
-    sub: "Recommendations from my LinkedIn, and the award my coaching work earned.",
+    sub: "Learner feedback, LinkedIn recommendations, and the recognition my coaching work earned.",
     quotes: [
+      {
+        q: "Outstanding Coaching Award, Pay it Forward 2025, for coaching a group of professionals unlocking their full potential.",
+        name: "ALX Arabia",
+        tag: "Lead Coach award",
+        cls: "me",
+        img: {
+          src: "assets/images/testimonials/alx-award-cert.jpg?v=20261121",
+          alt: "Outstanding Coaching Award certificate presented to Mostafa Alaa by the Pay It Forward Club",
+        },
+      },
+      {
+        q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
+        name: "Amr A. Hussien",
+        tag: "Pay It Forward bootcamp participant",
+      },
+      {
+        q: "Thank you for sharing your insights at ALX Coaches’ Corner. This experience was truly rewarding.",
+        name: "Batoul Allaithy",
+        tag: "Webinar attendee, ALX Coaches’ Corner",
+      },
+      {
+        q: "It was a pleasure meeting and learning from you all.",
+        name: "Muhammad Bahauddin Al-Muzayan",
+        tag: "Pay It Forward bootcamp participant",
+      },
+      {
+        q: "Your expertise and passion for coaching truly shone through.",
+        name: "Meran Hany",
+        tag: "ALX Relationship Manager",
+      },
+      {
+        q: "Very detailed and insightful sessions, especially in digital marketing and SEO. You made a notable impact.",
+        name: "ALX Egypt",
+        tag: "Community Coach feature",
+        img: {
+          src: "assets/images/testimonials/alx-coach-quote.jpg?v=20261121",
+          alt: "ALX Egypt Community Coach graphic thanking Mostafa Alaa for detailed, insightful sessions",
+        },
+      },
       {
         q: "I worked hand to hand alongside Mostafa. He’s a great person to learn from & he was the reason I joined the workforce in the 1st place.",
         name: "Mohamed Sabry",
@@ -139,10 +178,9 @@ window.SITE_CONTENT = {
         tag: "LinkedIn recommendation",
       },
       {
-        q: "Outstanding Coaching Award, Pay it Forward 2025 — for coaching a group of professionals unlocking their full potential.",
-        name: "ALX Arabia",
-        tag: "Lead Coach award",
-        cls: "me",
+        q: "From learners, to volunteers, to coaches, to role models, Ahmed and Mostafa show us exactly what it means to pay it forward.",
+        name: "ALX Egypt Alumni Network",
+        tag: "Success Story Highlight",
       },
     ],
   },

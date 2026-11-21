@@ -996,6 +996,13 @@ svg.sax {
   line-height: 1.6;
   margin: 0 0 14px;
 }
+.svc .tq-img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  margin-bottom: 14px;
+}
 .certs-label {
   font-size: 0.78rem;
   font-weight: 700;

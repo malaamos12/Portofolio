@@ -124,8 +124,47 @@ window.SITE_CONTENT = {
   testimonials: {
     eyebrow: "آراء الناس",
     title: "مش لازم تصدقني أنا.",
-    sub: "توصيات حقيقية من لينكدإن، والجايزة اللي خدتها عن شغلي في التدريب.",
+    sub: "كلام متدربين وحاضرين، توصيات من لينكدإن، والتكريم اللي خدته من ALX.",
     quotes: [
+      {
+        q: "جايزة Outstanding Coaching Award في Pay it Forward 2025، عن تدريب مجموعة محترفين ومساعدتهم يوصلوا لأقصى إمكانياتهم.",
+        name: "ALX Arabia",
+        tag: "جايزة Lead Coach",
+        cls: "me",
+        img: {
+          src: "assets/images/testimonials/alx-award-cert.jpg?v=20261121",
+          alt: "شهادة جايزة Outstanding Coaching Award المقدمة لمصطفى علاء من Pay It Forward Club",
+        },
+      },
+      {
+        q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
+        name: "Amr A. Hussien",
+        tag: "متدرب في Pay It Forward Bootcamp",
+      },
+      {
+        q: "Thank you for sharing your insights at ALX Coaches’ Corner. This experience was truly rewarding.",
+        name: "Batoul Allaithy",
+        tag: "مشاركة في ويبينار ALX Coaches’ Corner",
+      },
+      {
+        q: "It was a pleasure meeting and learning from you all.",
+        name: "Muhammad Bahauddin Al-Muzayan",
+        tag: "متدرب في Pay It Forward Bootcamp",
+      },
+      {
+        q: "Your expertise and passion for coaching truly shone through.",
+        name: "Meran Hany",
+        tag: "مسؤولة علاقات ALX",
+      },
+      {
+        q: "Very detailed and insightful sessions, especially in digital marketing and SEO. You made a notable impact.",
+        name: "ALX Egypt",
+        tag: "تكريم ALX Egypt Community Coach",
+        img: {
+          src: "assets/images/testimonials/alx-coach-quote.jpg?v=20261121",
+          alt: "تصميم تكريم ALX Egypt Community Coach يشكر مصطفى علاء على جلساته المفصلة والمفيدة",
+        },
+      },
       {
         q: "I worked hand to hand alongside Mostafa. He’s a great person to learn from & he was the reason I joined the workforce in the 1st place.",
         name: "Mohamed Sabry",
@@ -137,10 +176,9 @@ window.SITE_CONTENT = {
         tag: "توصية على لينكدإن",
       },
       {
-        q: "جايزة Outstanding Coaching Award في Pay it Forward 2025، عن تدريب مجموعة محترفين ومساعدتهم يوصلوا لأقصى إمكانياتهم.",
-        name: "ALX Arabia",
-        tag: "جايزة Lead Coach",
-        cls: "me",
+        q: "From learners, to volunteers, to coaches, to role models, Ahmed and Mostafa show us exactly what it means to pay it forward.",
+        name: "ALX Egypt Alumni Network",
+        tag: "قصة نجاح",
       },
     ],
   },
