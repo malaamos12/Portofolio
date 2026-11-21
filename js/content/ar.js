@@ -541,6 +541,7 @@ window.SITE_CONTENT = {
   contact: {
     eyebrow: "تواصل",
     title: "تعالى نتكلم",
+    call: "احجز مكالمة تعارف مجانية",
     wa: "واتساب",
     li: "لينكدإن",
     mail: "mostafabebo012@gmail.com",

@@ -543,6 +543,7 @@ window.SITE_CONTENT = {
   contact: {
     eyebrow: "Contact",
     title: "Let’s talk",
+    call: "Book a free intro call",
     wa: "WhatsApp",
     li: "LinkedIn",
     mail: "mostafabebo012@gmail.com",
