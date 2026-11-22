@@ -23,6 +23,7 @@ window.SITE_CONTENT = {
     eyebrow: "استراتيجي تسويق وميديا باير، من القاهرة",
     titleHtml: "التسويق بيبدأ <em>بالسمع</em>.",
     lead: "أنا مصطفى. بخطط وبنفّذ وبدير تسويق لكل أنواع البيزنس: استراتيجية ومحتوى وإعلانات ممولة وفهم للجمهور وتدريب. مفيش عندي وصفة جاهزة بنسخها لكل حد، بسمع عملاءك الأول وبعدين أبني اللي يناسبهم ويناسب هدفك. هي دي كمان اللي علّمتهالي الساكسفون: اسمع الأول، وبعدين اعزف.",
+    ctaCall: "احجز مكالمة مجانية",
     ctaWork: "شوف شغلي",
     ctaPdf: "نزّل البورتفوليو (PDF)",
     ctaCv: "نزّل الـCV",
@@ -157,7 +158,7 @@ window.SITE_CONTENT = {
   testimonials: {
     eyebrow: "آراء الناس",
     title: "مش لازم تصدقني أنا.",
-    sub: "كلام متدربين وحاضرين، توصيات من لينكدإن، والتكريم اللي خدته من ALX.",
+    sub: "كلام مديري وزمايلي ومتدربيني، توصيات من لينكدإن، والتكريم اللي خدته من ALX.",
     quotes: [
       {
         q: "جايزة Outstanding Coaching Award في Pay it Forward 2025، عن تدريب مجموعة محترفين ومساعدتهم يوصلوا لأقصى إمكانياتهم.",
@@ -169,16 +170,28 @@ window.SITE_CONTENT = {
         q: "It’s a truly well-deserved step. We’re already seeing the huge value you bring to the team ya Darsh, looking forward to achieving even more success together!!",
         name: "Amr Elsayed",
         tag: "مدير Workforce في Intelcia",
+        img: {
+          src: "assets/images/testimonials/amr-elsayed-linkedin.jpg",
+          alt: "لقطة شاشة لتوصية عمرو السيد على لينكدإن",
+        },
       },
       {
         q: "His dedication, professionalism, and exceptional skills stood out immediately. He consistently delivered outstanding results and brought innovative solutions to challenges.",
         name: "Abdelrahman Moataz",
         tag: "جدولة وتخطيط القوى العاملة",
+        img: {
+          src: "assets/images/testimonials/moataz-linkedin.jpg",
+          alt: "لقطة شاشة لتوصية عبد الرحمن معتز على لينكدإن",
+        },
       },
       {
         q: "Mostafa is one of the greatest talents I’ve worked with: helpful, dedicated, with high attention to detail.",
         name: "Abdelrahman Khalid",
         tag: "تحليل أعمال وحلول",
+        img: {
+          src: "assets/images/testimonials/khalid-linkedin.jpg",
+          alt: "لقطة شاشة لتوصية عبد الرحمن خالد على لينكدإن",
+        },
       },
       {
         q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",

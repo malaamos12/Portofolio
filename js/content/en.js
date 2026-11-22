@@ -25,6 +25,7 @@ window.SITE_CONTENT = {
     eyebrow: "Marketing strategist and media buyer, Cairo",
     titleHtml: "Marketing starts with <em>listening</em>.",
     lead: "I’m Mostafa. I plan, create and run marketing for businesses of every kind: strategy, content, paid ads, audience research and training. No copy-paste playbooks — I listen to your customers first, then build what fits them and your goal. It’s the same thing the saxophone taught me: listen first, then play.",
+    ctaCall: "Book a free call",
     ctaWork: "See my work",
     ctaPdf: "Download portfolio (PDF)",
     ctaCv: "Download CV",
@@ -159,7 +160,7 @@ window.SITE_CONTENT = {
   testimonials: {
     eyebrow: "What people say",
     title: "Don’t take my word for it.",
-    sub: "Learner feedback, LinkedIn recommendations, and the recognition my coaching work earned.",
+    sub: "What my manager, teammates and trainees say, and the recognition my coaching work earned.",
     quotes: [
       {
         q: "Outstanding Coaching Award, Pay it Forward 2025, for coaching a group of professionals unlocking their full potential.",
@@ -171,16 +172,28 @@ window.SITE_CONTENT = {
         q: "It’s a truly well-deserved step. We’re already seeing the huge value you bring to the team ya Darsh, looking forward to achieving even more success together!!",
         name: "Amr Elsayed",
         tag: "Workforce Manager, Intelcia",
+        img: {
+          src: "assets/images/testimonials/amr-elsayed-linkedin.jpg",
+          alt: "LinkedIn recommendation by Amr Elsayed (screenshot)",
+        },
       },
       {
         q: "His dedication, professionalism, and exceptional skills stood out immediately. He consistently delivered outstanding results and brought innovative solutions to challenges.",
         name: "Abdelrahman Moataz",
         tag: "Workforce scheduling & planning",
+        img: {
+          src: "assets/images/testimonials/moataz-linkedin.jpg",
+          alt: "LinkedIn recommendation by Abdelrahman Moataz (screenshot)",
+        },
       },
       {
         q: "Mostafa is one of the greatest talents I’ve worked with: helpful, dedicated, with high attention to detail.",
         name: "Abdelrahman Khalid",
         tag: "Business Analysis & Solutions",
+        img: {
+          src: "assets/images/testimonials/khalid-linkedin.jpg",
+          alt: "LinkedIn recommendation by Abdelrahman Khalid (screenshot)",
+        },
       },
       {
         q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
