@@ -544,7 +544,7 @@ window.SITE_CONTENT = {
   posts: {
     eyebrow: "Published posts",
     title: "Posts I made.",
-    hint: "Scroll to spin the wheel. Tap a post to enlarge it.",
+    hint: "Drag the wheel or use the arrows. Tap a post to enlarge it.",
     items: [
       { src: "assets/images/post-10.jpg", id: "i-cc10", alt: "Nefr Story Love of Amarna T-shirt launch post", cap: "Nefr Story · 27 Aug 2024: Love of Amarna T-shirt with a scannable story QR", res: "Brand ads: 1,516 clicks · EGP 0.47 each" },
       { src: "assets/images/post-7.jpg", id: "i-cc7", alt: "Kapri Cafe post from 27 November 2024", cap: "Kapri Cafe · 27 Nov 2024" },

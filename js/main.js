@@ -235,25 +235,29 @@
   const parallax = $$("[data-px]");
   const timeline = $(".tl");
   const wheelSec = $("#posts");
+  const wheelStage = wheelSec ? $(".stage", wheelSec) : null;
   const wheelItems = wheelSec ? $$(".wi", wheelSec) : [];
   const wcap = $("#wcap");
   let live = false;
+  let wpos = 0;
+  let iw = 300;
+  let wanim = 0;
 
   function wheelLayout() {
-    const vw = innerWidth,
-      vh = innerHeight,
-      N = wheelItems.length;
-    const r = wheelSec.getBoundingClientRect();
-    const total = wheelSec.offsetHeight - vh;
-    const f = clamp(-r.top / total, 0, 1) * (N - 1);
-    const R = Math.max(vw * 0.9, vh * 1.1, 640);
-    const step = vw < 700 ? 20 : 17;
-    const iw = Math.round(clamp(vw * 0.26, 210, 360));
-    const cx = vw / 2,
-      cy = vh * 0.56 + R;
+    const N = wheelItems.length;
+    if (!N || !wheelStage) return;
+    const sw = wheelStage.clientWidth,
+      sh = wheelStage.clientHeight;
+    const R = Math.max(sw * 0.9, sh * 1.1, 640);
+    const step = sw < 700 ? 20 : 17;
+    iw = Math.round(Math.min(clamp(sw * 0.26, 210, 360), sh * 0.66));
+    const cx = sw / 2,
+      cy = sh * 0.52 + R;
     wheelItems.forEach((it, i) => {
-      const d = i - f,
-        ad = Math.abs(d),
+      let d = (i - wpos) % N;
+      if (d > N / 2) d -= N;
+      if (d < -N / 2) d += N;
+      const ad = Math.abs(d),
         th = d * step,
         rad = (th * Math.PI) / 180;
       const x = cx + R * Math.sin(rad),
@@ -269,11 +273,31 @@
         "deg) scale(" +
         (1 - Math.min(ad, 2) * 0.07) +
         ")";
-      it.style.opacity = Math.max(0, 1 - ad * 0.3);
+      it.style.opacity = Math.max(0, 1 - ad * 0.38);
       it.style.zIndex = 50 - Math.round(ad * 10);
       it.style.pointerEvents = ad < 2.2 ? "auto" : "none";
     });
-    wcap.textContent = wheelItems[Math.round(f)].getAttribute("data-cap");
+    const ci = ((Math.round(wpos) % N) + N) % N;
+    wcap.textContent = wheelItems[ci].getAttribute("data-cap");
+  }
+  function wheelTo(target) {
+    cancelAnimationFrame(wanim);
+    const N = wheelItems.length;
+    let d = (target - wpos) % N;
+    if (d > N / 2) d -= N;
+    if (d < -N / 2) d += N;
+    const from = wpos,
+      to = wpos + d,
+      t0 = performance.now(),
+      dur = 340;
+    const tick = (now) => {
+      const t = Math.min(1, (now - t0) / dur);
+      const e = 1 - Math.pow(1 - t, 3);
+      wpos = from + (to - from) * e;
+      wheelLayout();
+      if (t < 1) wanim = requestAnimationFrame(tick);
+    };
+    wanim = requestAnimationFrame(tick);
   }
   function onScroll() {
     const h = root.scrollHeight - root.clientHeight;
@@ -295,7 +319,6 @@
         clamp((innerHeight * 0.7 - r.top) / r.height, 0, 1).toFixed(3),
       );
     }
-    if (live) wheelLayout();
   }
   let ticking = false;
   addEventListener(
@@ -311,20 +334,86 @@
     },
     { passive: true },
   );
-  addEventListener("resize", onScroll);
-  if (wheelSec && !rm) {
+  addEventListener("resize", () => {
+    onScroll();
+    if (live) wheelLayout();
+  });
+  if (wheelSec && wheelStage && !rm) {
     live = true;
     wheelSec.classList.add("live");
-    wheelItems.forEach((it, i) =>
-      it.addEventListener("focus", () => {
-        const total = wheelSec.offsetHeight - innerHeight;
-        const top = wheelSec.getBoundingClientRect().top + scrollY;
-        scrollTo({
-          top: top + (i / (wheelItems.length - 1)) * total + 1,
-          behavior: "auto",
-        });
-      }),
+    const rt = root.dir === "rtl";
+    const nav = document.createElement("div");
+    nav.className = "wnav";
+    const mkBtn = (dir, labelAr, labelEn) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "wbtn";
+      b.setAttribute("aria-label", isAr ? labelAr : labelEn);
+      b.textContent = dir < 0 ? "\u2039" : "\u203A";
+      b.addEventListener("click", () => wheelTo(Math.round(wpos) + dir));
+      return b;
+    };
+    nav.append(
+      mkBtn(-1, "\u0627\u0644\u0644\u064A \u0642\u0628\u0644\u0647", "Previous post"),
+      mkBtn(1, "\u0627\u0644\u0644\u064A \u0628\u0639\u062F\u0647", "Next post"),
     );
+    wheelSec.append(nav);
+    wheelSec.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        wheelTo(Math.round(wpos) + (rt ? 1 : -1));
+      }
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        wheelTo(Math.round(wpos) + (rt ? -1 : 1));
+      }
+    });
+    let dragging = false,
+      startX = 0,
+      startPos = 0,
+      moved = 0;
+    wheelStage.addEventListener("pointerdown", (e) => {
+      if (e.button > 0) return;
+      dragging = true;
+      moved = 0;
+      startX = e.clientX;
+      startPos = wpos;
+      cancelAnimationFrame(wanim);
+      try {
+        wheelStage.setPointerCapture(e.pointerId);
+      } catch (err) {}
+      wheelStage.classList.add("dragging");
+    });
+    wheelStage.addEventListener("pointermove", (e) => {
+      if (!dragging) return;
+      const dx = e.clientX - startX;
+      moved = Math.max(moved, Math.abs(dx));
+      wpos = startPos - dx / Math.max(140, iw * 0.85);
+      wheelLayout();
+    });
+    const endDrag = () => {
+      if (!dragging) return;
+      dragging = false;
+      wheelStage.classList.remove("dragging");
+      if (moved >= 6) wheelTo(Math.round(wpos));
+    };
+    wheelStage.addEventListener("pointerup", endDrag);
+    wheelStage.addEventListener("pointercancel", endDrag);
+    wheelStage.addEventListener(
+      "click",
+      (e) => {
+        if (moved >= 6) {
+          e.preventDefault();
+          e.stopPropagation();
+          moved = 0;
+        }
+      },
+      true,
+    );
+    wheelItems.forEach((it, i) =>
+      it.addEventListener("focus", () => wheelTo(i)),
+    );
+    wheelLayout();
   }
   onScroll();
 
