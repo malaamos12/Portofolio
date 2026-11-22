@@ -351,9 +351,10 @@ window.SITE_CONTENT = {
           eachL: "per chat",
           mini: [
             ["Spent", "EGP 118.61"],
-            ["Reached", "18,430"],
+            ["Reached", "17,357"],
             ["Interactions", "4,205"],
           ],
+          proof: { src: "i-mb20", cap: "Refreshment (Youssef Mahmoud): 4,205 interactions at EGP 0.028 each" },
           report: true,
         },
         {
@@ -438,6 +439,34 @@ window.SITE_CONTENT = {
             ["CPC", "EGP 11.41"],
           ],
           proof: { src: "i-mb5", cap: "Trainer, new offer: 41 chats at EGP 30.06" },
+        },
+        {
+          tag: "Chat ads",
+          title: "Hossam Bark",
+          heroN: "181",
+          heroL: "chats started",
+          eachV: "EGP 7.72",
+          eachL: "per chat",
+          mini: [
+            ["Spent", "EGP 1,397.21"],
+            ["Reached", "41,283"],
+            ["Impressions", "59,575"],
+          ],
+          proof: { src: "i-mb18", cap: "Hossam Bark: 181 chats at EGP 7.72 each" },
+        },
+        {
+          tag: "Chat ads",
+          title: "Mohamed Samy, new offer",
+          heroN: "63",
+          heroL: "chats started",
+          eachV: "EGP 23.81",
+          eachL: "per chat",
+          mini: [
+            ["Spent", "EGP 1,500"],
+            ["Reached", "36,155"],
+            ["Sales", "15 subscriptions · ~EGP 900 each"],
+          ],
+          proof: { src: "i-mb19", cap: "Mohamed Samy, new offer: 63 chats at EGP 23.81 - 15 subscriptions sold" },
         },
       ],
     },
@@ -544,7 +573,7 @@ window.SITE_CONTENT = {
   posts: {
     eyebrow: "Published posts",
     title: "Posts I made.",
-    hint: "Drag the wheel or use the arrows. Tap a post to enlarge it.",
+    hint: "It scrolls on its own - touch it to pause. Tap a post to enlarge it.",
     items: [
       { src: "assets/images/post-10.jpg", id: "i-cc10", alt: "Nefr Story Love of Amarna T-shirt launch post", cap: "Nefr Story · 27 Aug 2024: Love of Amarna T-shirt with a scannable story QR", res: "Brand ads: 1,516 clicks · EGP 0.47 each" },
       { src: "assets/images/post-7.jpg", id: "i-cc7", alt: "Kapri Cafe post from 27 November 2024", cap: "Kapri Cafe · 27 Nov 2024" },

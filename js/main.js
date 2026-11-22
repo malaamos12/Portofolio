@@ -244,7 +244,7 @@
   let iw = 300;
   let wanim = 0;
 
-  const WMODE = new URLSearchParams(location.search).get("wheel") || "arc";
+  const WMODE = new URLSearchParams(location.search).get("wheel") || "marquee";
 
   function wheelLayout() {
     const N = wheelItems.length;

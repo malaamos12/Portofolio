@@ -2387,7 +2387,7 @@ html[lang="ar"] .mqg {
 }
 .w-marquee .wi {
   position: static;
-  width: 210px;
+  width: 190px;
   flex: 0 0 auto;
 }
 @media (max-width: 900px) {
@@ -2395,7 +2395,7 @@ html[lang="ar"] .mqg {
     height: clamp(300px, 40vh, 420px);
   }
   .w-marquee .wi {
-    width: 170px;
+    width: 160px;
   }
 }
 .w-marquee .wcap {
@@ -2438,4 +2438,14 @@ html[lang="ar"] .mqg {
 }
 .w-marquee .wres {
   display: none;
+}
+.w-marquee .wi .wi-res {
+  display: block;
+  position: static;
+  max-width: 100%;
+  border-radius: 0;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  inset-inline-start: auto;
+  bottom: auto;
 }
