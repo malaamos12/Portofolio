@@ -637,7 +637,7 @@ window.SITE_CONTENT = {
       results: "chats / month",
       resultsLead: "leads / month",
       resultsSales: "sales / month",
-      roi: "ROI (profit on ad spend)",
+      roi: "return after ad spend (before costs)",
       cust: "customers",
       rev: "revenue (EGP)",
       cpa: "cost per customer (EGP)",
