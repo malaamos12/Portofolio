@@ -2401,3 +2401,22 @@ html[lang="ar"] .mqg {
 .w-marquee .wcap {
   display: none;
 }
+
+/* ---- wheel mode: 3D cylinder ---- */
+.w-cyl .stage {
+  height: clamp(340px, 44vh, 480px);
+  perspective: 1200px;
+}
+.w-cyl .wheel {
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+}
+.w-cyl .wi {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 900px) {
+  .w-cyl .stage {
+    height: clamp(300px, 40vh, 420px);
+  }
+}

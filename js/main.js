@@ -253,6 +253,7 @@
     const flat = WMODE === "flat",
       cover = WMODE === "cover",
       deck = WMODE === "deck",
+      cyl = WMODE === "cyl",
       mini = WMODE === "mini";
     const R = mini
       ? Math.max(sw * 0.7, sh * 1.05, 420)
@@ -261,7 +262,7 @@
     iw = Math.round(
       cover
         ? Math.min(clamp(sw * 0.34, 230, 380), sh * 0.72)
-        : deck
+        : deck || cyl
           ? Math.min(clamp(sw * 0.3, 220, 340), sh * 0.7)
           : flat
             ? Math.min(clamp(sw * 0.24, 190, 300), sh * 0.66)
@@ -272,7 +273,7 @@
     const cx = sw / 2,
       cy = mini
         ? sh * 0.55 + R
-        : flat || cover || deck
+        : flat || cover || deck || cyl
           ? sh * 0.5
           : sh * 0.52 + R;
     const spacing = cover ? iw * 0.58 : iw * 1.08;
@@ -281,8 +282,24 @@
       if (d > N / 2) d -= N;
       if (d < -N / 2) d += N;
       const ad = Math.abs(d);
-      let tf, op;
-      if (deck) {
+      let tf, op, zi;
+      if (cyl) {
+        const ang = d * (sw < 700 ? 30 : 24),
+          rad = (ang * Math.PI) / 180,
+          Rz = iw * 1.7;
+        tf =
+          "translate(" +
+          cx +
+          "px," +
+          cy +
+          "px) translate(-50%,-50%) rotateY(" +
+          ang +
+          "deg) translateZ(" +
+          Rz +
+          "px)";
+        op = Math.max(0, Math.pow(Math.cos(rad), 1.3));
+        zi = Math.round(Math.cos(rad) * 100);
+      } else if (deck) {
         const vd = clamp(d, -3, 3);
         tf =
           "translate(" +
@@ -329,8 +346,8 @@
       it.style.width = iw + "px";
       it.style.transform = tf;
       it.style.opacity = op;
-      it.style.zIndex = 50 - Math.round(ad * 10);
-      it.style.pointerEvents = ad < 2.2 ? "auto" : "none";
+      it.style.zIndex = zi != null ? zi : 50 - Math.round(ad * 10);
+      it.style.pointerEvents = (cyl ? ad < 0.6 : ad < 2.2) ? "auto" : "none";
     });
     const ci = ((Math.round(wpos) % N) + N) % N;
     wcap.textContent = wheelItems[ci].getAttribute("data-cap");
