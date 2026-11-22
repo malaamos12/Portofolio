@@ -247,11 +247,12 @@
 
   function wheelLayout() {
     const N = wheelItems.length;
-    if (!N || !wheelStage) return;
+    if (!N || !wheelStage || WMODE === "marquee" || WMODE === "grid") return;
     const sw = wheelStage.clientWidth,
       sh = wheelStage.clientHeight;
     const flat = WMODE === "flat",
       cover = WMODE === "cover",
+      deck = WMODE === "deck",
       mini = WMODE === "mini";
     const R = mini
       ? Math.max(sw * 0.7, sh * 1.05, 420)
@@ -260,32 +261,56 @@
     iw = Math.round(
       cover
         ? Math.min(clamp(sw * 0.34, 230, 380), sh * 0.72)
-        : flat
-          ? Math.min(clamp(sw * 0.24, 190, 300), sh * 0.66)
-          : mini
-            ? Math.min(clamp(sw * 0.2, 150, 230), sh * 0.6)
-            : Math.min(clamp(sw * 0.26, 210, 360), sh * 0.66),
+        : deck
+          ? Math.min(clamp(sw * 0.3, 220, 340), sh * 0.7)
+          : flat
+            ? Math.min(clamp(sw * 0.24, 190, 300), sh * 0.66)
+            : mini
+              ? Math.min(clamp(sw * 0.2, 150, 230), sh * 0.6)
+              : Math.min(clamp(sw * 0.26, 210, 360), sh * 0.66),
     );
     const cx = sw / 2,
-      cy = mini ? sh * 0.55 + R : flat || cover ? sh * 0.5 : sh * 0.52 + R;
-    const spacing = cover ? iw * 0.62 : iw * 1.08;
+      cy = mini
+        ? sh * 0.55 + R
+        : flat || cover || deck
+          ? sh * 0.5
+          : sh * 0.52 + R;
+    const spacing = cover ? iw * 0.58 : iw * 1.08;
     wheelItems.forEach((it, i) => {
       let d = (i - wpos) % N;
       if (d > N / 2) d -= N;
       if (d < -N / 2) d += N;
       const ad = Math.abs(d);
-      let tf;
-      if (flat || cover) {
+      let tf, op;
+      if (deck) {
+        const vd = clamp(d, -3, 3);
+        tf =
+          "translate(" +
+          (cx + vd * 16) +
+          "px," +
+          (cy + vd * 12) +
+          "px) translate(-50%,-50%) rotate(" +
+          vd * 3 +
+          "deg) scale(" +
+          (1 - Math.min(ad, 4) * 0.05) +
+          ")";
+        op = ad < 0.5 ? 1 : Math.max(0, 1 - (ad - 0.5) * 0.34);
+      } else if (flat || cover) {
+        const cd = clamp(d, -1, 1);
         tf =
           "translate(" +
           (cx + d * spacing) +
           "px," +
           cy +
           "px) translate(-50%,-50%)" +
-          (cover ? " rotateY(" + -d * 32 + "deg)" : "") +
-          " scale(" +
-          (1 - Math.min(ad, 2) * (cover ? 0.1 : 0.12)) +
-          ")";
+          (cover
+            ? " rotateY(" +
+              (-cd * 30) +
+              "deg) scale(" +
+              (1 - Math.min(ad, 2) * 0.08) +
+              ")"
+            : " scale(" + (1 - Math.min(ad, 2) * 0.12) + ")");
+        op = Math.max(0, 1 - ad * (cover ? 0.45 : 0.38));
       } else {
         const th = d * step,
           rad = (th * Math.PI) / 180;
@@ -299,10 +324,11 @@
           "deg) scale(" +
           (1 - Math.min(ad, 2) * 0.07) +
           ")";
+        op = Math.max(0, 1 - ad * 0.38);
       }
       it.style.width = iw + "px";
       it.style.transform = tf;
-      it.style.opacity = Math.max(0, 1 - ad * 0.38);
+      it.style.opacity = op;
       it.style.zIndex = 50 - Math.round(ad * 10);
       it.style.pointerEvents = ad < 2.2 ? "auto" : "none";
     });
@@ -318,7 +344,7 @@
     const from = wpos,
       to = wpos + d,
       t0 = performance.now(),
-      dur = 340;
+      dur = 420;
     const tick = (now) => {
       const t = Math.min(1, (now - t0) / dur);
       const e = 1 - Math.pow(1 - t, 3);
@@ -367,9 +393,13 @@
     onScroll();
     if (live) wheelLayout();
   });
-  if (wheelSec && wheelStage && !rm) {
+  if (wheelSec && wheelStage && !rm && WMODE !== "grid") {
     live = true;
     wheelSec.classList.add("live", "w-" + WMODE);
+    const wheelBox = $("#postsWheel");
+    if (WMODE === "marquee" && wheelBox) {
+      wheelItems.forEach((it) => wheelBox.append(it.cloneNode(true)));
+    }
     const rt = root.dir === "rtl";
     const nav = document.createElement("div");
     nav.className = "wnav";
@@ -386,64 +416,80 @@
       mkBtn(-1, "\u0627\u0644\u0644\u064A \u0642\u0628\u0644\u0647", "Previous post"),
       mkBtn(1, "\u0627\u0644\u0644\u064A \u0628\u0639\u062F\u0647", "Next post"),
     );
-    wheelSec.append(nav);
-    wheelSec.addEventListener("keydown", (e) => {
-      if (e.key === "ArrowLeft") {
-        e.preventDefault();
-        wheelTo(Math.round(wpos) + (rt ? 1 : -1));
-      }
-      if (e.key === "ArrowRight") {
-        e.preventDefault();
-        wheelTo(Math.round(wpos) + (rt ? -1 : 1));
-      }
-    });
-    let dragging = false,
-      startX = 0,
-      startPos = 0,
-      moved = 0;
-    wheelStage.addEventListener("pointerdown", (e) => {
-      if (e.button > 0) return;
-      dragging = true;
-      moved = 0;
-      startX = e.clientX;
-      startPos = wpos;
-      cancelAnimationFrame(wanim);
-      try {
-        wheelStage.setPointerCapture(e.pointerId);
-      } catch (err) {}
-      wheelStage.classList.add("dragging");
-    });
-    wheelStage.addEventListener("pointermove", (e) => {
-      if (!dragging) return;
-      const dx = e.clientX - startX;
-      moved = Math.max(moved, Math.abs(dx));
-      wpos = startPos - dx / Math.max(140, iw * 0.85);
-      wheelLayout();
-    });
-    const endDrag = () => {
-      if (!dragging) return;
-      dragging = false;
-      wheelStage.classList.remove("dragging");
-      if (moved >= 6) wheelTo(Math.round(wpos));
-    };
-    wheelStage.addEventListener("pointerup", endDrag);
-    wheelStage.addEventListener("pointercancel", endDrag);
-    wheelStage.addEventListener(
-      "click",
-      (e) => {
-        if (moved >= 6) {
+    if (WMODE !== "marquee") {
+      wheelSec.append(nav);
+      wheelSec.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
           e.preventDefault();
-          e.stopPropagation();
-          moved = 0;
+          wheelTo(Math.round(wpos) + (rt ? 1 : -1));
         }
-      },
-      true,
-    );
-    wheelItems.forEach((it, i) =>
-      it.addEventListener("focus", () => wheelTo(i)),
-    );
+        if (e.key === "ArrowRight") {
+          e.preventDefault();
+          wheelTo(Math.round(wpos) + (rt ? -1 : 1));
+        }
+      });
+      let dragging = false,
+        startX = 0,
+        startPos = 0,
+        moved = 0,
+        dragTarget = 0,
+        dragRaf = 0;
+      const dragFollow = () => {
+        wpos += (dragTarget - wpos) * 0.22;
+        wheelLayout();
+        dragRaf =
+          dragging || Math.abs(dragTarget - wpos) > 0.002
+            ? requestAnimationFrame(dragFollow)
+            : 0;
+      };
+      wheelStage.addEventListener("pointerdown", (e) => {
+        if (e.button > 0) return;
+        dragging = true;
+        moved = 0;
+        startX = e.clientX;
+        startPos = wpos;
+        dragTarget = wpos;
+        cancelAnimationFrame(wanim);
+        try {
+          wheelStage.setPointerCapture(e.pointerId);
+        } catch (err) {}
+        wheelStage.classList.add("dragging");
+      });
+      wheelStage.addEventListener("pointermove", (e) => {
+        if (!dragging) return;
+        const dx = e.clientX - startX;
+        moved = Math.max(moved, Math.abs(dx));
+        dragTarget = startPos - dx / Math.max(140, iw * 0.85);
+        if (!dragRaf) dragRaf = requestAnimationFrame(dragFollow);
+      });
+      const endDrag = () => {
+        if (!dragging) return;
+        dragging = false;
+        cancelAnimationFrame(dragRaf);
+        dragRaf = 0;
+        wheelStage.classList.remove("dragging");
+        if (moved >= 6) wheelTo(Math.round(wpos + (dragTarget - wpos) * 0.4));
+      };
+      wheelStage.addEventListener("pointerup", endDrag);
+      wheelStage.addEventListener("pointercancel", endDrag);
+      wheelStage.addEventListener(
+        "click",
+        (e) => {
+          if (moved >= 6) {
+            e.preventDefault();
+            e.stopPropagation();
+            moved = 0;
+          }
+        },
+        true,
+      );
+      wheelItems.forEach((it, i) =>
+        it.addEventListener("focus", () => wheelTo(i)),
+      );
+    }
     wheelLayout();
   }
+
   onScroll();
 
   /* ---------- lightbox ---------- */

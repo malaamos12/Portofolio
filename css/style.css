@@ -2356,3 +2356,48 @@ html[lang="ar"] .mqg {
     height: clamp(300px, 38vh, 420px);
   }
 }
+
+/* ---- wheel modes: deck + marquee ---- */
+.w-deck .stage {
+  height: clamp(340px, 44vh, 480px);
+}
+.w-marquee .stage {
+  height: auto;
+  overflow: hidden;
+  cursor: default;
+  padding: 6px 0;
+}
+.w-marquee .wheel {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+  max-width: none;
+  padding: 0;
+  position: static;
+  animation: wmarq 46s linear infinite;
+}
+.w-marquee .stage:hover .wheel,
+.w-marquee .stage:active .wheel {
+  animation-play-state: paused;
+}
+@keyframes wmarq {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.w-marquee .wi {
+  position: static;
+  width: 210px;
+  flex: 0 0 auto;
+}
+@media (max-width: 900px) {
+  .w-deck .stage {
+    height: clamp(300px, 40vh, 420px);
+  }
+  .w-marquee .wi {
+    width: 170px;
+  }
+}
+.w-marquee .wcap {
+  display: none;
+}
