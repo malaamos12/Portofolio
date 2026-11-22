@@ -2179,9 +2179,8 @@ html[lang="ar"] .mqg {
   display: inline-flex;
   align-items: center;
 }
-.dld summary {
-  list-style: none;
-  cursor: pointer;
+.dld > .dbtn {
+  font: inherit;
   white-space: nowrap;
 }
 .dld summary::-webkit-details-marker {
@@ -2200,7 +2199,8 @@ html[lang="ar"] .mqg {
   overflow: hidden;
   z-index: 60;
 }
-.dld[open] .dmenu {
+.dld:hover .dmenu,
+.dld:focus-within .dmenu {
   display: flex;
 }
 .dld .dmenu a {
@@ -2211,4 +2211,29 @@ html[lang="ar"] .mqg {
 }
 .dld .dmenu a:hover {
   background: rgba(212, 175, 55, 0.14);
+}
+
+/* scrollspy active nav */
+.nav a.l.on {
+  color: var(--gold);
+}
+.nav a.l.on::after {
+  transform: scaleX(1);
+}
+/* subtle scroll reveal */
+.rvl {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.rvl.in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rvl {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
