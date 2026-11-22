@@ -150,7 +150,7 @@ window.SITE_CONTENT = {
       {
         name: "Nada Nassar",
         role: "Content & social media",
-        link: "https://drive.google.com/file/d/1SvL0aiqGYbUiz7ghcg5KJYe83dbUp2FW/view",
+        link: "https://drive.google.com/file/d/1UZ4nWcOcVgd63iEgcVj1_9HbKRDB9ywe/view",
         linkLabel: "See her work",
         img: "assets/images/team/nada-nassar.jpg",
       },

@@ -148,7 +148,7 @@ window.SITE_CONTENT = {
       {
         name: "ندى نصار",
         role: "المحتوى والسوشيال ميديا",
-        link: "https://drive.google.com/file/d/1SvL0aiqGYbUiz7ghcg5KJYe83dbUp2FW/view",
+        link: "https://drive.google.com/file/d/1UZ4nWcOcVgd63iEgcVj1_9HbKRDB9ywe/view",
         linkLabel: "شوف شغلها",
         img: "assets/images/team/nada-nassar.jpg",
       },
