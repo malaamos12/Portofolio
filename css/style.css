@@ -2176,10 +2176,13 @@ html[lang="ar"] .mqg {
 /* header download dropdown */
 .dld {
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 .dld summary {
   list-style: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 .dld summary::-webkit-details-marker {
   display: none;

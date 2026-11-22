@@ -18,8 +18,8 @@ window.SITE_CONTENT = {
     contact: "تواصل",
     langToggle: "English",
     download: "تحميل",
-    dlCv: "تحميل السيرة الذاتية (CV)",
-    dlPortfolio: "تحميل البورتفوليو (PDF)",
+    dlCv: "السيرة الذاتية",
+    dlPortfolio: "البورتفوليو",
     langToggleHref: "../",
   },
   hero: {
