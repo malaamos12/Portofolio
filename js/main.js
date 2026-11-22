@@ -157,7 +157,7 @@
     const d = +el.dataset.dec || 0;
     el.textContent =
       (el.dataset.pre || "") +
-      v.toLocaleString("en-US", {
+      v.toLocaleString(document.documentElement.lang === "ar" ? "ar-EG" : "en-US", {
         minimumFractionDigits: d,
         maximumFractionDigits: d,
       }) +

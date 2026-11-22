@@ -143,7 +143,7 @@
       const head = el("div", "head");
       const txt = el("div", "txt");
       txt.append(
-        el("p", "eyebrow", C.shared.caseLabel + " " + String(pi + 1).padStart(2, "0") + " · " + p.eyebrow),
+        el("p", "eyebrow", C.shared.caseLabel + " " + (C.lang === "ar" ? String(pi + 1).padStart(2, "0").replace(/\d/g, (dd) => "٠١٢٣٤٥٦٧٨٩"[+dd]) : String(pi + 1).padStart(2, "0")) + " · " + p.eyebrow),
         el("h3", null, esc(p.title)),
         el("p", "plain", esc(p.plain))
       );
@@ -361,7 +361,7 @@
       return isFinite(n) ? n : 0;
     };
     const fmt = (n, d = 0) =>
-      n.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+      n.toLocaleString(C.lang === "ar" ? "ar-EG" : "en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
     const cur = { results: 0, cust: 0, rev: 0, cpa: 0, roas: 0, roi: 0 };
     function tween(k, to, d, suffix) {
       const from = cur[k];

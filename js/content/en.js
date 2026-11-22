@@ -56,13 +56,13 @@ window.SITE_CONTENT = {
     ],
   },
   metrics: {
-    note: "Every number comes straight from Meta Ads Manager. The case studies below show what they mean in practice.",
+    note: "Ad numbers come straight from Meta Ads Manager. Sales and commission are client-reported. The case studies below show what they mean in practice.",
     items: [
       { count: 1.04, dec: 2, suf: "M", label: "ad impressions in a single account" },
       { count: 588, dec: 0, suf: "K", label: "people reached in the same account" },
       { count: 1173, dec: 0, suf: "", label: "customer chats started on the trainers’ account" },
       { count: 922, dec: 0, suf: "K EGP", label: "in sales and commission attributed to the campaigns" },
-      { count: 3, dec: 0, suf: "K+", label: "people I have coached" },
+      { count: 500, dec: 0, suf: "+", label: "people I have coached" },
     ],
   },
   services: {
@@ -341,7 +341,7 @@ window.SITE_CONTENT = {
       goal: "Five fitness trainers and a yoga retreat needed to know which offers and audiences actually bring paying clients.",
       plain: "Five trainers, a retreat in Aswan, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under 2 to over 50 EGP and a playbook that kept working.",
       did: "I tried discount offers, 3-month plans, Ramadan and Eid campaigns, posters, carousels and videos, lookalike audiences, and Facebook against Instagram.",
-      pres: "About 23.1K EGP spent turned into 1,173 chats and 55K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer. Six campaigns have sales attached: 162,000 EGP in subscriptions and retreat spots from about 6,700 EGP of ads.",
+      pres: "About 23.1K EGP spent turned into 1,173 chats and 55K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer. Six campaigns have sales attached: 162,000 EGP in subscriptions and retreat spots.",
       kpis: [["162K EGP", "sales from trainers and the retreat"], ["1,173", "chats started"], ["1.85 EGP", "cheapest chat"], ["55K", "post interactions"]],
       cover: {
         src: "assets/images/cover-fitness.jpg?v=20261121",
@@ -657,7 +657,7 @@ window.SITE_CONTENT = {
     stats: [
       { count: 100, suf: "+", label: "hours of coaching" },
       { count: 12, suf: "+", label: "sessions" },
-      { count: 3, suf: "K+", label: "people coached" },
+      { count: 500, suf: "+", label: "people coached" },
     ],
     videoTitle: "ALX interview",
     videoNoteHtml: "ALX interview. If the player doesn’t load, <a href=\"https://drive.google.com/file/d/1Wv0x3hvg-vOhYCic1y9MMRWo699nI9nZ/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">open it in Google Drive</a>.",
@@ -703,7 +703,6 @@ window.SITE_CONTENT = {
     eyebrow: "About",
     title: "About me",
     lead: "I started in social media in 2017 and have since worked in fitness, real estate, retail, food, art and community projects. I’m curious by habit, I follow trends closely, and I like building teams that enjoy their work. I’m studying Business at Ain Shams University and I work from Cairo.",
-    note: "Some older client results on my CV (sales growth, engagement, sign-ups) are confidential. I’m happy to talk about them, but I can’t share the proof.",
   },
   certsec: {
     eyebrow: "Certificates",
