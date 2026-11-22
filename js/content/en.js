@@ -337,12 +337,12 @@ window.SITE_CONTENT = {
     {
       id: "fitness",
       eyebrow: "Fitness &amp; wellness",
-      title: "Six trainers, six audiences, one question",
-      goal: "Six fitness trainers needed to know which offers and audiences actually bring paying clients.",
-      plain: "Six trainers, six different audiences, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under 2 to over 50 EGP and a playbook that kept working.",
+      title: "Five trainers, one retreat, one question",
+      goal: "Five fitness trainers and a yoga retreat needed to know which offers and audiences actually bring paying clients.",
+      plain: "Five trainers, a retreat in Aswan, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under 2 to over 50 EGP and a playbook that kept working.",
       did: "I tried discount offers, 3-month plans, Ramadan and Eid campaigns, posters, carousels and videos, lookalike audiences, and Facebook against Instagram.",
       pres: "About 21.6K EGP spent turned into 992 chats and 56K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer. Six campaigns have sales attached: 162,000 EGP in subscriptions and retreat spots from about 6,700 EGP of ads.",
-      kpis: [["162K EGP", "sales from trainer offers"], ["992", "chats started"], ["1.85 EGP", "cheapest chat"], ["56K", "post interactions"]],
+      kpis: [["162K EGP", "sales from trainers and the retreat"], ["992", "chats started"], ["1.85 EGP", "cheapest chat"], ["56K", "post interactions"]],
       cover: {
         src: "assets/images/cover-fitness.jpg?v=20261121",
         alt: "Facebook reel with a trainer offering six months free",
@@ -353,7 +353,7 @@ window.SITE_CONTENT = {
       runs: [
         {
           tag: "Chat ads",
-          title: "Refreshment 1",
+          title: "Trainer 1, refreshment",
           heroN: "64",
           heroL: "chats started",
           eachV: "1.85 EGP",
@@ -370,7 +370,7 @@ window.SITE_CONTENT = {
 
         {
           tag: "Chat ads",
-          title: "50% Offer",
+          title: "Trainer 5, 50% offer",
           heroN: "138",
           heroL: "chats started",
           eachV: "10.11 EGP",
@@ -385,7 +385,7 @@ window.SITE_CONTENT = {
         },
         {
           tag: "Interaction ads",
-          title: "A trainer, 2nd try",
+          title: "Trainer 1, 2nd try",
           heroN: "7,546",
           heroL: "post interactions",
           eachV: "0.033 EGP",
@@ -398,7 +398,7 @@ window.SITE_CONTENT = {
         },
         {
           tag: "Interaction ads",
-          title: "A trainer, 2nd episode",
+          title: "Trainer 1, 2nd episode",
           heroN: "239",
           heroL: "post interactions",
           eachV: "0.72 EGP",
@@ -408,7 +408,7 @@ window.SITE_CONTENT = {
             ["Reached", "4,042"],
             ["CPC", "10.74 EGP"],
           ],
-          proof: { src: "i-mb7", cap: "Trainer, 2nd episode: 239 interactions at 0.72 EGP" },
+          proof: { src: "i-mb7", cap: "Trainer 1, 2nd episode: 239 interactions at 0.72 EGP" },
         },
         {
           tag: "Chat ads",
@@ -427,7 +427,7 @@ window.SITE_CONTENT = {
         },
         {
           tag: "Chat ads",
-          title: "Trainer, new offer",
+          title: "Trainer 2, new offer",
           heroN: "41",
           heroL: "chats started",
           eachV: "30.06 EGP",
@@ -438,11 +438,11 @@ window.SITE_CONTENT = {
             ["Reached", "14,504"],
             ["CPC", "11.41 EGP"],
           ],
-          proof: { src: "i-mb5", cap: "Trainer, new offer: 41 chats at 30.06 EGP" },
+          proof: { src: "i-mb5", cap: "Trainer 2, new offer: 41 chats at 30.06 EGP" },
         },
         {
           tag: "Chat ads",
-          title: "Trainer 2",
+          title: "Trainer 3",
           heroN: "181",
           heroL: "chats started",
           eachV: "7.72 EGP",
@@ -453,11 +453,11 @@ window.SITE_CONTENT = {
             ["Reached", "41,283"],
             ["Impressions", "59,575"],
           ],
-          proof: { src: "i-mb18", cap: "Trainer 2: 181 chats at 7.72 EGP each" },
+          proof: { src: "i-mb18", cap: "Trainer 3: 181 chats at 7.72 EGP each" },
         },
         {
           tag: "Chat ads",
-          title: "Trainer 3, new offer",
+          title: "Trainer 4, new offer",
           heroN: "63",
           heroL: "chats started",
           eachV: "23.81 EGP",
@@ -467,7 +467,7 @@ window.SITE_CONTENT = {
             ["Reached", "36,155"],
             ["Sales", "13,500 EGP"],
           ],
-          proof: { src: "i-mb19", cap: "Trainer 3, new offer: 63 chats at 23.81 EGP - 15 subscriptions sold, 13,500 EGP total" },
+          proof: { src: "i-mb19", cap: "Trainer 4, new offer: 63 chats at 23.81 EGP - 15 subscriptions sold, 13,500 EGP total" },
         },
       ],
     },

@@ -4,7 +4,7 @@ const L = {
     dl: "Download PDF",
     eyebrow: "Meta Ads Manager export · 1 Nov 2024 – 10 Nov 2026",
     h1: "Campaign performance <em>report</em>",
-    sub: "51 ad records across 34 campaign names, from the trainers’ ad account.",
+    sub: "50 ad records across 33 campaign names, from the trainers’ ad account.",
     k1: "Total spend (EGP)",
     k2: "Chats started with customers",
     k3: "Post interactions (likes, comments, shares)",
@@ -50,14 +50,14 @@ const L = {
     ],
     spentl: "spent",
     plain: (s, c, e, a, b) =>
-      `<b>In plain words.</b> Across 51 ads, EGP ${s} started ${c} chats with potential customers and drew ${e} reactions to posts. On average a chat cost EGP ${a}, but it ranged from under EGP 2 to over EGP ${b} depending on the offer and the audience. That is why testing matters more than simply spending more.`,
+      `<b>In plain words.</b> Across 50 ads, EGP ${s} started ${c} chats with potential customers and drew ${e} reactions to posts. On average a chat cost EGP ${a}, but it ranged from under EGP 2 to over EGP ${b} depending on the offer and the audience. That is why testing matters more than simply spending more.`,
   },
   ar: {
     back: "← البورتفوليو",
     dl: "نزّل الـPDF",
     eyebrow: "تصدير من Meta Ads Manager · من 1 نوفمبر 2024 لحد 10 نوفمبر 2026",
     h1: "تقرير أداء <em>الحملات</em>",
-    sub: "51 إعلان في 34 اسم حملة، من الحساب الإعلاني بتاع المدربين.",
+    sub: "50 إعلان في 33 اسم حملة، من الحساب الإعلاني بتاع المدربين.",
     k1: "إجمالي المصروف (جنيه)",
     k2: "محادثة اتفتحت مع عملاء",
     k3: "تفاعل على البوستات (لايك وكومنت وشير)",
@@ -103,7 +103,7 @@ const L = {
     ],
     spentl: "اتصرف",
     plain: (s, c, e, a, b) =>
-      `<b>ببساطة.</b> في 51 إعلان، صرفنا ${s} جنيه وفتحنا ${c} محادثة مع ناس مهتمة وجِبنا ${e} تفاعل على البوستات. متوسط المحادثة طلع ${a} جنيه، بس الفرق كان كبير: من أقل من جنيهين لأكتر من ${b} جنيه حسب العرض والجمهور. عشان كده الاختبار أهم من إنك تصرف أكتر.`,
+      `<b>ببساطة.</b> في 50 إعلان، صرفنا ${s} جنيه وفتحنا ${c} محادثة مع ناس مهتمة وجِبنا ${e} تفاعل على البوستات. متوسط المحادثة طلع ${a} جنيه، بس الفرق كان كبير: من أقل من جنيهين لأكتر من ${b} جنيه حسب العرض والجمهور. عشان كده الاختبار أهم من إنك تصرف أكتر.`,
   },
 };
 const GN = { Other: "oth" };
@@ -135,7 +135,12 @@ const T = DATA.reduce(
   }),
   { spend: 0, conv: 0, eng: 0, reach: 0 },
 );
-const gname = (g) => (g === "Other" ? L[lang].oth : g);
+const gname = (g) =>
+  g === "Other"
+    ? L[lang].oth
+    : lang === "ar"
+      ? g.replace(/^Trainer (\d+)$/, "المدرب $1")
+      : g;
 const COL = ["#C9A24B", "#E2C77F", "#9A7B2F", "#8a7a55", "#6b624a", "#4d4739"];
 function count(el, t, dec) {
   const rm = matchMedia("(prefers-reduced-motion:reduce)").matches;
