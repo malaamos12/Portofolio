@@ -2391,10 +2391,20 @@ html[lang="ar"] .mqg {
   overflow: hidden;
   cursor: default;
   padding: 6px 0;
+  /* anchor the track to the left edge even on the RTL page (see .wheel) */
+  direction: ltr;
 }
 .w-marquee .wheel {
   display: flex;
-  gap: 14px;
+  /* lay the track out LTR even on the Arabic page: in RTL a max-content
+     track anchors to the right and extends LEFT, so translateX(-50%) slid
+     the whole strip off-screen and it snapped back at the loop restart.
+     LTR anchoring keeps cards entering from the right edge. */
+  direction: ltr;
+  /* no flex gap here: each .wi carries a trailing margin instead, so one
+     item set is exactly half the track width and translateX(-50%) loops
+     seamlessly (a flex gap leaves the track half a gap short at the seam) */
+  gap: 0;
   width: max-content;
   max-width: none;
   padding: 0;
@@ -2414,6 +2424,11 @@ html[lang="ar"] .mqg {
   position: static;
   width: 190px;
   flex: 0 0 auto;
+  margin-inline-end: 14px;
+}
+.wloopgap {
+  flex: 0 0 auto;
+  height: 1px;
 }
 @media (max-width: 900px) {
   .w-deck .stage {

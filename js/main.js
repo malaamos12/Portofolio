@@ -426,7 +426,26 @@
     wres.className = "wres";
     wcap.after(wres);
     if (WMODE === "marquee" && wheelBox) {
+      // run-through marquee: two card sets separated by a fixed empty gap
+      // (half the stage width), so the last card exits and card 1 re-enters
+      // from the other side after a deliberate pause, never glued together.
+      // The loop distance is exactly one set + one gap, so the restart
+      // frame is identical to the start frame: no snap, no dead time.
+      const gap = document.createElement("div");
+      gap.className = "wloopgap";
+      gap.setAttribute("aria-hidden", "true");
+      wheelBox.append(gap);
       wheelItems.forEach((it) => wheelBox.append(it.cloneNode(true)));
+      wheelBox.append(gap.cloneNode(true));
+      const PX_PER_SEC = 44.35; // same travel speed as the old 46s loop
+      const setLoop = () => {
+        const g = Math.max(120, Math.round(wheelStage.clientWidth / 2));
+        $$(".wloopgap", wheelBox).forEach((el) => (el.style.width = g + "px"));
+        wheelBox.style.animationDuration =
+          wheelBox.scrollWidth / 2 / PX_PER_SEC + "s";
+      };
+      setLoop();
+      addEventListener("resize", setLoop);
     }
     const rt = root.dir === "rtl";
     const nav = document.createElement("div");
