@@ -724,7 +724,7 @@ window.SITE_CONTENT = {
     cv: "نزّل الـCV",
     pdf: "نزّل البورتفوليو (PDF)",
   },
-  footer: { text: "© 2026 مصطفى علاء · القاهرة، مصر ·", linkedin: "لينكدإن" },
+  footer: { text: "© 2026 مصطفى علاء ·", linkedin: "لينكدإن" },
   gate: { title: "اختار لغتك", sub: "Choose your language", en: "English", ar: "العربية" },
   lb: { prev: "→ اللي قبله", close: "إغلاق (Esc)", next: "اللي بعده ←" },
   shared: {

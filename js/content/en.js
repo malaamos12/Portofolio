@@ -726,7 +726,7 @@ window.SITE_CONTENT = {
     cv: "Download CV",
     pdf: "Download portfolio (PDF)",
   },
-  footer: { text: "© 2026 Mostafa Alaa · Cairo, Egypt ·", linkedin: "LinkedIn" },
+  footer: { text: "© 2026 Mostafa Alaa ·", linkedin: "LinkedIn" },
   gate: { title: "Choose your language", sub: "اختار لغتك", en: "English", ar: "العربية" },
   lb: { prev: "← Prev", close: "Close (Esc)", next: "Next →" },
   shared: {
