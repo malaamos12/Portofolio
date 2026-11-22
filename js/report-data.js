@@ -11,16 +11,6 @@ const DATA = [
     eng: 260,
   },
   {
-    ad: "Testo Old",
-    g: "Other",
-    t: "chat",
-    spend: 1383.02,
-    reach: 43696,
-    imp: 59309,
-    conv: 179,
-    eng: 996,
-  },
-  {
     ad: "Trainer B - 2nd try",
     g: "Trainer B",
     t: "chat",

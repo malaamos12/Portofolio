@@ -219,6 +219,10 @@ header.nav {
   font: 700 clamp(2rem, 4.5vw, 3.2rem)/1 var(--font-head);
   color: var(--gold);
 }
+.m b.long {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.15;
+}
 .m span {
   color: var(--muted);
   font-size: 0.92rem;
@@ -406,7 +410,6 @@ header.nav {
   border-top: 1px solid var(--line);
 }
 .mini dt {
-  grid-row: 1;
   font-size: 0.66rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -414,11 +417,10 @@ header.nav {
   min-width: 0;
 }
 .mini dd {
-  grid-row: 2;
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  white-space: nowrap;
+  min-width: 0;
 }
 .proof {
   margin-top: auto;

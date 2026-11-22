@@ -89,6 +89,7 @@
     C.metrics.items.forEach((m) => {
       const d = el("div", "m");
       const b = el("b", null, esc(m.count + m.suf));
+      if (String(m.count + m.suf).length > 6) b.classList.add("long");
       b.dataset.count = m.count;
       b.dataset.dec = m.dec;
       b.dataset.suf = m.suf;
@@ -132,7 +133,7 @@
 
   /* ---------- projects ---------- */
   const projWrap = $("#projects");
-  const adsImg = (id) => ROOT + "assets/images/ads-" + id.replace("i-mb", "") + ".jpg?v=20261121b";
+  const adsImg = (id) => ROOT + "assets/images/ads-" + id.replace("i-mb", "") + ".jpg?v=20261122";
   const usedProof = {};
   if (projWrap)
     C.projects.forEach((p, pi) => {
@@ -177,9 +178,12 @@
         each.append(el("b", null, esc(r.eachV)), document.createTextNode(" "), el("span", null, esc(r.eachL)));
         card.append(each);
         const dl = el("dl", "mini");
-        dl.style.gridTemplateColumns = "repeat(" + r.mini.length + ",auto)";
-        r.mini.forEach(([dt]) => dl.append(el("dt", null, esc(dt))));
-        r.mini.forEach(([, dd]) => dl.append(el("dd", null, esc(dd))));
+        dl.style.gridTemplateColumns = "repeat(" + Math.min(r.mini.length, 3) + ",1fr)";
+        r.mini.forEach(([k, v]) => {
+          const cell = el("div", "cell");
+          cell.append(el("dt", null, esc(k)), el("dd", null, esc(v)));
+          dl.append(cell);
+        });
         card.append(dl);
         if (r.proof) {
           usedProof[r.proof.src] = true;
