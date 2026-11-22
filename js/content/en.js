@@ -215,7 +215,7 @@ window.SITE_CONTENT = {
     {
       id: "realestate",
       eyebrow: "Real estate",
-      title: "Apartments in Faisal, land in Mansoura–Talkha",
+      title: "Real Estate Apartments and Lands",
       goal: "A property seller needed real buyer conversations for apartments in Faisal and land in Mansoura–Talkha, not just ad views.",
       plain: "People looking for a flat or a plot of land messaged the seller directly. Each conversation cost about EGP 2.",
       did: "I ran message campaigns and engagement campaigns, tried photos against video, and compared people in Mansoura with people across Egypt.",
@@ -292,7 +292,7 @@ window.SITE_CONTENT = {
       eyebrow: "Fitness &amp; wellness",
       title: "Six trainers, lots of testing",
       goal: "Six fitness trainers needed to know which offers and audiences actually bring paying clients.",
-      plain: "I helped six trainers work out which offers and audiences actually bring customers. A chat cost anywhere from under EGP 2 to over EGP 50, so the testing mattered more than the budget.",
+      plain: "Six trainers, six different audiences, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under EGP 2 to over EGP 50, and a playbook that kept working.",
       did: "I tried discount offers, 3-month plans, Ramadan and Eid campaigns, posters, carousels and videos, lookalike audiences, and Facebook against Instagram.",
       pres: "About EGP 23K spent turned into 1,171 chats and 56K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer.",
       kpis: [["1,171", "chats started"], ["EGP 1.85", "cheapest chat"], ["56K", "post interactions"]],
@@ -406,14 +406,14 @@ window.SITE_CONTENT = {
     {
       id: "content",
       eyebrow: "Content &amp; community",
-      title: "A café, a mental health platform and a non-profit",
+      title: "A café, a mental health platform and an NGO",
       goal: "Three brands needed steady, on-brand content every week, and the café also wanted people through the door.",
       plain: "Three very different brands, all posting on a schedule with Arabic captions. For the café I also ran campaigns to get people through the door.",
       did: "I planned the content calendars (reels, carousels, photo sets and YouTube videos) for Kapri Cafe, the Medium mental health platform and the Al-Noon Foundation for Family Care.",
       pres: "Kapri's December campaigns brought 67 and 90 chats at EGP 2.46 and EGP 6.01 each. Al-Noon published 18 posts on 5 platforms in two months.",
       kpis: [["EGP 2.46", "cheapest café chat"], ["18", "posts in two months"], ["5", "platforms covered"]],
       cover: {
-        src: "assets/images/cover-kapri.jpg?v=20261121",
+        src: "assets/images/cover-kapri.jpg?v=20261122",
         alt: "Kapri Cafe street decorated with festive lights at night",
         chip: "Kapri Cafe, December 2024",
       },
@@ -460,7 +460,7 @@ window.SITE_CONTENT = {
       pres: "One ad reached 32,621 people and brought 1,516 clicks for about EGP 710, or EGP 0.47 a click.",
       kpis: [["32,621", "people reached"], ["1,516", "clicks"], ["EGP 0.47", "cost per click"]],
       cover: {
-        src: "assets/images/cover-nefr.jpg?v=20261121",
+        src: "assets/images/cover-nefr.jpg?v=20261122",
         alt: "Love of Amarna T-shirt on a gold background",
         chip: "The Love of Amarna tee",
       },
