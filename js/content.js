@@ -175,7 +175,7 @@
         each.append(el("b", null, esc(r.eachV)), document.createTextNode(" "), el("span", null, esc(r.eachL)));
         card.append(each);
         const dl = el("dl", "mini");
-        dl.style.gridTemplateColumns = "repeat(" + r.mini.length + ",minmax(0,1fr))";
+        dl.style.gridTemplateColumns = "repeat(" + r.mini.length + ",auto)";
         r.mini.forEach(([dt]) => dl.append(el("dt", null, esc(dt))));
         r.mini.forEach(([, dd]) => dl.append(el("dd", null, esc(dd))));
         card.append(dl);
@@ -419,7 +419,7 @@
       const mk = (t) => ass.append(el("span", "chip2", esc(t)));
       const r2 = (v) => (v >= 100 ? fmt(v, 0) : fmt(v, 1));
       mk(K.assumed);
-      mk(costLabel + ": EGP " + r2(cost) + " (" + K.range + " " + r2(costLo) + "–" + r2(costHi) + ")");
+      mk(costLabel + ": " + r2(cost) + "\u00a0EGP (" + K.range + " " + r2(costLo) + "–" + r2(costHi) + ")");
       if (convLabel) mk(convLabel + ": " + fmt(conv, conv < 10 ? 1 : 0) + "%");
       tween("results", results, 0);
       tween("cust", cust, cust < 10 ? 1 : 0);
