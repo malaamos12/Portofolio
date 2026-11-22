@@ -699,5 +699,5 @@ window.SITE_CONTENT = {
     viewShot: "شوف اللقطة الأصلية",
     reportLink: "شوفه في تقرير الحملات ↗",
   },
-  order: ["hero", "how", "metrics", "work", "services", "testimonials", "certs", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
+  order: ["hero", "metrics", "brands", "explore", "how", "work", "services", "testimonials", "certs", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
 };

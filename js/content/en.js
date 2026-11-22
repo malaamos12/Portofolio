@@ -701,5 +701,5 @@ window.SITE_CONTENT = {
     viewShot: "View the original screenshot",
     reportLink: "See it in the campaign report ↗",
   },
-  order: ["hero", "how", "metrics", "work", "services", "testimonials", "certs", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
+  order: ["hero", "metrics", "brands", "explore", "how", "work", "services", "testimonials", "certs", "compare", "posts", "calc", "reportsec", "mentor", "music", "skills", "about"],
 };

@@ -2160,3 +2160,14 @@ html[lang="ar"] .mqg {
 #team {
   padding: 80px 0;
 }
+
+/* Brand strip + explore menu */
+.brandstrip{padding:28px 0 8px;text-align:center}
+.brandrow{font:500 1.15rem/1.9 var(--font-body);color:var(--muted);margin:6px auto 0;max-width:900px}
+.explore{padding:36px 0 8px}
+.explore-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:18px}
+.explore-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;text-decoration:none;color:var(--text)}
+.explore-card b{display:block;font:600 1.05rem var(--font-body)}
+.explore-card span{display:block;color:var(--muted);font-size:.92rem;margin-top:4px}
+.explore-card:hover{border-color:var(--gold);color:var(--gold-soft)}
+.explore-card:hover span{color:var(--text)}
