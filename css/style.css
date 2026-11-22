@@ -882,6 +882,12 @@ html[lang="ar"] {
   --font-head: "Amiri", "Noto Naskh Arabic", Georgia, serif;
   --font-body: "Cairo", "Segoe UI", Tahoma, system-ui, sans-serif;
 }
+/* keep all numerals in one font so ٬ and ٫ render with one consistent style */
+html[lang="ar"] .m b,
+html[lang="ar"] .casestats .cstat b,
+html[lang="ar"] .out b {
+  font-family: var(--font-body);
+}
 html[lang="ar"] body {
   line-height: 1.9;
 }

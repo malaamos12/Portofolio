@@ -425,14 +425,14 @@
       const mk = (t) => ass.append(el("span", "chip2", esc(t)));
       const r2 = (v) => (v >= 100 ? fmt(v, 0) : fmt(v, 1));
       mk(K.assumed);
-      mk(costLabel + ": " + r2(cost) + "\u00a0EGP (" + K.range + " " + r2(costLo) + "–" + r2(costHi) + ")");
-      if (convLabel) mk(convLabel + ": " + fmt(conv, conv < 10 ? 1 : 0) + "%");
+      mk(costLabel + ": " + r2(cost) + (C.lang === "ar" ? "\u00a0جنيه (" : "\u00a0EGP (") + K.range + " " + r2(costLo) + "–" + r2(costHi) + ")");
+      if (convLabel) mk(convLabel + ": " + fmt(conv, conv < 10 ? 1 : 0) + (C.lang === "ar" ? "٪" : "%"));
       tween("results", results, 0);
       tween("cust", cust, cust < 10 ? 1 : 0);
       tween("rev", rev, 0);
       tween("cpa", cpa, 0);
       tween("roas", roas, 1, "×");
-      tween("roi", roi * 100, 0, "%");
+      tween("roi", roi * 100, 0, C.lang === "ar" ? "٪" : "%");
     }
     ["c-ind", "c-cty", "c-obj", "c-b", "c-v"].forEach((id) =>
       $("#" + id).addEventListener("input", run)

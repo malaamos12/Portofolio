@@ -14,6 +14,11 @@ html[lang="ar"] {
   --fh: "Amiri", "Noto Naskh Arabic", Georgia, serif;
   --fb: "Cairo", "Segoe UI", Tahoma, sans-serif;
 }
+/* keep all numerals in one font so ٬ and ٫ render with one consistent style */
+html[lang="ar"] .kpi b,
+html[lang="ar"] .dc b {
+  font-family: var(--fb);
+}
 * {
   box-sizing: border-box;
 }
