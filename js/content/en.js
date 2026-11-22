@@ -7,9 +7,9 @@ window.SITE_CONTENT = {
   lang: "en",
   dir: "ltr",
   meta: {
-    title: "Mostafa Alaa | Marketing strategist and media buyer",
+    title: "Mostafa Alaa | The Marketer Who Listens",
     description:
-      "Marketing strategist and media buyer in Cairo. Strategy, content, paid ads and training for businesses of any size, with real campaign results.",
+      "Marketing that starts with listening. Strategy, content, paid ads and training for businesses of any size, with real campaign results.",
   },
   nav: {
     skip: "Skip to work",
@@ -25,9 +25,9 @@ window.SITE_CONTENT = {
     langToggleHref: "ar/",
   },
   hero: {
-    eyebrow: "Marketing strategist and media buyer, Cairo",
+    eyebrow: "The marketer who listens",
     titleHtml: "Marketing starts with <em>listening</em>.",
-    lead: "I’m Mostafa. I plan, create and run marketing for businesses of every kind: strategy, content, paid ads, audience research and training. No copy-paste playbooks — I listen to your customers first, then build what fits them and your goal. It’s the same thing the saxophone taught me: listen first, then play.",
+    lead: "Good marketing doesn’t start with a playbook. It starts with your customers — what they want, what they scroll past, what makes them buy. Listen to that and the strategy writes itself. It’s the same rule the saxophone teaches: listen first, then play.",
     ctaCall: "Book a free call",
     ctaWork: "See my work",
     ctaPdf: "Download portfolio (PDF)",
