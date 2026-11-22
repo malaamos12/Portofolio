@@ -243,36 +243,65 @@
   let iw = 300;
   let wanim = 0;
 
+  const WMODE = new URLSearchParams(location.search).get("wheel") || "arc";
+
   function wheelLayout() {
     const N = wheelItems.length;
     if (!N || !wheelStage) return;
     const sw = wheelStage.clientWidth,
       sh = wheelStage.clientHeight;
-    const R = Math.max(sw * 0.9, sh * 1.1, 640);
-    const step = sw < 700 ? 20 : 17;
-    iw = Math.round(Math.min(clamp(sw * 0.26, 210, 360), sh * 0.66));
+    const flat = WMODE === "flat",
+      cover = WMODE === "cover",
+      mini = WMODE === "mini";
+    const R = mini
+      ? Math.max(sw * 0.7, sh * 1.05, 420)
+      : Math.max(sw * 0.9, sh * 1.1, 640);
+    const step = mini ? (sw < 700 ? 24 : 20) : sw < 700 ? 20 : 17;
+    iw = Math.round(
+      cover
+        ? Math.min(clamp(sw * 0.34, 230, 380), sh * 0.72)
+        : flat
+          ? Math.min(clamp(sw * 0.24, 190, 300), sh * 0.66)
+          : mini
+            ? Math.min(clamp(sw * 0.2, 150, 230), sh * 0.6)
+            : Math.min(clamp(sw * 0.26, 210, 360), sh * 0.66),
+    );
     const cx = sw / 2,
-      cy = sh * 0.52 + R;
+      cy = mini ? sh * 0.55 + R : flat || cover ? sh * 0.5 : sh * 0.52 + R;
+    const spacing = cover ? iw * 0.62 : iw * 1.08;
     wheelItems.forEach((it, i) => {
       let d = (i - wpos) % N;
       if (d > N / 2) d -= N;
       if (d < -N / 2) d += N;
-      const ad = Math.abs(d),
-        th = d * step,
-        rad = (th * Math.PI) / 180;
-      const x = cx + R * Math.sin(rad),
-        y = cy - R * Math.cos(rad);
+      const ad = Math.abs(d);
+      let tf;
+      if (flat || cover) {
+        tf =
+          "translate(" +
+          (cx + d * spacing) +
+          "px," +
+          cy +
+          "px) translate(-50%,-50%)" +
+          (cover ? " rotateY(" + -d * 32 + "deg)" : "") +
+          " scale(" +
+          (1 - Math.min(ad, 2) * (cover ? 0.1 : 0.12)) +
+          ")";
+      } else {
+        const th = d * step,
+          rad = (th * Math.PI) / 180;
+        tf =
+          "translate(" +
+          (cx + R * Math.sin(rad)) +
+          "px," +
+          (cy - R * Math.cos(rad)) +
+          "px) translate(-50%,-50%) rotate(" +
+          th +
+          "deg) scale(" +
+          (1 - Math.min(ad, 2) * 0.07) +
+          ")";
+      }
       it.style.width = iw + "px";
-      it.style.transform =
-        "translate(" +
-        x +
-        "px," +
-        y +
-        "px) translate(-50%,-50%) rotate(" +
-        th +
-        "deg) scale(" +
-        (1 - Math.min(ad, 2) * 0.07) +
-        ")";
+      it.style.transform = tf;
       it.style.opacity = Math.max(0, 1 - ad * 0.38);
       it.style.zIndex = 50 - Math.round(ad * 10);
       it.style.pointerEvents = ad < 2.2 ? "auto" : "none";
@@ -340,7 +369,7 @@
   });
   if (wheelSec && wheelStage && !rm) {
     live = true;
-    wheelSec.classList.add("live");
+    wheelSec.classList.add("live", "w-" + WMODE);
     const rt = root.dir === "rtl";
     const nav = document.createElement("div");
     nav.className = "wnav";

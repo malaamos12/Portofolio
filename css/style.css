@@ -2333,3 +2333,26 @@ html[lang="ar"] .mqg {
   transform: translateY(-2px);
   color: #121214;
 }
+
+/* ---- wheel layout variants ---- */
+.w-mini .stage {
+  height: clamp(290px, 36vh, 400px);
+}
+.w-flat .stage {
+  height: clamp(320px, 42vh, 460px);
+}
+.w-cover .stage {
+  height: clamp(340px, 44vh, 480px);
+  perspective: 1100px;
+}
+@media (max-width: 900px) {
+  .w-mini .stage {
+    height: clamp(270px, 32vh, 360px);
+  }
+  .w-flat .stage {
+    height: clamp(290px, 36vh, 400px);
+  }
+  .w-cover .stage {
+    height: clamp(300px, 38vh, 420px);
+  }
+}
