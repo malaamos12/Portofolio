@@ -2213,6 +2213,12 @@ html[lang="ar"] .mqg {
   background: rgba(212, 175, 55, 0.14);
 }
 
+.dld .dbtn {
+  font: inherit;
+  background: none;
+  cursor: pointer;
+  appearance: none;
+}
 /* scrollspy active nav */
 .nav a.l.on {
   color: var(--gold);
