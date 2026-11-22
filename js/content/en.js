@@ -414,8 +414,8 @@ window.SITE_CONTENT = {
       kpis: [["EGP 2.46", "cheapest café chat"], ["18", "posts in two months"], ["5", "platforms covered"]],
       cover: {
         src: "assets/images/cover-kapri.jpg?v=20261122",
-        alt: "Kapri Cafe street decorated with festive lights at night",
-        chip: "Kapri Cafe, December 2024",
+        alt: "Kapri Café logo - white brush lettering in a coffee-cup ring on dark slate",
+        chip: "Kapri Café",
       },
       guide: true,
       note: "The posts themselves are in the gallery below.",
@@ -461,8 +461,8 @@ window.SITE_CONTENT = {
       kpis: [["32,621", "people reached"], ["1,516", "clicks"], ["EGP 0.47", "cost per click"]],
       cover: {
         src: "assets/images/cover-nefr.jpg?v=20261122",
-        alt: "Love of Amarna T-shirt on a gold background",
-        chip: "The Love of Amarna tee",
+        alt: "Nefr Story logo - gold winged figure with the brand name in English and Arabic",
+        chip: "Nefr Story",
       },
       guide: true,
       note: "The Instagram 30%-off ad had a 3.46% click rate.",
