@@ -4,7 +4,7 @@ const L = {
     dl: "Download PDF",
     eyebrow: "Meta Ads Manager export · 1 Nov 2024 – 10 Nov 2026",
     h1: "Campaign performance <em>report</em>",
-    sub: "50 ad records across 33 campaign names, from the trainers’ ad account.",
+    sub: "51 ad records across 34 campaign names, from the trainers’ ad account.",
     k1: "Total spend (EGP)",
     k2: "Chats started with customers",
     k3: "Post interactions (likes, comments, shares)",
@@ -48,16 +48,39 @@ const L = {
       "Cost / chat",
       "Interactions",
     ],
+    e5: "Full picture",
+    h2e: "Beyond this export: every result in the portfolio",
+    s5: "The Meta export above covers the trainers’ ad account only. Here is everything else the portfolio shows: real-estate commission, sales per campaign, the café and the clothing brand.",
+    pf: [
+      { h: "Real estate · 4 properties listed, all sold" },
+      { n: "Faisal Apartment, 40 St", d: "644 chats at 2.16 EGP each · 1,392 EGP spent", r: "110,000 EGP commission on a 1.1M EGP deal" },
+      { n: "Faisal Apartment", d: "122 chats at 1.67 EGP each · 204 EGP spent", r: "70,000 EGP commission on a 700K EGP deal" },
+      { n: "Mansoura–Talkha land", d: "19,156 interactions at 0.037 EGP each", r: "360,000 EGP commission on 18M EGP of land" },
+      { n: "Mansoura–Talkha, new design", d: "618 interactions at 0.72 EGP each", r: "220,000 EGP commission on 11M EGP of land" },
+      { t: "Real estate total: 760,000 EGP commission on 30.8M EGP in closed deals" },
+      { h: "Fitness trainers and the yoga retreat · tracked sales" },
+      { n: "Trainer 1, refreshment", d: "64 chats at 1.85 EGP each", r: "27,000 EGP · 9 subscriptions" },
+      { n: "Trainer 2, new offer", d: "41 chats at 30.06 EGP each", r: "13,000 EGP · 26 × 500 EGP" },
+      { n: "Trainer 3, sales campaign", d: "181 chats at 7.72 EGP each", r: "16,500 EGP · 11 × 1,500 EGP" },
+      { n: "Trainer 4, new offer", d: "", r: "13,500 EGP · 15 subscriptions" },
+      { n: "Trainer 5, 50% offer", d: "138 chats at 10.11 EGP each", r: "20,000 EGP · 20 × 1,000 EGP" },
+      { n: "Yoga retreat, Aswan", d: "65 chats at 16.33 EGP each", r: "72,000 EGP · 12 spots × 6,000 EGP" },
+      { t: "Fitness total: 162,000 EGP in tracked sales" },
+      { h: "Café and own brand" },
+      { n: "Kapri Cafe, December", d: "67 chats at 2.46 EGP and 90 chats at 6.01 EGP", r: "Café reported about 30% income growth that month" },
+      { n: "Nefr Story (own brand)", d: "1,516 clicks at 0.47 EGP each · 32,621 reached · 710 EGP spent", r: "Launched from zero on a small budget" },
+      { t: "Grand total: 922,000 EGP in tracked sales and commission" },
+    ],
     spentl: "spent",
     plain: (s, c, e, a, b) =>
-      `<b>In plain words.</b> Across 50 ads, EGP ${s} started ${c} chats with potential customers and drew ${e} reactions to posts. On average a chat cost EGP ${a}, but it ranged from under EGP 2 to over EGP ${b} depending on the offer and the audience. That is why testing matters more than simply spending more.`,
+      `<b>In plain words.</b> Across 51 ads, EGP ${s} started ${c} chats with potential customers and drew ${e} reactions to posts. On average a chat cost EGP ${a}, but it ranged from under EGP 2 to over EGP ${b} depending on the offer and the audience. That is why testing matters more than simply spending more.`,
   },
   ar: {
     back: "← البورتفوليو",
     dl: "نزّل الـPDF",
     eyebrow: "تصدير من Meta Ads Manager · من 1 نوفمبر 2024 لحد 10 نوفمبر 2026",
     h1: "تقرير أداء <em>الحملات</em>",
-    sub: "50 إعلان في 33 اسم حملة، من الحساب الإعلاني بتاع المدربين.",
+    sub: "51 إعلان في 34 اسم حملة، من الحساب الإعلاني بتاع المدربين.",
     k1: "إجمالي المصروف (جنيه)",
     k2: "محادثة اتفتحت مع عملاء",
     k3: "تفاعل على البوستات (لايك وكومنت وشير)",
@@ -101,9 +124,32 @@ const L = {
       "تكلفة المحادثة",
       "التفاعل",
     ],
+    e5: "الصورة الكاملة",
+    h2e: "أبعد من التصدير ده: كل نتايج البورتفوليو",
+    s5: "التصدير اللي فوق بيغطي الحساب الإعلاني بتاع المدربين بس. هنا كل حاجة تانية موجودة في البورتفوليو: عمولات العقارات، ومبيعات كل حملة، والكافيه والبراند.",
+    pf: [
+      { h: "العقارات · 4 عقارات اتعرضوا، كلهم اتباعوا" },
+      { n: "شقة فيصل، شارع 40", d: "644 محادثة بتكلفة 2.16 جنيه · 1,392 جنيه مصروف", r: "110,000 جنيه عمولة من صفقة 1.1 مليون جنيه" },
+      { n: "شقة فيصل", d: "122 محادثة بتكلفة 1.67 جنيه · 204 جنيه مصروف", r: "70,000 جنيه عمولة من صفقة 700 ألف جنيه" },
+      { n: "أرض منصورة–طلخة", d: "19,156 تفاعل بتكلفة 0.037 جنيه", r: "360,000 جنيه عمولة من أرض بـ18 مليون جنيه" },
+      { n: "منصورة–طلخة، تصميم جديد", d: "618 تفاعل بتكلفة 0.72 جنيه", r: "220,000 جنيه عمولة من أرض بـ11 مليون جنيه" },
+      { t: "إجمالي العقارات: 760,000 جنيه عمولة على صفقات بـ30.8 مليون جنيه" },
+      { h: "المدربين وريتريت اليوجا · مبيعات متسجلة" },
+      { n: "المدرب 1، ريفريشمنت", d: "64 محادثة بتكلفة 1.85 جنيه", r: "27,000 جنيه · 9 اشتراكات" },
+      { n: "المدرب 2، عرض جديد", d: "41 محادثة بتكلفة 30.06 جنيه", r: "13,000 جنيه · 26 × 500 جنيه" },
+      { n: "المدرب 3، حملة مبيعات", d: "181 محادثة بتكلفة 7.72 جنيه", r: "16,500 جنيه · 11 × 1,500 جنيه" },
+      { n: "المدرب 4، عرض جديد", d: "", r: "13,500 جنيه · 15 اشتراك" },
+      { n: "المدرب 5، عرض خصم 50%", d: "138 محادثة بتكلفة 10.11 جنيه", r: "20,000 جنيه · 20 × 1,000 جنيه" },
+      { n: "ريتريت يوجا، أسوان", d: "65 محادثة بتكلفة 16.33 جنيه", r: "72,000 جنيه · 12 مكان × 6,000 جنيه" },
+      { t: "إجمالي الفتنس: 162,000 جنيه مبيعات متسجلة" },
+      { h: "الكافيه والبراند" },
+      { n: "كابري كافيه، ديسمبر", d: "67 محادثة بتكلفة 2.46 جنيه و90 محادثة بتكلفة 6.01 جنيه", r: "الكافيه قال إن دخله زاد حوالي 30% في الشهر ده" },
+      { n: "نفر ستوري (البراند بتاعي)", d: "1,516 كليك بتكلفة 0.47 جنيه · 32,621 وصول · 710 جنيه مصروف", r: "براند اتبنى من الصفر بميزانية صغيرة" },
+      { t: "الإجمالي الكلي: 922,000 جنيه مبيعات وعمولات متسجلة" },
+    ],
     spentl: "اتصرف",
     plain: (s, c, e, a, b) =>
-      `<b>ببساطة.</b> في 50 إعلان، صرفنا ${s} جنيه وفتحنا ${c} محادثة مع ناس مهتمة وجِبنا ${e} تفاعل على البوستات. متوسط المحادثة طلع ${a} جنيه، بس الفرق كان كبير: من أقل من جنيهين لأكتر من ${b} جنيه حسب العرض والجمهور. عشان كده الاختبار أهم من إنك تصرف أكتر.`,
+      `<b>ببساطة.</b> في 51 إعلان، صرفنا ${s} جنيه وفتحنا ${c} محادثة مع ناس مهتمة وجِبنا ${e} تفاعل على البوستات. متوسط المحادثة طلع ${a} جنيه، بس الفرق كان كبير: من أقل من جنيهين لأكتر من ${b} جنيه حسب العرض والجمهور. عشان كده الاختبار أهم من إنك تصرف أكتر.`,
   },
 };
 const GN = { Other: "oth" };
@@ -322,6 +368,19 @@ function arm() {
   });
 }
 document.querySelectorAll(".rv").forEach((e) => io.observe(e));
+
+function pf() {
+  const l = L[lang];
+  document.getElementById("pf").innerHTML = l.pf
+    .map((r) =>
+      r.h
+        ? `<div class="pfh">${r.h}</div>`
+        : r.t
+          ? `<div class="pft">${r.t}</div>`
+          : `<div class="pfr"><div><b>${r.n}</b>${r.d ? `<span>${r.d}</span>` : ""}</div><div class="pfr-r">${r.r}</div></div>`,
+    )
+    .join("");
+}
 function setLang(l) {
   lang = l;
   try {
@@ -336,6 +395,7 @@ function setLang(l) {
   bars();
   donut();
   table();
+  pf();
   if (typeof Jazz !== "undefined") Jazz.ui();
 }
 document.getElementById("lt").onclick = () =>

@@ -60,7 +60,7 @@ window.SITE_CONTENT = {
     items: [
       { count: 1.04, dec: 2, suf: "M", label: "ad impressions in a single account" },
       { count: 588, dec: 0, suf: "K", label: "people reached in the same account" },
-      { count: 992, dec: 0, suf: "", label: "customer chats started on the trainers’ account" },
+      { count: 1173, dec: 0, suf: "", label: "customer chats started on the trainers’ account" },
       { count: 922, dec: 0, suf: "K EGP", label: "in sales and commission attributed to the campaigns" },
       { count: 3, dec: 0, suf: "K+", label: "people I have coached" },
     ],
@@ -341,8 +341,8 @@ window.SITE_CONTENT = {
       goal: "Five fitness trainers and a yoga retreat needed to know which offers and audiences actually bring paying clients.",
       plain: "Five trainers, a retreat in Aswan, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under 2 to over 50 EGP and a playbook that kept working.",
       did: "I tried discount offers, 3-month plans, Ramadan and Eid campaigns, posters, carousels and videos, lookalike audiences, and Facebook against Instagram.",
-      pres: "About 21.6K EGP spent turned into 992 chats and 56K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer. Six campaigns have sales attached: 162,000 EGP in subscriptions and retreat spots from about 6,700 EGP of ads.",
-      kpis: [["162K EGP", "sales from trainers and the retreat"], ["992", "chats started"], ["1.85 EGP", "cheapest chat"], ["56K", "post interactions"]],
+      pres: "About 23.1K EGP spent turned into 1,173 chats and 55K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer. Six campaigns have sales attached: 162,000 EGP in subscriptions and retreat spots from about 6,700 EGP of ads.",
+      kpis: [["162K EGP", "sales from trainers and the retreat"], ["1,173", "chats started"], ["1.85 EGP", "cheapest chat"], ["55K", "post interactions"]],
       cover: {
         src: "assets/images/cover-fitness.jpg?v=20261121",
         alt: "Facebook reel with a trainer offering six months free",

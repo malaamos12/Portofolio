@@ -1,5 +1,15 @@
-/* Ad records exported from the Meta Ads Manager CSV (Nov 2024 - Nov 2026). Edit or replace to update the report. */
+/* Ad records exported from the Meta Ads Manager CSV (Nov 2024 - Nov 2026); the Trainer 3 sales campaign was added from the Ads Manager screenshot. Edit or replace to update the report. */
 const DATA = [
+  {
+    ad: "Trainer 3 - Sales",
+    g: "Trainer 3",
+    t: "chat",
+    spend: 1397.21,
+    reach: 41283,
+    imp: 59575,
+    conv: 181,
+    eng: 0,
+  },
   {
     ad: "Trainer 5 - New Offer Sales - Poster",
     g: "Trainer 5",

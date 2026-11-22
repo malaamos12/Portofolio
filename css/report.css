@@ -685,3 +685,11 @@ body.go .musicbtn {
 :root {
   --radius: 14px;
 }
+
+.pf { margin-top: 26px; border-top: 1px solid var(--line); }
+.pfh { margin: 26px 0 4px; font: 600 12px/1.4 Inter, Cairo, sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+.pfr { display: flex; justify-content: space-between; gap: 18px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.pfr b { display: block; font-weight: 600; }
+.pfr span { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+.pfr-r { text-align: end; color: var(--gold2); font-weight: 600; max-width: 46%; }
+.pft { margin: 14px 0 4px; padding: 14px 16px; border: 1px solid var(--gold); border-radius: 12px; color: var(--gold2); font-weight: 700; }
