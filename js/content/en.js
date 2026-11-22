@@ -168,6 +168,11 @@ window.SITE_CONTENT = {
         cls: "me",
       },
       {
+        q: "It’s a truly well-deserved step. We’re already seeing the huge value you bring to the team ya Darsh, looking forward to achieving even more success together!!",
+        name: "Amr Elsayed",
+        tag: "Workforce Manager, Intelcia",
+      },
+      {
         q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
         name: "Amr A. Hussien",
         tag: "Pay It Forward bootcamp participant",
