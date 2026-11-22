@@ -238,6 +238,7 @@
   const wheelStage = wheelSec ? $(".stage", wheelSec) : null;
   const wheelItems = wheelSec ? $$(".wi", wheelSec) : [];
   const wcap = $("#wcap");
+  let wres = null;
   let live = false;
   let wpos = 0;
   let iw = 300;
@@ -264,7 +265,9 @@
         ? Math.min(clamp(sw * 0.34, 230, 380), sh * 0.72)
         : deck || cyl
           ? Math.min(clamp(sw * 0.3, 220, 340), sh * 0.7)
-          : flat
+          : cyl
+            ? Math.min(clamp(sw * 0.26, 170, 270), sh * 0.62)
+            : flat
             ? Math.min(clamp(sw * 0.24, 190, 300), sh * 0.66)
             : mini
               ? Math.min(clamp(sw * 0.2, 150, 230), sh * 0.6)
@@ -350,7 +353,12 @@
       it.style.pointerEvents = (cyl ? ad < 0.6 : ad < 2.2) ? "auto" : "none";
     });
     const ci = ((Math.round(wpos) % N) + N) % N;
-    wcap.textContent = wheelItems[ci].getAttribute("data-cap");
+    const cur = wheelItems[ci];
+    wcap.textContent = cur.getAttribute("data-cap");
+    if (wres) {
+      const r = cur.querySelector(".wi-res");
+      wres.textContent = r ? r.textContent : "";
+    }
   }
   function wheelTo(target) {
     cancelAnimationFrame(wanim);
@@ -414,6 +422,9 @@
     live = true;
     wheelSec.classList.add("live", "w-" + WMODE);
     const wheelBox = $("#postsWheel");
+    wres = document.createElement("p");
+    wres.className = "wres";
+    wcap.after(wres);
     if (WMODE === "marquee" && wheelBox) {
       wheelItems.forEach((it) => wheelBox.append(it.cloneNode(true)));
     }

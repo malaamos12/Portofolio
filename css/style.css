@@ -2420,3 +2420,22 @@ html[lang="ar"] .mqg {
     height: clamp(300px, 40vh, 420px);
   }
 }
+
+/* ---- wheel: cleaner cards, KPI as caption line ---- */
+.live .wi .wi-res {
+  display: none;
+}
+.wres {
+  display: block;
+  text-align: center;
+  margin: 6px auto 0;
+  padding: 0 24px;
+  color: var(--gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  min-height: 1.2em;
+}
+.w-marquee .wres {
+  display: none;
+}
