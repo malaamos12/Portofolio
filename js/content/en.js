@@ -61,6 +61,7 @@ window.SITE_CONTENT = {
       { count: 1.04, dec: 2, suf: "M", label: "ad impressions in a single account" },
       { count: 588, dec: 0, suf: "K", label: "people reached in the same account" },
       { count: 1171, dec: 0, suf: "", label: "customer chats started on the trainers’ account" },
+      { count: 9, dec: 0, suf: "×", label: "return on ad spend on one trainer offer" },
       { count: 3, dec: 0, suf: "K+", label: "people I have coached" },
     ],
   },
@@ -255,9 +256,9 @@ window.SITE_CONTENT = {
       eyebrow: "Real estate",
       title: "Real Estate Apartments and Lands",
       goal: "A property seller needed real buyer conversations for apartments in Faisal and land in Mansoura–Talkha, not just ad views.",
-      plain: "People looking for a flat or a plot of land messaged the seller directly. Each conversation cost about 2. EGP",
+      plain: "People looking for a flat or a plot of land messaged the seller directly. Each conversation cost about 2 EGP.",
       did: "I ran message campaigns and engagement campaigns, tried photos against video, and compared people in Mansoura with people across Egypt.",
-      pres: "Buyers messaged for about 2 EGP a chat. The best campaign started 644 conversations for 1,392. EGP",
+      pres: "Buyers messaged for about 2 EGP a chat. The best campaign started 644 conversations for 1,392 EGP.",
       kpis: [["1.67 EGP", "cheapest chat"], ["644", "chats in the best campaign"], ["165K", "reached by one ad"]],
       cover: {
         src: "assets/images/cover-realestate.jpg?v=20261121",
@@ -265,7 +266,7 @@ window.SITE_CONTENT = {
         chip: "644 chats from a single campaign",
       },
       guide: true,
-      note: "Best ad in Mansoura–Talkha reached 165K people for 2,481.68. EGP",
+      note: "Best ad in Mansoura–Talkha reached 165K people for 2,481.68 EGP.",
       runs: [
         {
           tag: "Chat ads",
@@ -330,17 +331,17 @@ window.SITE_CONTENT = {
       eyebrow: "Fitness &amp; wellness",
       title: "Six trainers, six audiences, one question",
       goal: "Six fitness trainers needed to know which offers and audiences actually bring paying clients.",
-      plain: "Six trainers, six different audiences, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under 2 EGP to over 50, EGP and a playbook that kept working.",
+      plain: "Six trainers, six different audiences, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under 2 to over 50 EGP and a playbook that kept working.",
       did: "I tried discount offers, 3-month plans, Ramadan and Eid campaigns, posters, carousels and videos, lookalike audiences, and Facebook against Instagram.",
-      pres: "About 23K EGP spent turned into 1,171 chats and 56K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer.",
-      kpis: [["1,171", "chats started"], ["1.85 EGP", "cheapest chat"], ["56K", "post interactions"]],
+      pres: "About 23K EGP spent turned into 1,171 chats and 56K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer. One offer stood out: 1,500 EGP of ads for trainer Mohamed Samy came back as 13,500 EGP of subscription sales - a 9x return on ad spend.",
+      kpis: [["9×", "return on ad spend on one offer"], ["1,171", "chats started"], ["1.85 EGP", "cheapest chat"], ["56K", "post interactions"]],
       cover: {
         src: "assets/images/cover-fitness.jpg?v=20261121",
         alt: "Facebook reel with a trainer offering six months free",
         chip: "A New Year offer for one of the trainers",
       },
       guide: true,
-      note: "One Ramadan offer video reached 41,706 people for US$20.40 (March 2025). On ads with 10 or more chats, the cost per chat ran from 1.85 EGP to 55. EGP",
+      note: "One Ramadan offer video reached 41,706 people for US$20.40 (March 2025). On ads with 10 or more chats, the cost per chat ran from 1.85 to 55 EGP",
       runs: [
         {
           tag: "Chat ads",
@@ -456,6 +457,8 @@ window.SITE_CONTENT = {
         },
         {
           tag: "Chat ads",
+          badge: "9× ROAS",
+          star: true,
           title: "Mohamed Samy, new offer",
           heroN: "63",
           heroL: "chats started",
@@ -522,9 +525,9 @@ window.SITE_CONTENT = {
       eyebrow: "My own brand",
       title: "Nefr Story",
       goal: "Launch my own ancient-Egypt clothing brand from zero, on almost no budget.",
-      plain: "A clothing brand I started, inspired by ancient Egypt. On a small budget, one ad brought about 1,500 clicks for under 710. EGP",
+      plain: "A clothing brand I started, inspired by ancient Egypt. On a small budget, one ad brought about 1,500 clicks for under 710 EGP.",
       did: "I wrote the launch copy, designed the pieces (each one carries a QR code that opens its story), and ran video, photo and discount ads.",
-      pres: "One ad reached 32,621 people and brought 1,516 clicks for about 710, EGP or 0.47 EGP a click.",
+      pres: "One ad reached 32,621 people and brought 1,516 clicks for about 710 EGP, or 0.47 EGP a click.",
       kpis: [["32,621", "people reached"], ["1,516", "clicks"], ["0.47 EGP", "cost per click"]],
       cover: {
         src: "assets/images/cover-nefr.jpg?v=20261122",

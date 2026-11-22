@@ -210,7 +210,7 @@ header.nav {
 }
 .metrics .wrap {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 24px;
   padding-block: 44px;
 }
@@ -285,6 +285,20 @@ header.nav {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
+}
+.roas {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #14130f;
+  background: var(--gold);
+  border-radius: 999px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+.run.star {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
 }
 /* case studies */
 .case {

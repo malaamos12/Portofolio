@@ -165,8 +165,10 @@
       const runs = el("div", "runs");
       p.runs.forEach((r) => {
         const card = el("article", "run");
+        if (r.star) card.classList.add("star");
         const top = el("div", "run-top");
         top.append(el("span", "tag", esc(r.tag)));
+        if (r.badge) top.append(el("span", "roas", esc(r.badge)));
         card.append(top, el("h4", null, r.title));
         const hero = el("div", "hero-n");
         hero.append(el("b", null, esc(r.heroN)), el("span", null, esc(r.heroL)));
