@@ -171,6 +171,16 @@ window.SITE_CONTENT = {
         tag: "مدير Workforce في Intelcia",
       },
       {
+        q: "His dedication, professionalism, and exceptional skills stood out immediately. He consistently delivered outstanding results and brought innovative solutions to challenges.",
+        name: "Abdelrahman Moataz",
+        tag: "جدولة وتخطيط القوى العاملة",
+      },
+      {
+        q: "Mostafa is one of the greatest talents I’ve worked with: helpful, dedicated, with high attention to detail.",
+        name: "Abdelrahman Khalid",
+        tag: "تحليل أعمال وحلول",
+      },
+      {
         q: "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
         name: "Amr A. Hussien",
         tag: "متدرب في Pay It Forward Bootcamp",
