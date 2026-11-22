@@ -147,6 +147,13 @@ window.SITE_CONTENT = {
         linkLabel: "See her work",
         img: "assets/images/team/sama-abuelazm.jpg",
       },
+      {
+        name: "Nada Nassar",
+        role: "Content & social media",
+        link: "https://drive.google.com/file/d/1SvL0aiqGYbUiz7ghcg5KJYe83dbUp2FW/view",
+        linkLabel: "See her work",
+        img: "assets/images/team/nada-nassar.jpg",
+      },
     ],
   },
   testimonials: {

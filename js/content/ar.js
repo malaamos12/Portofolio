@@ -145,6 +145,13 @@ window.SITE_CONTENT = {
         linkLabel: "شوف شغلها",
         img: "assets/images/team/sama-abuelazm.jpg",
       },
+      {
+        name: "ندى نصار",
+        role: "المحتوى والسوشيال ميديا",
+        link: "https://drive.google.com/file/d/1SvL0aiqGYbUiz7ghcg5KJYe83dbUp2FW/view",
+        linkLabel: "شوف شغلها",
+        img: "assets/images/team/nada-nassar.jpg",
+      },
     ],
   },
   testimonials: {
