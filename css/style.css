@@ -2243,3 +2243,51 @@ html[lang="ar"] .mqg {
     transition: none;
   }
 }
+
+/* floating action stack: music, download, WhatsApp */
+.fab {
+  position: fixed;
+  inset-inline-end: 20px;
+  bottom: 20px;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.fab .musicbtn,
+.fab .wafloat {
+  position: static;
+  inset-inline-start: auto;
+  inset-inline-end: auto;
+  bottom: auto;
+}
+.fab .dld {
+  position: relative;
+}
+.fab .dld .dmenu {
+  top: auto;
+  bottom: calc(100% + 10px);
+  inset-inline-end: 0;
+}
+.fab .dlbtn {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  background: rgba(11, 11, 12, 0.92);
+  backdrop-filter: blur(6px);
+  color: var(--gold);
+  cursor: pointer;
+  padding: 0;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+.fab .dlbtn:hover {
+  background: var(--gold);
+  transform: translateY(-2px);
+  color: #121214;
+}
