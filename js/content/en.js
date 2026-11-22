@@ -52,7 +52,7 @@ window.SITE_CONTENT = {
     ],
   },
   metrics: {
-    note: "The numbers come from Meta Ads Manager reports. Each project below explains them in simple words.",
+    note: "Every number comes straight from Meta Ads Manager. The case studies below show what they mean in practice.",
     items: [
       { count: 1.04, dec: 2, suf: "M", label: "ad impressions in a single account" },
       { count: 588, dec: 0, suf: "K", label: "people reached in the same account" },
@@ -63,7 +63,7 @@ window.SITE_CONTENT = {
   services: {
     eyebrow: "Services",
     title: "Everything your brand needs, from one team.",
-    sub: "I run the strategy and the ads myself. Behind me is a team of specialists I trust, so your brand gets everything from one place - one brief, one goal. Samples of their work are available on request.",
+    sub: "I run the strategy and the ads myself. Behind me is a team of specialists I trust, so your brand gets everything from one place - one brief, one goal. Ask and I’ll show you what they’ve made.",
     items: [
       {
         icon: "target",
@@ -190,12 +190,12 @@ window.SITE_CONTENT = {
         },
       },
       {
-        q: "I worked hand to hand alongside Mostafa. He’s a great person to learn from & he was the reason I joined the workforce in the 1st place.",
+        q: "I worked hand to hand alongside Mostafa. He’s a great person to learn from and he was the reason I joined the workforce in the first place.",
         name: "Mohamed Sabry",
         tag: "LinkedIn recommendation",
       },
       {
-        q: "Mostafa was one of the best team members I’ve worked with ever with an analytical mindset, critical thinking and Communications skills",
+        q: "Mostafa was one of the best team members I’ve worked with, with an analytical mindset, critical thinking and communication skills",
         name: "Ahmed Abdin",
         tag: "LinkedIn recommendation",
       },
@@ -290,7 +290,7 @@ window.SITE_CONTENT = {
     {
       id: "fitness",
       eyebrow: "Fitness &amp; wellness",
-      title: "Six trainers, lots of testing",
+      title: "Six trainers, six audiences, one question",
       goal: "Six fitness trainers needed to know which offers and audiences actually bring paying clients.",
       plain: "Six trainers, six different audiences, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under EGP 2 to over EGP 50, and a playbook that kept working.",
       did: "I tried discount offers, 3-month plans, Ramadan and Eid campaigns, posters, carousels and videos, lookalike audiences, and Facebook against Instagram.",

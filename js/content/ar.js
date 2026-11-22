@@ -50,7 +50,7 @@ window.SITE_CONTENT = {
     ],
   },
   metrics: {
-    note: "الأرقام دي من تقارير Meta Ads Manager، وكل مشروع تحت بيشرحها بكلام بسيط.",
+    note: "كل الأرقام دي جاية على طول من Meta Ads Manager، وقصص النجاح اللي تحت بتوضّح معناها في الواقع.",
     items: [
       { count: 1.04, dec: 2, suf: "M", label: "ظهور لإعلاناتي في حساب إعلاني واحد" },
       { count: 588, dec: 0, suf: "K", label: "شخص وصلتلهم الإعلانات في نفس الحساب" },
@@ -61,7 +61,7 @@ window.SITE_CONTENT = {
   services: {
     eyebrow: "الخدمات",
     title: "كل اللي برندك محتاجه، من فريق واحد.",
-    sub: "أنا بنفسي بمسك الاستراتيجية والإعلانات. وورايا فريق متخصصين بوثق فيهم، عشان برندك ياخد كل حاجة من مكان واحد: بريف واحد، وهدف واحد. ونماذج من شغلهم متاحة عند الطلب.",
+    sub: "أنا بنفسي بمسك الاستراتيجية والإعلانات. وورايا فريق متخصصين بوثق فيهم، عشان برندك ياخد كل حاجة من مكان واحد: بريف واحد، وهدف واحد. اسألني وأوريك من شغلهم.",
     items: [
       {
         icon: "target",
@@ -188,12 +188,12 @@ window.SITE_CONTENT = {
         },
       },
       {
-        q: "I worked hand to hand alongside Mostafa. He’s a great person to learn from & he was the reason I joined the workforce in the 1st place.",
+        q: "I worked hand to hand alongside Mostafa. He’s a great person to learn from and he was the reason I joined the workforce in the first place.",
         name: "Mohamed Sabry",
         tag: "توصية على لينكدإن",
       },
       {
-        q: "Mostafa was one of the best team members I’ve worked with ever with an analytical mindset, critical thinking and Communications skills",
+        q: "Mostafa was one of the best team members I’ve worked with, with an analytical mindset, critical thinking and communication skills",
         name: "Ahmed Abdin",
         tag: "توصية على لينكدإن",
       },
@@ -288,7 +288,7 @@ window.SITE_CONTENT = {
     {
       id: "fitness",
       eyebrow: "اللياقة والصحة",
-      title: "ستة مدربين وتجارب كتير",
+      title: "ستة مدربين، ست جماهير، سؤال واحد",
       goal: "ستة مدربين كانوا محتاجين يعرفوا أنهي عروض وأنهي جمهور بيجيبوا عملاء فعلًا.",
       plain: "ستة مدربين، ست جماهير مختلفة، وسؤال واحد: إيه اللي بيخلي حد فعلاً يبدأ محادثة؟ جرّبنا عروض وهوكات وجماهير لحد ما الأرقام اتكلمت: محادثات من أقل من 2 جنيه لأكتر من 50 جنيه، وطريقة شغل فضلت شغالة.",
       did: "جرّبت عروض الخصم وباقات الـ3 شهور وحملات رمضان والعيد، والبوستر والكاروسيل والفيديو، والجماهير المشابهة، وفيسبوك قصاد إنستجرام.",
