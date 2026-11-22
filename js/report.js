@@ -131,7 +131,7 @@ const L = {
       "التفاعل",
     ],
     e5: "الصورة الكاملة",
-    h٢e: "أبعد من التصدير ده: كل نتايج البورتفوليو",
+    h2e: "كل نتايج شغلي، مش بس الأرقام اللي في الملف ده",
     s5: "التصدير اللي فوق بيغطي الحساب الإعلاني بتاع المدربين بس. هنا كل حاجة تانية موجودة في البورتفوليو: عمولات العقارات، ومبيعات كل حملة، والكافيه والبراند.",
     pf: [
       { h: "العقارات · ٤ عقارات اتعرضوا، كلهم اتباعوا" },
@@ -251,6 +251,11 @@ function count(el, t, dec) {
 }
 function texts() {
   const l = L[lang];
+  document.querySelector(".logo > span").innerHTML =
+    lang === "ar" ? "مصطفى <b>علاء</b>" : "Mostafa <b>Alaa</b>";
+  document.getElementById("q").setAttribute("aria-label", lang === "ar" ? "دوّر باسم الإعلان" : "Search");
+  document.getElementById("gsel").setAttribute("aria-label", lang === "ar" ? "المجموعة" : "Group");
+  document.getElementById("lt").lang = lang === "ar" ? "en" : "ar";
   document.querySelectorAll("[data-k]").forEach((e) => {
     const v = l[e.dataset.k];
     if (typeof v === "string") {
