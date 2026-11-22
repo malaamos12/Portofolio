@@ -19,6 +19,9 @@ window.SITE_CONTENT = {
     about: "About",
     contact: "Contact",
     langToggle: "العربية",
+    download: "Download",
+    dlCv: "Download CV",
+    dlPortfolio: "Download portfolio (PDF)",
     langToggleHref: "ar/",
   },
   hero: {

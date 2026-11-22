@@ -2171,3 +2171,41 @@ html[lang="ar"] .mqg {
 .explore-card span{display:block;color:var(--muted);font-size:.92rem;margin-top:4px}
 .explore-card:hover{border-color:var(--gold);color:var(--gold-soft)}
 .explore-card:hover span{color:var(--text)}
+
+
+/* header download dropdown */
+.dld {
+  position: relative;
+}
+.dld summary {
+  list-style: none;
+  cursor: pointer;
+}
+.dld summary::-webkit-details-marker {
+  display: none;
+}
+.dld .dmenu {
+  position: absolute;
+  inset-inline-end: 0;
+  top: calc(100% + 8px);
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  background: #17130c;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 60;
+}
+.dld[open] .dmenu {
+  display: flex;
+}
+.dld .dmenu a {
+  color: #e9e2d0;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+.dld .dmenu a:hover {
+  background: rgba(212, 175, 55, 0.14);
+}
