@@ -175,11 +175,9 @@
         each.append(el("b", null, esc(r.eachV)), document.createTextNode(" "), el("span", null, esc(r.eachL)));
         card.append(each);
         const dl = el("dl", "mini");
-        r.mini.forEach(([dt, dd]) => {
-          const dv = el("div");
-          dv.append(el("dt", null, esc(dt)), el("dd", null, esc(dd)));
-          dl.append(dv);
-        });
+        dl.style.gridTemplateColumns = "repeat(" + r.mini.length + ",minmax(0,1fr))";
+        r.mini.forEach(([dt]) => dl.append(el("dt", null, esc(dt))));
+        r.mini.forEach(([, dd]) => dl.append(el("dd", null, esc(dd))));
         card.append(dl);
         if (r.proof) {
           usedProof[r.proof.src] = true;

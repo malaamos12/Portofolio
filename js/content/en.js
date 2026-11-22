@@ -464,9 +464,9 @@ window.SITE_CONTENT = {
           mini: [
             ["Spent", "EGP 1,500"],
             ["Reached", "36,155"],
-            ["Sales", "15 subscriptions · ~EGP 900 each"],
+            ["Sales", "EGP 13,500"],
           ],
-          proof: { src: "i-mb19", cap: "Mohamed Samy, new offer: 63 chats at EGP 23.81 - 15 subscriptions sold" },
+          proof: { src: "i-mb19", cap: "Mohamed Samy, new offer: 63 chats at EGP 23.81 - 15 subscriptions sold, EGP 13,500 total" },
         },
       ],
     },

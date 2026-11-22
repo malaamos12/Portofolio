@@ -384,24 +384,27 @@ header.nav {
   font-size: 1.25rem;
 }
 .mini {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+  gap: 2px 10px;
   margin: 8px 0 0;
   padding-top: 12px;
   border-top: 1px solid var(--line);
 }
 .mini dt {
-  font-size: 0.7rem;
+  grid-row: 1;
+  font-size: 0.66rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--muted);
+  min-width: 0;
 }
 .mini dd {
+  grid-row: 2;
   margin: 0;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  white-space: nowrap;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 .proof {
   margin-top: auto;
@@ -2439,13 +2442,4 @@ html[lang="ar"] .mqg {
 .w-marquee .wres {
   display: none;
 }
-.w-marquee .wi .wi-res {
-  display: block;
-  position: static;
-  max-width: 100%;
-  border-radius: 0;
-  padding: 5px 10px;
-  font-size: 0.7rem;
-  inset-inline-start: auto;
-  bottom: auto;
-}
+
