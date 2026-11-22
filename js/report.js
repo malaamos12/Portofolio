@@ -9,6 +9,9 @@ const L = {
     k2: "Chats started with customers",
     k3: "Post interactions (likes, comments, shares)",
     k4: "Ad-level reach (summed, not unique people)",
+    k5: "Tracked sales + commission (EGP)",
+    k6: "Sales per chat on tracked campaigns",
+    knote: "Sales per chat is computed only from campaigns with reported sale counts: 93 sales from 552 fitness and retreat chats (9/64, 26/41, 11/181, 15/63, 20/138, 12/65). Real estate closed all 4 listed properties; the two land campaigns were engagement ads with no chat counts.",
     e1: "Best value",
     h2a: "Cheapest chats",
     s1: "Ads that started 10 or more chats, ranked by cost per chat. Lower is better.",
@@ -73,7 +76,7 @@ const L = {
     ],
     spentl: "spent",
     plain: (s, c, e, a, b) =>
-      `<b>In plain words.</b> Across 51 ads, EGP ${s} started ${c} chats with potential customers and drew ${e} reactions to posts. On average a chat cost EGP ${a}, but it ranged from under EGP 2 to over EGP ${b} depending on the offer and the audience. That is why testing matters more than simply spending more.`,
+      `<b>In plain words.</b> Across 51 ads, EGP ${s} started ${c} chats with potential customers and drew ${e} reactions to posts. On average a chat cost EGP ${a}, but it ranged from under EGP 2 to over EGP ${b} depending on the offer and the audience. That is why testing matters more than simply spending more. Tracked outcomes: <b>922,000 EGP</b> in sales and commission — 760K real-estate commission on 30.8M in closed deals and 162K in fitness and retreat sales. On campaigns with reported sale counts, 16.8% of chats ended in a sale (93 of 552).`,
   },
   ar: {
     back: "← البورتفوليو",
@@ -85,6 +88,9 @@ const L = {
     k2: "محادثة اتفتحت مع عملاء",
     k3: "تفاعل على البوستات (لايك وكومنت وشير)",
     k4: "الوصول (مجموع كل إعلان، مش ناس مختلفة)",
+    k5: "مبيعات وعمولات متسجلة (جنيه)",
+    k6: "نسبة البيع من المحادثة في الحملات المتتبعة",
+    knote: "نسبة البيع من المحادثة محسوبة بس على الحملات اللي ليها عدد مبيعات متسجل: 93 مبيعة من 552 محادثة فتنس وريتريت (9/64، 26/41، 11/181، 15/63، 20/138، 12/65). العقارات: الـ4 عقارات اتباعوا كلهم، وحملتا الأرض كانوا إعلانات تفاعل من غير عدد محادثات.",
     e1: "أحسن قيمة",
     h2a: "أرخص المحادثات",
     s1: "إعلانات جابت 10 محادثات أو أكتر، مترتبة بتكلفة المحادثة. كل ما قلّت كان أحسن.",
@@ -149,7 +155,7 @@ const L = {
     ],
     spentl: "اتصرف",
     plain: (s, c, e, a, b) =>
-      `<b>ببساطة.</b> في 51 إعلان، صرفنا ${s} جنيه وفتحنا ${c} محادثة مع ناس مهتمة وجِبنا ${e} تفاعل على البوستات. متوسط المحادثة طلع ${a} جنيه، بس الفرق كان كبير: من أقل من جنيهين لأكتر من ${b} جنيه حسب العرض والجمهور. عشان كده الاختبار أهم من إنك تصرف أكتر.`,
+      `<b>ببساطة.</b> في 51 إعلان، صرفنا ${s} جنيه وفتحنا ${c} محادثة مع ناس مهتمة وجِبنا ${e} تفاعل على البوستات. متوسط المحادثة طلع ${a} جنيه، بس الفرق كان كبير: من أقل من جنيهين لأكتر من ${b} جنيه حسب العرض والجمهور. عشان كده الاختبار أهم من إنك تصرف أكتر. النتايج المتسجلة: <b>922,000 جنيه</b> مبيعات وعمولات — 760 ألف عمولة عقارات على صفقات بـ30.8 مليون جنيه و162 ألف مبيعات فتنس وريتريت. وفي الحملات اللي عندها عدد مبيعات متسجل، 16.8% من المحادثات خلصت بمبيعة (93 من 552).`,
   },
 };
 const GN = { Other: "oth" };
