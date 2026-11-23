@@ -1421,6 +1421,11 @@ window.SITE_CONTENT = {
     "eyebrow": "آراء الناس",
     "quotes": [
       {
+        "name": "Rasha El Zaatry",
+        "q": "Mustafa, I truly appreciate your support and the great work we do together. I genuinely enjoy working with you because you understand my vision, and that makes our collaboration both smooth and productive. It’s always a pleasure working with you!",
+        "tag": "رأي عميلة"
+      },
+      {
         "cls": "me",
         "name": "أيه إل إكس العربية",
         "q": "جايزة التدريب المتميز في باي إت فورورد ٢٠٢٥، عن تدريب مجموعة محترفين ومساعدتهم يوصلوا لأقصى إمكانياتهم.",
