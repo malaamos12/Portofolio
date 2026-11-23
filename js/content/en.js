@@ -1421,6 +1421,11 @@ window.SITE_CONTENT = {
     "eyebrow": "What people say",
     "quotes": [
       {
+        "name": "Rasha El Zaatry",
+        "q": "Mustafa, I truly appreciate your support and the great work we do together. I genuinely enjoy working with you because you understand my vision, and that makes our collaboration both smooth and productive. It’s always a pleasure working with you!",
+        "tag": "Client testimonial"
+      },
+      {
         "cls": "me",
         "name": "ALX Arabia",
         "q": "Outstanding Coaching Award, Pay it Forward 2025, for coaching a group of professionals unlocking their full potential.",
