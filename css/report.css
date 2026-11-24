@@ -50,7 +50,7 @@ a {
 .wrap {
   max-width: none;
   margin: 0 auto;
-  padding: 0 clamp(24px, 4.5vw, 88px);
+  padding: 0 clamp(24px, 3.2vw, 96px);
 }
 #pg {
   position: fixed;

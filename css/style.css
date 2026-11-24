@@ -11,7 +11,7 @@
   --font-head: "Fraunces", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --max: none; /* content fills the screen */
-  --edge: clamp(24px, 4.5vw, 88px); /* side padding */
+  --edge: clamp(24px, 3.2vw, 96px); /* side padding */
 }
 * {
   box-sizing: border-box;
