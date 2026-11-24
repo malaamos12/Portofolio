@@ -2502,3 +2502,42 @@ html[lang="ar"] .mqg {
   display: none;
 }
 
+
+/* phones and small tablets: the floating buttons become a bottom bar so they never sit on top of text */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+  .fab {
+    inset-inline: 0;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: rgba(11, 11, 12, 0.96);
+    border-top: 1px solid var(--line);
+    backdrop-filter: blur(8px);
+  }
+  .fab .musicbtn,
+  .fab .wafloat,
+  .fab .dlbtn {
+    width: 46px;
+    height: 46px;
+  }
+  .fab .dld .dmenu {
+    top: auto;
+    bottom: calc(100% + 14px);
+    inset-inline-end: auto;
+    inset-inline-start: 50%;
+    transform: translateX(-50%) translateY(6px) scale(0.96);
+    transform-origin: bottom center;
+  }
+  [dir="rtl"] .fab .dld .dmenu {
+    transform-origin: bottom center;
+  }
+  .fab .dld:hover .dmenu,
+  .fab .dld:focus-within .dmenu {
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
