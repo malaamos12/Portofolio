@@ -12,6 +12,7 @@
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --max: none; /* content fills the screen */
   --edge: clamp(24px, 3.2vw, 96px); /* side padding */
+  --edge-end: var(--edge); /* end side; leaves room for the floating buttons on larger screens */
 }
 * {
   box-sizing: border-box;
@@ -43,7 +44,10 @@ a:hover {
 .wrap {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 var(--edge);
+  padding: 0 var(--edge-end) 0 var(--edge);
+}
+[dir="rtl"] .wrap {
+  padding: 0 var(--edge) 0 var(--edge-end);
 }
 .skip {
   position: absolute;
@@ -2297,6 +2301,11 @@ html[lang="ar"] .mqg {
   }
 }
 
+@media (min-width: 769px) {
+  :root {
+    --edge-end: max(var(--edge), 88px);
+  }
+}
 /* floating action stack: music, download, WhatsApp */
 .fab {
   position: fixed;
