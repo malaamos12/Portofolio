@@ -1,708 +1,288 @@
 window.SITE_CONTENT = {
-  "about": {
-    "eyebrow": "About",
-    "lead": "I started in social media in 2017 and have since worked in fitness, real estate, retail, food, art and community projects. I’m curious by habit, I follow trends closely, and I like building teams that enjoy their work. I’m studying Business at Ain Shams University and I work from Cairo.",
-    "title": "About me"
-  },
-  "calc": {
-    "assumed": "Assumed from benchmarks:",
-    "convLabel": "chat → customer",
-    "costPerChat": "cost per chat",
-    "costPerLead": "cost per lead",
-    "costPerSale": "cost per sale",
-    "countries": [
-      {
-        "cpm": 1.81,
-        "id": "eg",
-        "label": "Egypt"
-      },
-      {
-        "cpm": 12.01,
-        "id": "sa",
-        "label": "Saudi Arabia"
-      },
-      {
-        "cpm": 10,
-        "id": "ae",
-        "label": "United Arab Emirates"
-      },
-      {
-        "cpm": 8.07,
-        "id": "kw",
-        "label": "Kuwait"
-      },
-      {
-        "cpm": 12.67,
-        "id": "qa",
-        "label": "Qatar"
-      },
-      {
-        "cpm": 16.08,
-        "id": "us",
-        "label": "United States"
-      },
-      {
-        "cpm": 11.5,
-        "id": "gb",
-        "label": "United Kingdom"
-      },
-      {
-        "cpm": 10.5,
-        "id": "de",
-        "label": "Germany"
-      }
-    ],
-    "egpPerUsd": 48,
-    "eyebrow": "Try it yourself",
-    "fields": {
-      "budget": "Monthly ad budget (EGP)",
-      "country": "Your country",
-      "industry": "Your field",
-      "objective": "What counts as a result",
-      "price": "Average sale (EGP)"
-    },
-    "industries": [
-      {
-        "chat": [
-          1.7,
-          2.5
-        ],
-        "conv": [
-          2,
-          4
-        ],
-        "cpp": [
-          200,
-          600
-        ],
-        "id": "realestate",
-        "label": "Real estate",
-        "usCpl": 16.61
-      },
-      {
-        "chat": [
-          2.5,
-          6
-        ],
-        "conv": [
-          5,
-          10
-        ],
-        "cpp": [
-          15,
-          40
-        ],
-        "id": "food",
-        "label": "Restaurants & cafés",
-        "usCpl": 3.16
-      },
-      {
-        "chat": [
-          2,
-          20
-        ],
-        "conv": [
-          3,
-          6
-        ],
-        "cpp": [
-          60,
-          200
-        ],
-        "id": "fitness",
-        "label": "Fitness & wellness",
-        "usCpl": 52.98
-      },
-      {
-        "chat": [
-          4,
-          10
-        ],
-        "conv": [
-          4,
-          8
-        ],
-        "cpp": [
-          30,
-          90
-        ],
-        "id": "beauty",
-        "label": "Beauty & personal care",
-        "usCpl": 51.42
-      },
-      {
-        "chat": [
-          4,
-          8
-        ],
-        "conv": [
-          3,
-          6
-        ],
-        "cpp": [
-          80,
-          250
-        ],
-        "id": "education",
-        "label": "Education & courses",
-        "usCpl": 28.22
-      },
-      {
-        "chat": [
-          3,
-          8
-        ],
-        "conv": [
-          3,
-          7
-        ],
-        "cpp": [
-          40,
-          120
-        ],
-        "id": "retail",
-        "label": "E-commerce & retail",
-        "usCpl": 19.3
-      },
-      {
-        "chat": [
-          8,
-          20
-        ],
-        "conv": [
-          5,
-          10
-        ],
-        "cpp": [
-          60,
-          200
-        ],
-        "id": "health",
-        "label": "Clinics & healthcare",
-        "usCpl": 47.47
-      },
-      {
-        "chat": [
-          4,
-          12
-        ],
-        "conv": [
-          2,
-          5
-        ],
-        "cpp": [
-          50,
-          150
-        ],
-        "id": "other",
-        "label": "Something else",
-        "usCpl": 27.66
-      }
-    ],
-    "leadConvLabel": "lead → customer",
-    "note": "These are market benchmarks, not promises. Your real numbers depend on your product, your pricing, your season and your follow-up - some items will beat these, some won't. In a consultation, we'll tell you honestly what it'll take to hit them.",
-    "objectives": [
-      {
-        "id": "chat",
-        "label": "WhatsApp / Messenger chats"
-      },
-      {
-        "id": "lead",
-        "label": "Form leads"
-      },
-      {
-        "id": "sales",
-        "label": "Online sales (purchases)"
-      }
-    ],
-    "out": {
-      "cpa": "cost per customer (EGP)",
-      "cust": "customers",
-      "results": "chats / month",
-      "resultsLead": "leads / month",
-      "resultsSales": "sales / month",
-      "rev": "revenue (EGP)",
-      "roas": "return on ad spend",
-      "roi": "return after ad spend (before costs)"
-    },
-    "range": "range",
-    "sub": "Pick your field, your country, what counts as a result and your budget. The benchmark costs and conversion rates fill themselves in from 2025–2026 market data — you can’t set them, and that’s the point.",
-    "title": "What could a chat be worth?",
-    "usCpm": 16.08
-  },
-  "certsec": {
-    "chips": [
-      {
-        "org": "ALX Arabia",
-        "t": "Lead Coach",
-        "y": "2025"
-      },
-      {
-        "org": "ALX Arabia",
-        "t": "AICE (AI Career Essentials)",
-        "y": "2024"
-      }
-    ],
-    "chipsLabel": "More training",
-    "eyebrow": "Certificates",
-    "images": [
-      {
-        "alt": "Google Foundations of Digital Marketing and E-commerce certificate issued to Mostafa Alaa Mostafa via Coursera, July 2025",
-        "name": "Foundations of Digital Marketing and E-commerce",
-        "src": "assets/images/certs/google-cert.jpg?v=20261121",
-        "tag": "Google · Coursera, 2025"
-      },
-      {
-        "alt": "ITIDA Gigs freelance training program certificate issued to Mostafa Alaa",
-        "name": "ITIDA Gigs Freelance Training Program",
-        "src": "assets/images/certs/itida-cert.jpg?v=20261121",
-        "tag": "ITIDA & EYouth, 2025"
-      },
-      {
-        "alt": "Outstanding Coaching Award certificate presented to Mostafa Alaa by the Pay It Forward Club",
-        "name": "Outstanding Coaching Award, Pay It Forward 2025",
-        "src": "assets/images/certs/alx-award-cert.jpg?v=20261121",
-        "tag": "ALX Arabia"
-      }
-    ],
-    "sub": "Programs I completed, with the certificates to show for them.",
-    "title": "The paper behind the practice."
-  },
-  "compare": {
-    "guide": "Cost per chat for the 13 campaigns in my Ads Manager screenshots. Client names are hidden — tap a row to see the original screenshot. Lower is better.",
-    "rows": [
-      {
-        "cap": "Real estate, apartment: 1.67 EGP per chat, 122 conversations · 204 EGP",
-        "name": "Real estate · apartment",
-        "small": "122 chats · 204 EGP",
-        "src": "i-mb9",
-        "v": "1.67 EGP",
-        "w": 5.6
-      },
-      {
-        "cap": "Real estate, apartment: 2.16 EGP per chat, 644 conversations · 1,392 EGP",
-        "name": "Real estate · apartment (2nd campaign)",
-        "small": "644 chats · 1,392 EGP",
-        "src": "i-mb8",
-        "v": "2.16 EGP",
-        "w": 7.2
-      },
-      {
-        "cap": "Café, December: 2.46 EGP per chat, 67 conversations · 165 EGP",
-        "name": "Café · December offer",
-        "small": "67 chats · 165 EGP",
-        "src": "i-mb11",
-        "v": "2.46 EGP",
-        "w": 8.2
-      },
-      {
-        "cap": "Chat campaign: 2.87 EGP per chat, 194 conversations · 556 EGP",
-        "name": "Chat campaign (name hidden)",
-        "small": "194 chats · 556 EGP",
-        "src": "i-mb13",
-        "v": "2.87 EGP",
-        "w": 9.5
-      },
-      {
-        "cap": "Chat campaign: 3.07 EGP per chat, 228 conversations · 700 EGP",
-        "name": "Chat campaign (name hidden)",
-        "small": "228 chats · 700 EGP",
-        "src": "i-mb14",
-        "v": "3.07 EGP",
-        "w": 10.2
-      },
-      {
-        "cap": "Café, December: 6.01 EGP per chat, 90 conversations · 541 EGP",
-        "name": "Café · December offer (2)",
-        "small": "90 chats · 541 EGP",
-        "src": "i-mb10",
-        "v": "6.01 EGP",
-        "w": 20
-      },
-      {
-        "cap": "Chat campaign: 8.98 EGP per chat, 106 conversations · 952 EGP",
-        "name": "Chat campaign (name hidden)",
-        "small": "106 chats · 952 EGP",
-        "src": "i-mb1",
-        "v": "8.98 EGP",
-        "w": 29.9
-      },
-      {
-        "cap": "Chat campaign: 9.51 EGP per chat, 62 conversations · 589 EGP",
-        "name": "Chat campaign (name hidden)",
-        "small": "62 chats · 589 EGP",
-        "src": "i-mb12",
-        "v": "9.51 EGP",
-        "w": 31.6
-      },
-      {
-        "cap": "Fitness, yoga retreat: 16.33 EGP per chat, 65 conversations · 1,062 EGP",
-        "name": "Fitness · yoga retreat",
-        "small": "65 chats · 1,062 EGP",
-        "src": "i-mb15",
-        "v": "16.33 EGP",
-        "w": 54.3
-      },
-      {
-        "cap": "Chat campaign: 21.28 EGP per chat, 17 conversations · 362 EGP",
-        "name": "Chat campaign (name hidden)",
-        "small": "17 chats · 362 EGP",
-        "src": "i-mb6",
-        "v": "21.28 EGP",
-        "w": 70.8
-      },
-      {
-        "cap": "Chat campaign: 21.47 EGP per chat, 56 conversations · 1,203 EGP",
-        "name": "Chat campaign (name hidden)",
-        "small": "56 chats · 1,203 EGP",
-        "src": "i-mb17",
-        "v": "21.47 EGP",
-        "w": 71.4
-      },
-      {
-        "cap": "Chat campaign: 23.11 EGP per chat, 33 conversations · 763 EGP",
-        "name": "Chat campaign (name hidden)",
-        "small": "33 chats · 763 EGP",
-        "src": "i-mb4",
-        "v": "23.11 EGP",
-        "w": 76.9
-      },
-      {
-        "cap": "Fitness, trainer offer: 30.06 EGP per chat, 41 conversations · 1,232 EGP",
-        "name": "Fitness · trainer offer",
-        "small": "41 chats · 1,232 EGP",
-        "src": "i-mb5",
-        "v": "30.06 EGP",
-        "w": 100
-      }
-    ],
-    "title": "For the numbers people: every chat campaign, ranked by cost"
-  },
-  "contact": {
-    "call": "Book a free intro call",
-    "cv": "Download CV",
-    "eyebrow": "Contact",
-    "li": "LinkedIn",
-    "mail": "mostafalaadiab@gmail.com",
-    "pdf": "Download portfolio (PDF)",
-    "title": "Let’s talk",
-    "wa": "WhatsApp"
-  },
+  "lang": "en",
   "dir": "ltr",
-  "experience": {
-    "eyebrow": "Experience",
-    "items": [
-      {
-        "org": "ALX Arabia",
-        "role": "Marketing Mentor",
-        "time": "08/2024 – now"
-      },
-      {
-        "org": "Freelance",
-        "role": "Media Buyer Lead",
-        "time": "01/2024 – now"
-      },
-      {
-        "org": "Aqar Masr",
-        "role": "Media Buyer",
-        "time": "11/2024 – 02/2025"
-      },
-      {
-        "org": "Kapri Cafe",
-        "role": "Social Media Manager",
-        "time": "09/2024 – 03/2025"
-      },
-      {
-        "org": "Kemet",
-        "role": "Social Media Manager",
-        "time": "12/2019 – 11/2023"
-      },
-      {
-        "org": "7ENNA, Jamilah Accessories, Venus, Fitness Garage, Tuhfajyh Gallery and others",
-        "role": "Media buying and social media roles",
-        "time": "2017 – 2021"
-      }
-    ]
+  "meta": {
+    "title": "Mostafa Alaa | The Marketer Who Listens",
+    "description": "Marketing that starts with listening. Strategy, content, paid ads and training for businesses of any size, with real campaign results."
   },
-  "footer": {
-    "linkedin": "LinkedIn",
-    "text": "© 2026 Mostafa Alaa ·"
-  },
-  "gate": {
-    "ar": "العربية",
-    "en": "English",
-    "sub": "اختار لغتك",
-    "title": "Choose your language"
+  "nav": {
+    "skip": "Skip to work",
+    "work": "Work",
+    "mentor": "Mentorship",
+    "music": "Music",
+    "about": "About",
+    "contact": "Contact",
+    "langToggle": "العربية",
+    "download": "Download",
+    "dlCv": "CV",
+    "dlPortfolio": "Portfolio",
+    "langToggleHref": "ar/"
   },
   "hero": {
-    "ctaCall": "Book a free call",
-    "ctaCv": "Download CV",
-    "ctaPdf": "Download portfolio (PDF)",
-    "ctaWork": "See my work",
     "eyebrow": "The marketer who listens",
-    "imgAlt": "Portrait of Mostafa Alaa",
+    "titleHtml": "Marketing starts with \u003cem>listening\u003c/em>.",
     "lead": "Good marketing doesn’t start with a playbook. It starts with your customers — what they want, what they scroll past, what makes them buy. Listen to that and the strategy writes itself. It’s the same rule the saxophone teaches: listen first, then play.",
-    "titleHtml": "Marketing starts with <em>listening</em>."
+    "ctaCall": "Book a free call",
+    "ctaWork": "See my work",
+    "ctaPdf": "Download portfolio (PDF)",
+    "ctaCv": "Download CV",
+    "imgAlt": "Portrait of Mostafa Alaa"
   },
   "how": {
     "eyebrow": "How I work",
+    "title": "Three steps, every time.",
     "steps": [
       {
-        "d": "I start with your customers, your market and your goal. No money moves before that.",
         "n": "01",
-        "t": "Listen"
+        "t": "Listen",
+        "d": "I start with your customers, your market and your goal. No money moves before that."
       },
       {
-        "d": "Then a simple plan: who we talk to, what we say, where, and what it costs.",
         "n": "02",
-        "t": "Plan"
+        "t": "Plan",
+        "d": "Then a simple plan: who we talk to, what we say, where, and what it costs."
       },
       {
-        "d": "I make the content, run the campaigns, check the results and fix what isn’t working.",
         "n": "03",
-        "t": "Create"
+        "t": "Create",
+        "d": "I make the content, run the campaigns, check the results and fix what isn’t working."
       }
-    ],
-    "title": "Three steps, every time."
-  },
-  "lang": "en",
-  "lb": {
-    "close": "Close (Esc)",
-    "next": "Next →",
-    "prev": "← Prev"
-  },
-  "mentor": {
-    "decks": [
-      {
-        "items": [
-          "Why stories stick",
-          "Story frameworks: Hero’s Journey, PAS, BAB",
-          "Building a story bank"
-        ],
-        "tag": "Masterclass · 30 min",
-        "title": "Communication and Storytelling for Coaches"
-      },
-      {
-        "items": [
-          "Fixed vs growth mindset",
-          "Personal branding on LinkedIn, GitHub and X",
-          "A 30-second pitch, written and shared live"
-        ],
-        "tag": "Townhall",
-        "title": "Building a Growth Mindset"
-      },
-      {
-        "items": [
-          "Content strategy for Reels, Stories and posts",
-          "Targeting, carousel and video ads",
-          "Reading reach, clicks, saves and impressions"
-        ],
-        "tag": "Workshop",
-        "title": "Content Creation and Media Buying on Facebook and Instagram"
-      }
-    ],
-    "eyebrow": "Mentorship",
-    "stats": [
-      {
-        "count": 100,
-        "label": "hours of coaching",
-        "suf": "+"
-      },
-      {
-        "count": 12,
-        "label": "sessions",
-        "suf": "+"
-      },
-      {
-        "count": 500,
-        "label": "people coached",
-        "suf": "+"
-      }
-    ],
-    "sub": "I have been a marketing mentor at ALX Arabia since August 2024. My sessions cover digital marketing, storytelling and building a personal brand, and I design the learning paths for new marketers.",
-    "title": "I teach what I do.",
-    "videoNoteHtml": "ALX interview. If the player doesn’t load, <a href=\"https://drive.google.com/file/d/1Wv0x3hvg-vOhYCic1y9MMRWo699nI9nZ/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">open it in Google Drive</a>.",
-    "videoTitle": "ALX interview"
-  },
-  "meta": {
-    "description": "Marketing that starts with listening. Strategy, content, paid ads and training for businesses of any size, with real campaign results.",
-    "title": "Mostafa Alaa | The Marketer Who Listens"
+    ]
   },
   "metrics": {
+    "note": "Ad numbers come straight from Meta Ads Manager. Sales and commission are client-reported. The case studies below show what they mean in practice.",
     "items": [
       {
         "count": 1.04,
         "dec": 2,
-        "label": "ad impressions in a single account",
-        "suf": "M"
+        "suf": "M",
+        "label": "ad impressions in a single account"
       },
       {
         "count": 588,
         "dec": 0,
-        "label": "people reached in the same account",
-        "suf": "K"
+        "suf": "K",
+        "label": "people reached in the same account"
       },
       {
         "count": 1173,
         "dec": 0,
-        "label": "customer chats started on the trainers’ account",
-        "suf": ""
+        "suf": "",
+        "label": "customer chats started on the trainers’ account"
       },
       {
         "count": 922,
         "dec": 0,
-        "label": "in sales and commission attributed to the campaigns",
-        "suf": "K EGP"
+        "suf": "K EGP",
+        "label": "in sales and commission attributed to the campaigns"
       },
       {
         "count": 500,
         "dec": 0,
-        "label": "people I have coached",
-        "suf": "+"
+        "suf": "+",
+        "label": "people I have coached"
       }
-    ],
-    "note": "Ad numbers come straight from Meta Ads Manager. Sales and commission are client-reported. The case studies below show what they mean in practice."
+    ]
   },
-  "music": {
-    "eyebrow": "Away from work",
+  "services": {
+    "eyebrow": "Services",
+    "title": "Everything your brand needs, from one team.",
+    "sub": "I run the strategy and the ads myself. Behind me is a team of specialists I trust, so your brand gets everything from one place - one brief, one goal. Ask and I’ll show you what they’ve made.",
     "items": [
       {
-        "d": "A player hears the room before the first note. I try to hear the customer before the first ad.",
-        "t": "Listening"
+        "icon": "target",
+        "t": "Strategy",
+        "d": "A clear plan for who to talk to, what to say, where, and what it costs.",
+        "who": "me",
+        "whoLabel": "Mostafa"
       },
       {
-        "d": "Music has a structure and some freedom inside it. A campaign works the same way: a plan first, then quick tests and changes.",
-        "t": "Structure and room to improvise"
+        "icon": "ads",
+        "t": "Paid ads",
+        "d": "Meta, Google, TikTok, LinkedIn and X ads set up to bring real customers.",
+        "who": "me",
+        "whoLabel": "Mostafa"
       },
       {
-        "d": "A good note at the wrong moment still sounds wrong. A good offer at the wrong time does too.",
-        "t": "Timing"
+        "icon": "track",
+        "t": "Tracking and fixing",
+        "d": "I watch what works, stop what doesn’t, and explain it in simple language.",
+        "who": "me",
+        "whoLabel": "Mostafa"
       },
       {
-        "d": "Skill comes from repeating things. Testing and tuning campaigns is the same habit.",
-        "t": "Practice"
+        "icon": "training",
+        "t": "Training",
+        "d": "Workshops and coaching for teams and new marketers.",
+        "who": "me",
+        "whoLabel": "Mostafa"
+      },
+      {
+        "icon": "content",
+        "t": "Content",
+        "d": "Posts, reels and campaigns that sound like your brand, written by the content creators on my team.",
+        "who": "team",
+        "whoLabel": "My team"
+      },
+      {
+        "icon": "identity",
+        "t": "Brand identity",
+        "d": "Logo, colors and tone of voice — a brand people remember.",
+        "who": "team",
+        "whoLabel": "My team"
+      },
+      {
+        "icon": "design",
+        "t": "Design",
+        "d": "Posts, ads, print and everything in between.",
+        "who": "team",
+        "whoLabel": "My team"
+      },
+      {
+        "icon": "photo",
+        "t": "Photography & filming",
+        "d": "Shoots and video that make you look the part.",
+        "who": "team",
+        "whoLabel": "My team"
+      },
+      {
+        "icon": "production",
+        "t": "Production",
+        "d": "Full video production, from the idea to the final cut.",
+        "who": "team",
+        "whoLabel": "My team"
       }
-    ],
-    "title": "I play the saxophone."
+    ]
   },
-  "nav": {
-    "about": "About",
-    "contact": "Contact",
-    "dlCv": "CV",
-    "dlPortfolio": "Portfolio",
-    "download": "Download",
-    "langToggle": "العربية",
-    "langToggleHref": "ar/",
-    "mentor": "Mentorship",
-    "music": "Music",
-    "skip": "Skip to work",
-    "work": "Work"
-  },
-  "order": [
-    "hero",
-    "metrics",
-    "brands",
-    "explore",
-    "how",
-    "work",
-    "services",
-    "testimonials",
-    "certs",
-    "compare",
-    "posts",
-    "calc",
-    "reportsec",
-    "mentor",
-    "music",
-    "skills",
-    "about"
-  ],
-  "posts": {
-    "eyebrow": "Published posts",
-    "hint": "It scrolls on its own - touch it to pause. Tap a post to enlarge it.",
-    "items": [
+  "team": {
+    "eyebrow": "The team",
+    "members": [
       {
-        "alt": "Nefr Story Love of Amarna T-shirt launch post",
-        "cap": "Nefr Story · 27 Aug 2024: Love of Amarna T-shirt with a scannable story QR",
-        "id": "i-cc10",
-        "res": "Brand ads: 1,516 clicks · 0.47 EGP each",
-        "src": "assets/images/post-10.jpg"
+        "name": "Mohamed Diab",
+        "role": "Photography & filming · Production",
+        "link": "https://drive.google.com/drive/folders/1kmcrjT860MehN_CJILwxlE08FOGD42x-",
+        "linkLabel": "See his work",
+        "img": "assets/images/team/mohamed-diab.jpg"
       },
       {
-        "alt": "Kapri Cafe post from 27 November 2024",
-        "cap": "Kapri Cafe · 27 Nov 2024",
-        "id": "i-cc7",
-        "src": "assets/images/post-7.jpg"
+        "name": "Sama Abuelazm",
+        "role": "Design & identity",
+        "link": "https://www.behance.net/samaabuelazm",
+        "linkLabel": "See her work",
+        "img": "assets/images/team/sama-abuelazm.jpg"
       },
       {
-        "alt": "Kapri Cafe festive lights post from 19 December 2024",
-        "cap": "Kapri Cafe · 19 Dec 2024",
-        "id": "i-cc6",
-        "res": "Dec 19 campaign: 90 chats · 6.01 EGP each",
-        "src": "assets/images/post-6.jpg"
-      },
-      {
-        "alt": "Nefr Story hoodie launch post in Arabic",
-        "cap": "Nefr Story · 20 Dec 2024: hoodie launch with a story QR code",
-        "id": "i-cc9",
-        "res": "Brand ads: 1,516 clicks · 0.47 EGP each",
-        "src": "assets/images/post-9.jpg"
-      },
-      {
-        "alt": "Nefr Story hoodie post with a hooded figure at a temple",
-        "cap": "Nefr Story · 21 Dec 2024: hoodie post, priced at 799 EGP",
-        "id": "i-cc8",
-        "res": "Brand ads: 1,516 clicks · 0.47 EGP each",
-        "src": "assets/images/post-8.jpg"
-      },
-      {
-        "alt": "Kapri Cafe post from 22 December 2024",
-        "cap": "Kapri Cafe · 22 Dec 2024",
-        "id": "i-cc5",
-        "res": "December ads: 67–90 chats",
-        "src": "assets/images/post-5.jpg"
-      },
-      {
-        "alt": "Kapri Cafe New Year's Eve post",
-        "cap": "Kapri Cafe · 31 Dec 2024",
-        "id": "i-cc4",
-        "res": "December ads: 67–90 chats",
-        "src": "assets/images/post-4.jpg"
-      },
-      {
-        "alt": "Kapri Cafe post with festive lights",
-        "cap": "Kapri Cafe · 4 Jan 2025",
-        "id": "i-cc3",
-        "res": "December ads: 67–90 chats",
-        "src": "assets/images/post-3.jpg"
-      },
-      {
-        "alt": "Medium Platform carousel with Arabic mindful eating tips",
-        "cap": "Medium Platform: mindful-eating carousel (Arabic)",
-        "id": "i-cc2",
-        "src": "assets/images/post-2.jpg"
-      },
-      {
-        "alt": "Four Facebook posts: a trainer offer reel, a Medium carousel and two Kapri Cafe posts",
-        "cap": "Trainer New Year offer reel, Medium carousel and Kapri posts",
-        "id": "i-cc1",
-        "src": "assets/images/post-1.jpg"
+        "name": "Nada Nassar",
+        "role": "Content & social media",
+        "link": "https://drive.google.com/file/d/1UZ4nWcOcVgd63iEgcVj1_9HbKRDB9ywe/view",
+        "linkLabel": "See her work",
+        "img": "assets/images/team/nada-nassar.jpg"
       }
-    ],
-    "title": "Posts I made."
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "What people say",
+    "title": "Don’t take my word for it.",
+    "sub": "What my manager, teammates and trainees say, and the recognition my coaching work earned.",
+    "quotes": [
+      {
+        "q": "Mustafa, I truly appreciate your support and the great work we do together. I genuinely enjoy working with you because you understand my vision, and that makes our collaboration both smooth and productive. It’s always a pleasure working with you!",
+        "name": "Rasha El Zaatry",
+        "tag": "Client testimonial"
+      },
+      {
+        "q": "Outstanding Coaching Award, Pay it Forward 2025, for coaching a group of professionals unlocking their full potential.",
+        "name": "ALX Arabia",
+        "tag": "Lead Coach award",
+        "cls": "me"
+      },
+      {
+        "q": "It’s a truly well-deserved step. We’re already seeing the huge value you bring to the team ya Darsh, looking forward to achieving even more success together!!",
+        "name": "Amr Elsayed",
+        "tag": "Workforce Manager, Intelcia",
+        "img": {
+          "src": "assets/images/testimonials/amr-elsayed-linkedin.jpg",
+          "alt": "LinkedIn recommendation by Amr Elsayed (screenshot)"
+        }
+      },
+      {
+        "q": "His dedication, professionalism, and exceptional skills stood out immediately. He consistently delivered outstanding results and brought innovative solutions to challenges.",
+        "name": "Abdelrahman Moataz",
+        "tag": "Workforce scheduling & planning",
+        "img": {
+          "src": "assets/images/testimonials/moataz-linkedin.jpg",
+          "alt": "LinkedIn recommendation by Abdelrahman Moataz (screenshot)"
+        }
+      },
+      {
+        "q": "Mostafa is one of the greatest talents I’ve worked with: helpful, dedicated, with high attention to detail.",
+        "name": "Abdelrahman Khalid",
+        "tag": "Business Analysis & Solutions",
+        "img": {
+          "src": "assets/images/testimonials/khalid-linkedin.jpg",
+          "alt": "LinkedIn recommendation by Abdelrahman Khalid (screenshot)"
+        }
+      },
+      {
+        "q": "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
+        "name": "Amr A. Hussien",
+        "tag": "Pay It Forward bootcamp participant"
+      },
+      {
+        "q": "Thank you for sharing your insights at ALX Coaches’ Corner. This experience was truly rewarding.",
+        "name": "Batoul Allaithy",
+        "tag": "Webinar attendee, ALX Coaches’ Corner"
+      },
+      {
+        "q": "It was a pleasure meeting and learning from you all.",
+        "name": "Muhammad Bahauddin Al-Muzayan",
+        "tag": "Pay It Forward bootcamp participant"
+      },
+      {
+        "q": "Your expertise and passion for coaching truly shone through.",
+        "name": "Meran Hany",
+        "tag": "ALX Relationship Manager"
+      },
+      {
+        "q": "Very detailed and insightful sessions, especially in digital marketing and SEO. You made a notable impact.",
+        "name": "ALX Egypt",
+        "tag": "Community Coach feature",
+        "img": {
+          "src": "assets/images/testimonials/alx-coach-quote.jpg?v=20261121",
+          "alt": "ALX Egypt Community Coach graphic thanking Mostafa Alaa for detailed, insightful sessions"
+        }
+      },
+      {
+        "q": "I worked hand to hand alongside Mostafa. He’s a great person to learn from and he was the reason I joined the workforce in the first place.",
+        "name": "Mohamed Sabry",
+        "tag": "LinkedIn recommendation"
+      },
+      {
+        "q": "Mostafa was one of the best team members I’ve worked with, with an analytical mindset, critical thinking and communication skills",
+        "name": "Ahmed Abdin",
+        "tag": "LinkedIn recommendation"
+      },
+      {
+        "q": "From learners, to volunteers, to coaches, to role models, Ahmed and Mostafa show us exactly what it means to pay it forward.",
+        "name": "ALX Egypt Alumni Network",
+        "tag": "Success Story Highlight"
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Case studies.",
+    "sub": "Real campaigns, told as short stories: the goal, what I did, and exactly what came back. Client names are hidden where they must be; every number is from Ads Manager. The full breakdown sits under each story."
   },
   "projects": [
     {
-      "cover": {
-        "alt": "Modern residential buildings at dusk with warm windows lighting up",
-        "chip": "644 chats from a single campaign",
-        "src": "assets/images/cover-realestate.jpg?v=20261121"
-      },
-      "did": "I ran message campaigns and engagement campaigns, tried photos against video, and compared people in Mansoura with people across Egypt.",
-      "eyebrow": "Real estate",
-      "goal": "A property seller needed real buyer conversations for apartments in Faisal and land in Mansoura–Talkha, not just ad views.",
-      "guide": true,
       "id": "realestate",
+      "eyebrow": "Real estate",
+      "title": "Real Estate Apartments and Lands",
+      "goal": "A property seller needed real buyer conversations for apartments in Faisal and land in Mansoura–Talkha, not just ad views.",
+      "plain": "People looking for a flat or a plot of land messaged the seller directly. Each conversation cost about 2 EGP.",
+      "did": "I ran message campaigns and engagement campaigns, tried photos against video, and compared people in Mansoura with people across Egypt.",
+      "pres": "Buyers messaged for about 2 EGP a chat. The best campaign started 644 conversations for 1,392 EGP. All four properties sold: 760,000 EGP in commission on 30.8M EGP of apartments and land.",
       "kpis": [
         [
           "760K EGP",
@@ -721,15 +301,21 @@ window.SITE_CONTENT = {
           "reached by one ad"
         ]
       ],
+      "cover": {
+        "src": "assets/images/cover-realestate.jpg?v=20261121",
+        "alt": "Modern residential buildings at dusk with warm windows lighting up",
+        "chip": "644 chats from a single campaign"
+      },
+      "guide": true,
       "note": "Best ad in Mansoura–Talkha reached 165K people for 2,481.68 EGP.",
-      "plain": "People looking for a flat or a plot of land messaged the seller directly. Each conversation cost about 2 EGP.",
-      "pres": "Buyers messaged for about 2 EGP a chat. The best campaign started 644 conversations for 1,392 EGP. All four properties sold: 760,000 EGP in commission on 30.8M EGP of apartments and land.",
       "runs": [
         {
-          "eachL": "per chat",
-          "eachV": "2.16 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Faisal Apartment, 40 St",
           "heroN": "644",
+          "heroL": "chats started",
+          "eachV": "2.16 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -753,17 +339,17 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Faisal Apartment, 40 St: 644 chats at 2.16 EGP",
-            "src": "i-mb8"
-          },
-          "tag": "Chat ads",
-          "title": "Faisal Apartment, 40 St"
+            "src": "i-mb8",
+            "cap": "Faisal Apartment, 40 St: 644 chats at 2.16 EGP"
+          }
         },
         {
-          "eachL": "per chat",
-          "eachV": "1.67 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Faisal Apartment",
           "heroN": "122",
+          "heroL": "chats started",
+          "eachV": "1.67 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -787,17 +373,17 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Faisal Apartment: 122 chats at 1.67 EGP",
-            "src": "i-mb9"
-          },
-          "tag": "Chat ads",
-          "title": "Faisal Apartment"
+            "src": "i-mb9",
+            "cap": "Faisal Apartment: 122 chats at 1.67 EGP"
+          }
         },
         {
-          "eachL": "per interaction",
-          "eachV": "0.037 EGP",
-          "heroL": "post interactions",
+          "tag": "Interaction ads",
+          "title": "Mansoura–Talkha",
           "heroN": "19,156",
+          "heroL": "post interactions",
+          "eachV": "0.037 EGP",
+          "eachL": "per interaction",
           "mini": [
             [
               "Spent",
@@ -821,17 +407,17 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Mansoura–Talkha: 19,156 interactions at 0.037 EGP",
-            "src": "i-mb3"
-          },
-          "tag": "Interaction ads",
-          "title": "Mansoura–Talkha"
+            "src": "i-mb3",
+            "cap": "Mansoura–Talkha: 19,156 interactions at 0.037 EGP"
+          }
         },
         {
-          "eachL": "per interaction",
-          "eachV": "0.72 EGP",
-          "heroL": "post interactions",
+          "tag": "Interaction ads",
+          "title": "Mansoura–Talkha, new design",
           "heroN": "618",
+          "heroL": "post interactions",
+          "eachV": "0.72 EGP",
+          "eachL": "per interaction",
           "mini": [
             [
               "Spent",
@@ -855,26 +441,20 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Mansoura–Talkha new design: 618 interactions at 0.72 EGP",
-            "src": "i-mb2"
-          },
-          "tag": "Interaction ads",
-          "title": "Mansoura–Talkha, new design"
+            "src": "i-mb2",
+            "cap": "Mansoura–Talkha new design: 618 interactions at 0.72 EGP"
+          }
         }
-      ],
-      "title": "Real Estate Apartments and Lands"
+      ]
     },
     {
-      "cover": {
-        "alt": "Facebook reel with a trainer offering six months free",
-        "chip": "A New Year offer for one of the trainers",
-        "src": "assets/images/cover-fitness.jpg?v=20261121"
-      },
-      "did": "I tried discount offers, 3-month plans, Ramadan and Eid campaigns, posters, carousels and videos, lookalike audiences, and Facebook against Instagram.",
-      "eyebrow": "Fitness &amp; wellness",
-      "goal": "Five fitness trainers and a yoga retreat needed to know which offers and audiences actually bring paying clients.",
-      "guide": true,
       "id": "fitness",
+      "eyebrow": "Fitness &amp; wellness",
+      "title": "Five trainers, one retreat, one question",
+      "goal": "Five fitness trainers and a yoga retreat needed to know which offers and audiences actually bring paying clients.",
+      "plain": "Five trainers, a retreat in Aswan, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under 2 to over 50 EGP and a playbook that kept working.",
+      "did": "I tried discount offers, 3-month plans, Ramadan and Eid campaigns, posters, carousels and videos, lookalike audiences, and Facebook against Instagram.",
+      "pres": "About 23.1K EGP spent turned into 1,173 chats and 55K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer. Six campaigns have sales attached: 162,000 EGP in subscriptions and retreat spots.",
       "kpis": [
         [
           "162K EGP",
@@ -893,15 +473,21 @@ window.SITE_CONTENT = {
           "post interactions"
         ]
       ],
+      "cover": {
+        "src": "assets/images/cover-fitness.jpg?v=20261121",
+        "alt": "Facebook reel with a trainer offering six months free",
+        "chip": "A New Year offer for one of the trainers"
+      },
+      "guide": true,
       "note": "One Ramadan offer video reached 41,706 people for US$20.40 (March 2025). On ads with 10 or more chats, the cost per chat ran from 1.85 to 55 EGP",
-      "plain": "Five trainers, a retreat in Aswan, one question: what actually makes someone start a chat? We tested offers, hooks and audiences until the numbers talked - chats from under 2 to over 50 EGP and a playbook that kept working.",
-      "pres": "About 23.1K EGP spent turned into 1,173 chats and 55K post interactions between Nov 2024 and Nov 2026, plus a clear playbook for each trainer. Six campaigns have sales attached: 162,000 EGP in subscriptions and retreat spots.",
       "runs": [
         {
-          "eachL": "per chat",
-          "eachV": "1.85 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Trainer 1, refreshment",
           "heroN": "64",
+          "heroL": "chats started",
+          "eachV": "1.85 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -921,18 +507,18 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Refreshment (Trainer 1): 4,205 interactions at 0.028 EGP each",
-            "src": "i-mb20"
+            "src": "i-mb20",
+            "cap": "Refreshment (Trainer 1): 4,205 interactions at 0.028 EGP each"
           },
-          "report": true,
-          "tag": "Chat ads",
-          "title": "Trainer 1, refreshment"
+          "report": true
         },
         {
-          "eachL": "per chat",
-          "eachV": "10.11 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Trainer 5, 50% offer",
           "heroN": "138",
+          "heroL": "chats started",
+          "eachV": "10.11 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -951,15 +537,15 @@ window.SITE_CONTENT = {
               "1,252"
             ]
           ],
-          "report": true,
-          "tag": "Chat ads",
-          "title": "Trainer 5, 50% offer"
+          "report": true
         },
         {
-          "eachL": "per interaction",
-          "eachV": "0.033 EGP",
-          "heroL": "post interactions",
+          "tag": "Interaction ads",
+          "title": "Trainer 1, 2nd try",
           "heroN": "7,546",
+          "heroL": "post interactions",
+          "eachV": "0.033 EGP",
+          "eachL": "per interaction",
           "mini": [
             [
               "Spent",
@@ -970,15 +556,15 @@ window.SITE_CONTENT = {
               "19,606"
             ]
           ],
-          "report": true,
-          "tag": "Interaction ads",
-          "title": "Trainer 1, 2nd try"
+          "report": true
         },
         {
-          "eachL": "per interaction",
-          "eachV": "0.72 EGP",
-          "heroL": "post interactions",
+          "tag": "Interaction ads",
+          "title": "Trainer 1, 2nd episode",
           "heroN": "239",
+          "heroL": "post interactions",
+          "eachV": "0.72 EGP",
+          "eachL": "per interaction",
           "mini": [
             [
               "Spent",
@@ -994,17 +580,17 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Trainer 1, 2nd episode: 239 interactions at 0.72 EGP",
-            "src": "i-mb7"
-          },
-          "tag": "Interaction ads",
-          "title": "Trainer 1, 2nd episode"
+            "src": "i-mb7",
+            "cap": "Trainer 1, 2nd episode: 239 interactions at 0.72 EGP"
+          }
         },
         {
-          "eachL": "per chat",
-          "eachV": "16.33 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Yoga retreat, Aswan",
           "heroN": "65",
+          "heroL": "chats started",
+          "eachV": "16.33 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -1024,17 +610,17 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Yoga retreat: 65 chats at 16.33 EGP",
-            "src": "i-mb15"
-          },
-          "tag": "Chat ads",
-          "title": "Yoga retreat, Aswan"
+            "src": "i-mb15",
+            "cap": "Yoga retreat: 65 chats at 16.33 EGP"
+          }
         },
         {
-          "eachL": "per chat",
-          "eachV": "30.06 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Trainer 2, new offer",
           "heroN": "41",
+          "heroL": "chats started",
+          "eachV": "30.06 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -1054,17 +640,17 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Trainer 2, new offer: 41 chats at 30.06 EGP",
-            "src": "i-mb5"
-          },
-          "tag": "Chat ads",
-          "title": "Trainer 2, new offer"
+            "src": "i-mb5",
+            "cap": "Trainer 2, new offer: 41 chats at 30.06 EGP"
+          }
         },
         {
-          "eachL": "per chat",
-          "eachV": "7.72 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Trainer 3",
           "heroN": "181",
+          "heroL": "chats started",
+          "eachV": "7.72 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -1084,17 +670,17 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Trainer 3: 181 chats at 7.72 EGP each",
-            "src": "i-mb18"
-          },
-          "tag": "Chat ads",
-          "title": "Trainer 3"
+            "src": "i-mb18",
+            "cap": "Trainer 3: 181 chats at 7.72 EGP each"
+          }
         },
         {
-          "eachL": "per chat",
-          "eachV": "23.81 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Trainer 4, new offer",
           "heroN": "63",
+          "heroL": "chats started",
+          "eachV": "23.81 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -1110,26 +696,20 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Trainer 4, new offer: 63 chats at 23.81 EGP - 15 subscriptions sold, 13,500 EGP total",
-            "src": "i-mb19"
-          },
-          "tag": "Chat ads",
-          "title": "Trainer 4, new offer"
+            "src": "i-mb19",
+            "cap": "Trainer 4, new offer: 63 chats at 23.81 EGP - 15 subscriptions sold, 13,500 EGP total"
+          }
         }
-      ],
-      "title": "Five trainers, one retreat, one question"
+      ]
     },
     {
-      "cover": {
-        "alt": "Kapri Café logo - white brush lettering in a coffee-cup ring on dark slate",
-        "chip": "Kapri Café",
-        "src": "assets/images/cover-kapri.jpg?v=20261122"
-      },
-      "did": "I planned the content calendars (reels, carousels, photo sets and YouTube videos) for Kapri Cafe, the Medium mental health platform and the Al-Noon Foundation for Family Care.",
-      "eyebrow": "Content &amp; community",
-      "goal": "Three brands needed steady, on-brand content every week, and the café also wanted people through the door.",
-      "guide": true,
       "id": "content",
+      "eyebrow": "Content &amp; community",
+      "title": "A café, a mental health platform and an NGO",
+      "goal": "Three brands needed steady, on-brand content every week, and the café also wanted people through the door.",
+      "plain": "Three very different brands, all posting on a schedule with Arabic captions. For the café I also ran campaigns to get people through the door.",
+      "did": "I planned the content calendars (reels, carousels, photo sets and YouTube videos) for Kapri Cafe, the Medium mental health platform and the Al-Noon Foundation for Family Care.",
+      "pres": "Kapri's December campaigns brought 67 and 90 chats at 2.46 EGP and 6.01 EGP each, and the café reports its income grew about 30% that month. Al-Noon published 18 posts on 5 platforms in two months.",
       "kpis": [
         [
           "+30%",
@@ -1148,15 +728,21 @@ window.SITE_CONTENT = {
           "platforms covered"
         ]
       ],
+      "cover": {
+        "src": "assets/images/cover-kapri.jpg?v=20261122",
+        "alt": "Kapri Café logo - white brush lettering in a coffee-cup ring on dark slate",
+        "chip": "Kapri Café"
+      },
+      "guide": true,
       "note": "The posts themselves are in the gallery below.",
-      "plain": "Three very different brands, all posting on a schedule with Arabic captions. For the café I also ran campaigns to get people through the door.",
-      "pres": "Kapri's December campaigns brought 67 and 90 chats at 2.46 EGP and 6.01 EGP each, and the café reports its income grew about 30% that month. Al-Noon published 18 posts on 5 platforms in two months.",
       "runs": [
         {
-          "eachL": "per chat",
-          "eachV": "2.46 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Kapri Cafe, Dec 8",
           "heroN": "67",
+          "heroL": "chats started",
+          "eachV": "2.46 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -1172,17 +758,17 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Kapri Cafe Dec 8: 67 chats at 2.46 EGP",
-            "src": "i-mb11"
-          },
-          "tag": "Chat ads",
-          "title": "Kapri Cafe, Dec 8"
+            "src": "i-mb11",
+            "cap": "Kapri Cafe Dec 8: 67 chats at 2.46 EGP"
+          }
         },
         {
-          "eachL": "per chat",
-          "eachV": "6.01 EGP",
-          "heroL": "chats started",
+          "tag": "Chat ads",
+          "title": "Kapri Cafe, Dec 19",
           "heroN": "90",
+          "heroL": "chats started",
+          "eachV": "6.01 EGP",
+          "eachL": "per chat",
           "mini": [
             [
               "Spent",
@@ -1198,26 +784,20 @@ window.SITE_CONTENT = {
             ]
           ],
           "proof": {
-            "cap": "Kapri Cafe Dec 19: 90 chats at 6.01 EGP",
-            "src": "i-mb10"
-          },
-          "tag": "Chat ads",
-          "title": "Kapri Cafe, Dec 19"
+            "src": "i-mb10",
+            "cap": "Kapri Cafe Dec 19: 90 chats at 6.01 EGP"
+          }
         }
-      ],
-      "title": "A café, a mental health platform and an NGO"
+      ]
     },
     {
-      "cover": {
-        "alt": "Nefr Story logo - gold winged figure with the brand name in English and Arabic",
-        "chip": "Nefr Story",
-        "src": "assets/images/cover-nefr.jpg?v=20261122"
-      },
-      "did": "I wrote the launch copy, designed the pieces (each one carries a QR code that opens its story), and ran video, photo and discount ads.",
-      "eyebrow": "Clothing brand campaign",
-      "goal": "Launch an ancient-Egypt-inspired clothing brand from zero, on almost no budget.",
-      "guide": true,
       "id": "nefr",
+      "eyebrow": "Clothing brand campaign",
+      "title": "Nefr Story",
+      "goal": "Launch an ancient-Egypt-inspired clothing brand from zero, on almost no budget.",
+      "plain": "An ancient-Egypt-inspired clothing brand. On a small budget, one ad brought about 1,500 clicks for under 710 EGP.",
+      "did": "I wrote the launch copy, designed the pieces (each one carries a QR code that opens its story), and ran video, photo and discount ads.",
+      "pres": "One ad reached 32,621 people and brought 1,516 clicks for about 710 EGP, or 0.47 EGP a click.",
       "kpis": [
         [
           "32,621",
@@ -1232,16 +812,21 @@ window.SITE_CONTENT = {
           "cost per click"
         ]
       ],
+      "cover": {
+        "src": "assets/images/cover-nefr.jpg?v=20261122",
+        "alt": "Nefr Story logo - gold winged figure with the brand name in English and Arabic",
+        "chip": "Nefr Story"
+      },
+      "guide": true,
       "note": "The Instagram 30%-off ad had a 3.46% click rate.",
-      "plain": "An ancient-Egypt-inspired clothing brand. On a small budget, one ad brought about 1,500 clicks for under 710 EGP.",
-      "pres": "One ad reached 32,621 people and brought 1,516 clicks for about 710 EGP, or 0.47 EGP a click.",
       "runs": [
         {
-          "eachL": "per click",
-          "eachV": "0.47 EGP",
-          "exp": "From the Ads Manager report",
-          "heroL": "link clicks",
+          "tag": "Click ads",
+          "title": "Nefr Afro",
           "heroN": "1,516",
+          "heroL": "link clicks",
+          "eachV": "0.47 EGP",
+          "eachL": "per click",
           "mini": [
             [
               "Spent",
@@ -1256,259 +841,674 @@ window.SITE_CONTENT = {
               "3.57%"
             ]
           ],
-          "tag": "Click ads",
-          "title": "Nefr Afro"
+          "exp": "From the Ads Manager report"
         }
-      ],
-      "title": "Nefr Story"
+      ]
     }
   ],
-  "reportsec": {
-    "cta": "Open the report ↗",
-    "sub": "The full campaign report lists every ad with its cost and results. The first page sums it up in plain language.",
-    "title": "Want every number?"
+  "compare": {
+    "title": "For the numbers people: every chat campaign, ranked by cost",
+    "guide": "Cost per chat for the 13 campaigns in my Ads Manager screenshots. Client names are hidden — tap a row to see the original screenshot. Lower is better.",
+    "rows": [
+      {
+        "name": "Real estate · apartment",
+        "small": "122 chats · 204 EGP",
+        "w": 5.6,
+        "v": "1.67 EGP",
+        "src": "i-mb9",
+        "cap": "Real estate, apartment: 1.67 EGP per chat, 122 conversations · 204 EGP"
+      },
+      {
+        "name": "Real estate · apartment (2nd campaign)",
+        "small": "644 chats · 1,392 EGP",
+        "w": 7.2,
+        "v": "2.16 EGP",
+        "src": "i-mb8",
+        "cap": "Real estate, apartment: 2.16 EGP per chat, 644 conversations · 1,392 EGP"
+      },
+      {
+        "name": "Café · December offer",
+        "small": "67 chats · 165 EGP",
+        "w": 8.2,
+        "v": "2.46 EGP",
+        "src": "i-mb11",
+        "cap": "Café, December: 2.46 EGP per chat, 67 conversations · 165 EGP"
+      },
+      {
+        "name": "Chat campaign (name hidden)",
+        "small": "194 chats · 556 EGP",
+        "w": 9.5,
+        "v": "2.87 EGP",
+        "src": "i-mb13",
+        "cap": "Chat campaign: 2.87 EGP per chat, 194 conversations · 556 EGP"
+      },
+      {
+        "name": "Chat campaign (name hidden)",
+        "small": "228 chats · 700 EGP",
+        "w": 10.2,
+        "v": "3.07 EGP",
+        "src": "i-mb14",
+        "cap": "Chat campaign: 3.07 EGP per chat, 228 conversations · 700 EGP"
+      },
+      {
+        "name": "Café · December offer (2)",
+        "small": "90 chats · 541 EGP",
+        "w": 20,
+        "v": "6.01 EGP",
+        "src": "i-mb10",
+        "cap": "Café, December: 6.01 EGP per chat, 90 conversations · 541 EGP"
+      },
+      {
+        "name": "Chat campaign (name hidden)",
+        "small": "106 chats · 952 EGP",
+        "w": 29.9,
+        "v": "8.98 EGP",
+        "src": "i-mb1",
+        "cap": "Chat campaign: 8.98 EGP per chat, 106 conversations · 952 EGP"
+      },
+      {
+        "name": "Chat campaign (name hidden)",
+        "small": "62 chats · 589 EGP",
+        "w": 31.6,
+        "v": "9.51 EGP",
+        "src": "i-mb12",
+        "cap": "Chat campaign: 9.51 EGP per chat, 62 conversations · 589 EGP"
+      },
+      {
+        "name": "Fitness · yoga retreat",
+        "small": "65 chats · 1,062 EGP",
+        "w": 54.3,
+        "v": "16.33 EGP",
+        "src": "i-mb15",
+        "cap": "Fitness, yoga retreat: 16.33 EGP per chat, 65 conversations · 1,062 EGP"
+      },
+      {
+        "name": "Chat campaign (name hidden)",
+        "small": "17 chats · 362 EGP",
+        "w": 70.8,
+        "v": "21.28 EGP",
+        "src": "i-mb6",
+        "cap": "Chat campaign: 21.28 EGP per chat, 17 conversations · 362 EGP"
+      },
+      {
+        "name": "Chat campaign (name hidden)",
+        "small": "56 chats · 1,203 EGP",
+        "w": 71.4,
+        "v": "21.47 EGP",
+        "src": "i-mb17",
+        "cap": "Chat campaign: 21.47 EGP per chat, 56 conversations · 1,203 EGP"
+      },
+      {
+        "name": "Chat campaign (name hidden)",
+        "small": "33 chats · 763 EGP",
+        "w": 76.9,
+        "v": "23.11 EGP",
+        "src": "i-mb4",
+        "cap": "Chat campaign: 23.11 EGP per chat, 33 conversations · 763 EGP"
+      },
+      {
+        "name": "Fitness · trainer offer",
+        "small": "41 chats · 1,232 EGP",
+        "w": 100,
+        "v": "30.06 EGP",
+        "src": "i-mb5",
+        "cap": "Fitness, trainer offer: 30.06 EGP per chat, 41 conversations · 1,232 EGP"
+      }
+    ]
   },
-  "services": {
-    "eyebrow": "Services",
+  "posts": {
+    "eyebrow": "Published posts",
+    "title": "Posts I made.",
+    "hint": "It scrolls on its own - touch it to pause. Tap a post to enlarge it.",
     "items": [
       {
-        "d": "A clear plan for who to talk to, what to say, where, and what it costs.",
-        "icon": "target",
-        "t": "Strategy",
-        "who": "me",
-        "whoLabel": "Mostafa"
+        "src": "assets/images/post-10.jpg",
+        "id": "i-cc10",
+        "alt": "Nefr Story Love of Amarna T-shirt launch post",
+        "cap": "Nefr Story · 27 Aug 2024: Love of Amarna T-shirt with a scannable story QR",
+        "res": "Brand ads: 1,516 clicks · 0.47 EGP each"
       },
       {
-        "d": "Meta, Google, TikTok, LinkedIn and X ads set up to bring real customers.",
-        "icon": "ads",
-        "t": "Paid ads",
-        "who": "me",
-        "whoLabel": "Mostafa"
+        "src": "assets/images/post-7.jpg",
+        "id": "i-cc7",
+        "alt": "Kapri Cafe post from 27 November 2024",
+        "cap": "Kapri Cafe · 27 Nov 2024"
       },
       {
-        "d": "I watch what works, stop what doesn’t, and explain it in simple language.",
-        "icon": "track",
-        "t": "Tracking and fixing",
-        "who": "me",
-        "whoLabel": "Mostafa"
+        "src": "assets/images/post-6.jpg",
+        "id": "i-cc6",
+        "alt": "Kapri Cafe festive lights post from 19 December 2024",
+        "cap": "Kapri Cafe · 19 Dec 2024",
+        "res": "Dec 19 campaign: 90 chats · 6.01 EGP each"
       },
       {
-        "d": "Workshops and coaching for teams and new marketers.",
-        "icon": "training",
-        "t": "Training",
-        "who": "me",
-        "whoLabel": "Mostafa"
+        "src": "assets/images/post-9.jpg",
+        "id": "i-cc9",
+        "alt": "Nefr Story hoodie launch post in Arabic",
+        "cap": "Nefr Story · 20 Dec 2024: hoodie launch with a story QR code",
+        "res": "Brand ads: 1,516 clicks · 0.47 EGP each"
       },
       {
-        "d": "Posts, reels and campaigns that sound like your brand, written by the content creators on my team.",
-        "icon": "content",
-        "t": "Content",
-        "who": "team",
-        "whoLabel": "My team"
+        "src": "assets/images/post-8.jpg",
+        "id": "i-cc8",
+        "alt": "Nefr Story hoodie post with a hooded figure at a temple",
+        "cap": "Nefr Story · 21 Dec 2024: hoodie post, priced at 799 EGP",
+        "res": "Brand ads: 1,516 clicks · 0.47 EGP each"
       },
       {
-        "d": "Logo, colors and tone of voice — a brand people remember.",
-        "icon": "identity",
-        "t": "Brand identity",
-        "who": "team",
-        "whoLabel": "My team"
+        "src": "assets/images/post-5.jpg",
+        "id": "i-cc5",
+        "alt": "Kapri Cafe post from 22 December 2024",
+        "cap": "Kapri Cafe · 22 Dec 2024",
+        "res": "December ads: 67–90 chats"
       },
       {
-        "d": "Posts, ads, print and everything in between.",
-        "icon": "design",
-        "t": "Design",
-        "who": "team",
-        "whoLabel": "My team"
+        "src": "assets/images/post-4.jpg",
+        "id": "i-cc4",
+        "alt": "Kapri Cafe New Year's Eve post",
+        "cap": "Kapri Cafe · 31 Dec 2024",
+        "res": "December ads: 67–90 chats"
       },
       {
-        "d": "Shoots and video that make you look the part.",
-        "icon": "photo",
-        "t": "Photography & filming",
-        "who": "team",
-        "whoLabel": "My team"
+        "src": "assets/images/post-3.jpg",
+        "id": "i-cc3",
+        "alt": "Kapri Cafe post with festive lights",
+        "cap": "Kapri Cafe · 4 Jan 2025",
+        "res": "December ads: 67–90 chats"
       },
       {
-        "d": "Full video production, from the idea to the final cut.",
-        "icon": "production",
-        "t": "Production",
-        "who": "team",
-        "whoLabel": "My team"
+        "src": "assets/images/post-2.jpg",
+        "id": "i-cc2",
+        "alt": "Medium Platform carousel with Arabic mindful eating tips",
+        "cap": "Medium Platform: mindful-eating carousel (Arabic)"
+      },
+      {
+        "src": "assets/images/post-1.jpg",
+        "id": "i-cc1",
+        "alt": "Four Facebook posts: a trainer offer reel, a Medium carousel and two Kapri Cafe posts",
+        "cap": "Trainer New Year offer reel, Medium carousel and Kapri posts"
+      }
+    ]
+  },
+  "calc": {
+    "eyebrow": "Try it yourself",
+    "title": "What could a chat be worth?",
+    "sub": "Pick your field, your country, what counts as a result and your budget. The benchmark costs and conversion rates fill themselves in from 2025–2026 market data — you can’t set them, and that’s the point.",
+    "fields": {
+      "industry": "Your field",
+      "country": "Your country",
+      "objective": "What counts as a result",
+      "budget": "Monthly ad budget (EGP)",
+      "price": "Average sale (EGP)"
+    },
+    "objectives": [
+      {
+        "id": "chat",
+        "label": "WhatsApp / Messenger chats"
+      },
+      {
+        "id": "lead",
+        "label": "Form leads"
+      },
+      {
+        "id": "sales",
+        "label": "Online sales (purchases)"
       }
     ],
-    "sub": "I run the strategy and the ads myself. Behind me is a team of specialists I trust, so your brand gets everything from one place - one brief, one goal. Ask and I’ll show you what they’ve made.",
-    "title": "Everything your brand needs, from one team."
+    "industries": [
+      {
+        "id": "realestate",
+        "label": "Real estate",
+        "chat": [
+          1.7,
+          2.5
+        ],
+        "conv": [
+          2,
+          4
+        ],
+        "usCpl": 16.61,
+        "cpp": [
+          200,
+          600
+        ]
+      },
+      {
+        "id": "food",
+        "label": "Restaurants & cafés",
+        "chat": [
+          2.5,
+          6
+        ],
+        "conv": [
+          5,
+          10
+        ],
+        "usCpl": 3.16,
+        "cpp": [
+          15,
+          40
+        ]
+      },
+      {
+        "id": "fitness",
+        "label": "Fitness & wellness",
+        "chat": [
+          2,
+          20
+        ],
+        "conv": [
+          3,
+          6
+        ],
+        "usCpl": 52.98,
+        "cpp": [
+          60,
+          200
+        ]
+      },
+      {
+        "id": "beauty",
+        "label": "Beauty & personal care",
+        "chat": [
+          4,
+          10
+        ],
+        "conv": [
+          4,
+          8
+        ],
+        "usCpl": 51.42,
+        "cpp": [
+          30,
+          90
+        ]
+      },
+      {
+        "id": "education",
+        "label": "Education & courses",
+        "chat": [
+          4,
+          8
+        ],
+        "conv": [
+          3,
+          6
+        ],
+        "usCpl": 28.22,
+        "cpp": [
+          80,
+          250
+        ]
+      },
+      {
+        "id": "retail",
+        "label": "E-commerce & retail",
+        "chat": [
+          3,
+          8
+        ],
+        "conv": [
+          3,
+          7
+        ],
+        "usCpl": 19.3,
+        "cpp": [
+          40,
+          120
+        ]
+      },
+      {
+        "id": "health",
+        "label": "Clinics & healthcare",
+        "chat": [
+          8,
+          20
+        ],
+        "conv": [
+          5,
+          10
+        ],
+        "usCpl": 47.47,
+        "cpp": [
+          60,
+          200
+        ]
+      },
+      {
+        "id": "other",
+        "label": "Something else",
+        "chat": [
+          4,
+          12
+        ],
+        "conv": [
+          2,
+          5
+        ],
+        "usCpl": 27.66,
+        "cpp": [
+          50,
+          150
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "id": "eg",
+        "label": "Egypt",
+        "cpm": 1.81
+      },
+      {
+        "id": "sa",
+        "label": "Saudi Arabia",
+        "cpm": 12.01
+      },
+      {
+        "id": "ae",
+        "label": "United Arab Emirates",
+        "cpm": 10
+      },
+      {
+        "id": "kw",
+        "label": "Kuwait",
+        "cpm": 8.07
+      },
+      {
+        "id": "qa",
+        "label": "Qatar",
+        "cpm": 12.67
+      },
+      {
+        "id": "us",
+        "label": "United States",
+        "cpm": 16.08
+      },
+      {
+        "id": "gb",
+        "label": "United Kingdom",
+        "cpm": 11.5
+      },
+      {
+        "id": "de",
+        "label": "Germany",
+        "cpm": 10.5
+      }
+    ],
+    "usCpm": 16.08,
+    "egpPerUsd": 48,
+    "assumed": "Assumed from benchmarks:",
+    "costPerChat": "cost per chat",
+    "costPerLead": "cost per lead",
+    "costPerSale": "cost per sale",
+    "convLabel": "chat → customer",
+    "leadConvLabel": "lead → customer",
+    "range": "range",
+    "out": {
+      "results": "chats / month",
+      "resultsLead": "leads / month",
+      "resultsSales": "sales / month",
+      "roi": "return after ad spend (before costs)",
+      "cust": "customers",
+      "rev": "revenue (EGP)",
+      "cpa": "cost per customer (EGP)",
+      "roas": "return on ad spend"
+    },
+    "note": "These are market benchmarks, not promises. Your real numbers depend on your product, your pricing, your season and your follow-up - some items will beat these, some won't. In a consultation, we'll tell you honestly what it'll take to hit them."
   },
-  "shared": {
-    "caseLabel": "Case",
-    "guideHtml": "<b>Quick guide.</b> A <b>chat</b> is someone messaging the business after seeing the ad. <b>Reached</b> is how many people saw it. <b>CPC</b> is what one click cost. Lower is better. Tap a card to see the original screenshot.",
-    "reportLink": "See it in the campaign report ↗",
-    "runsSummary": "The numbers and proof",
-    "storyDid": "What I did",
-    "storyGoal": "The goal",
-    "storyResult": "The result",
-    "viewShot": "View the original screenshot"
+  "reportsec": {
+    "title": "Want every number?",
+    "sub": "The full campaign report lists every ad with its cost and results. The first page sums it up in plain language.",
+    "cta": "Open the report ↗"
+  },
+  "mentor": {
+    "eyebrow": "Mentorship",
+    "title": "I teach what I do.",
+    "sub": "I have been a marketing mentor at ALX Arabia since August 2024. My sessions cover digital marketing, storytelling and building a personal brand, and I design the learning paths for new marketers.",
+    "stats": [
+      {
+        "count": 100,
+        "suf": "+",
+        "label": "hours of coaching"
+      },
+      {
+        "count": 12,
+        "suf": "+",
+        "label": "sessions"
+      },
+      {
+        "count": 500,
+        "suf": "+",
+        "label": "people coached"
+      }
+    ],
+    "videoTitle": "ALX interview",
+    "videoNoteHtml": "ALX interview. If the player doesn’t load, \u003ca href=\"https://drive.google.com/file/d/1Wv0x3hvg-vOhYCic1y9MMRWo699nI9nZ/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">open it in Google Drive\u003c/a>.",
+    "decks": [
+      {
+        "tag": "Masterclass · 30 min",
+        "title": "Communication and Storytelling for Coaches",
+        "items": [
+          "Why stories stick",
+          "Story frameworks: Hero’s Journey, PAS, BAB",
+          "Building a story bank"
+        ]
+      },
+      {
+        "tag": "Townhall",
+        "title": "Building a Growth Mindset",
+        "items": [
+          "Fixed vs growth mindset",
+          "Personal branding on LinkedIn, GitHub and X",
+          "A 30-second pitch, written and shared live"
+        ]
+      },
+      {
+        "tag": "Workshop",
+        "title": "Content Creation and Media Buying on Facebook and Instagram",
+        "items": [
+          "Content strategy for Reels, Stories and posts",
+          "Targeting, carousel and video ads",
+          "Reading reach, clicks, saves and impressions"
+        ]
+      }
+    ]
+  },
+  "music": {
+    "eyebrow": "Away from work",
+    "title": "I play the saxophone.",
+    "items": [
+      {
+        "t": "Listening",
+        "d": "A player hears the room before the first note. I try to hear the customer before the first ad."
+      },
+      {
+        "t": "Structure and room to improvise",
+        "d": "Music has a structure and some freedom inside it. A campaign works the same way: a plan first, then quick tests and changes."
+      },
+      {
+        "t": "Timing",
+        "d": "A good note at the wrong moment still sounds wrong. A good offer at the wrong time does too."
+      },
+      {
+        "t": "Practice",
+        "d": "Skill comes from repeating things. Testing and tuning campaigns is the same habit."
+      }
+    ]
   },
   "skills": {
     "eyebrow": "Skills and tools",
+    "title": "What I work with.",
     "groups": [
       {
+        "t": "Social media marketing",
         "chips": [
           "Instagram",
           "TikTok",
           "Facebook",
           "Twitter",
           "LinkedIn"
-        ],
-        "t": "Social media marketing"
+        ]
       },
       {
+        "t": "Paid advertising",
         "chips": [
           "Meta Ads",
           "LinkedIn Ads",
           "Google Ads",
           "TikTok Ads",
           "Twitter Ads"
-        ],
-        "t": "Paid advertising"
+        ]
       },
       {
+        "t": "Tools and analytics",
         "chips": [
           "Canva",
           "Meta Creator Studio",
           "Google Suite",
           "Microsoft Office",
           "Cross-platform analytics"
-        ],
-        "t": "Tools and analytics"
+        ]
       },
       {
+        "t": "Languages",
         "chips": [
           "Arabic (native)",
           "English (fluent)"
-        ],
-        "t": "Languages"
-      }
-    ],
-    "title": "What I work with."
-  },
-  "team": {
-    "eyebrow": "The team",
-    "members": [
-      {
-        "img": "assets/images/team/mohamed-diab.jpg",
-        "link": "https://drive.google.com/drive/folders/1kmcrjT860MehN_CJILwxlE08FOGD42x-",
-        "linkLabel": "See his work",
-        "name": "Mohamed Diab",
-        "role": "Photography & filming · Production"
-      },
-      {
-        "img": "assets/images/team/sama-abuelazm.jpg",
-        "link": "https://www.behance.net/samaabuelazm",
-        "linkLabel": "See her work",
-        "name": "Sama Abuelazm",
-        "role": "Design & identity"
-      },
-      {
-        "img": "assets/images/team/nada-nassar.jpg",
-        "link": "https://drive.google.com/file/d/1UZ4nWcOcVgd63iEgcVj1_9HbKRDB9ywe/view",
-        "linkLabel": "See her work",
-        "name": "Nada Nassar",
-        "role": "Content & social media"
+        ]
       }
     ]
   },
-  "testimonials": {
-    "eyebrow": "What people say",
-    "quotes": [
+  "about": {
+    "eyebrow": "About",
+    "title": "About me",
+    "lead": "I started in social media in 2017 and have since worked in fitness, real estate, retail, food, art and community projects. I’m curious by habit, I follow trends closely, and I like building teams that enjoy their work. I’m studying Business at Ain Shams University and I work from Cairo."
+  },
+  "certsec": {
+    "eyebrow": "Certificates",
+    "title": "The paper behind the practice.",
+    "sub": "Programs I completed, with the certificates to show for them.",
+    "images": [
       {
-        "name": "Rasha El Zaatry",
-        "q": "Mustafa, I truly appreciate your support and the great work we do together. I genuinely enjoy working with you because you understand my vision, and that makes our collaboration both smooth and productive. It’s always a pleasure working with you!",
-        "tag": "Client testimonial"
+        "src": "assets/images/certs/google-cert.jpg?v=20261121",
+        "alt": "Google Foundations of Digital Marketing and E-commerce certificate issued to Mostafa Alaa Mostafa via Coursera, July 2025",
+        "name": "Foundations of Digital Marketing and E-commerce",
+        "tag": "Google · Coursera, 2025"
       },
       {
-        "cls": "me",
-        "name": "ALX Arabia",
-        "q": "Outstanding Coaching Award, Pay it Forward 2025, for coaching a group of professionals unlocking their full potential.",
-        "tag": "Lead Coach award"
+        "src": "assets/images/certs/itida-cert.jpg?v=20261121",
+        "alt": "ITIDA Gigs freelance training program certificate issued to Mostafa Alaa",
+        "name": "ITIDA Gigs Freelance Training Program",
+        "tag": "ITIDA & EYouth, 2025"
       },
       {
-        "img": {
-          "alt": "LinkedIn recommendation by Amr Elsayed (screenshot)",
-          "src": "assets/images/testimonials/amr-elsayed-linkedin.jpg"
-        },
-        "name": "Amr Elsayed",
-        "q": "It’s a truly well-deserved step. We’re already seeing the huge value you bring to the team ya Darsh, looking forward to achieving even more success together!!",
-        "tag": "Workforce Manager, Intelcia"
-      },
-      {
-        "img": {
-          "alt": "LinkedIn recommendation by Abdelrahman Moataz (screenshot)",
-          "src": "assets/images/testimonials/moataz-linkedin.jpg"
-        },
-        "name": "Abdelrahman Moataz",
-        "q": "His dedication, professionalism, and exceptional skills stood out immediately. He consistently delivered outstanding results and brought innovative solutions to challenges.",
-        "tag": "Workforce scheduling & planning"
-      },
-      {
-        "img": {
-          "alt": "LinkedIn recommendation by Abdelrahman Khalid (screenshot)",
-          "src": "assets/images/testimonials/khalid-linkedin.jpg"
-        },
-        "name": "Abdelrahman Khalid",
-        "q": "Mostafa is one of the greatest talents I’ve worked with: helpful, dedicated, with high attention to detail.",
-        "tag": "Business Analysis & Solutions"
-      },
-      {
-        "name": "Amr A. Hussien",
-        "q": "It truly helped me improve, especially Mostafa Alaa, for mentoring, supporting, and providing insightful feedback.",
-        "tag": "Pay It Forward bootcamp participant"
-      },
-      {
-        "name": "Batoul Allaithy",
-        "q": "Thank you for sharing your insights at ALX Coaches’ Corner. This experience was truly rewarding.",
-        "tag": "Webinar attendee, ALX Coaches’ Corner"
-      },
-      {
-        "name": "Muhammad Bahauddin Al-Muzayan",
-        "q": "It was a pleasure meeting and learning from you all.",
-        "tag": "Pay It Forward bootcamp participant"
-      },
-      {
-        "name": "Meran Hany",
-        "q": "Your expertise and passion for coaching truly shone through.",
-        "tag": "ALX Relationship Manager"
-      },
-      {
-        "img": {
-          "alt": "ALX Egypt Community Coach graphic thanking Mostafa Alaa for detailed, insightful sessions",
-          "src": "assets/images/testimonials/alx-coach-quote.jpg?v=20261121"
-        },
-        "name": "ALX Egypt",
-        "q": "Very detailed and insightful sessions, especially in digital marketing and SEO. You made a notable impact.",
-        "tag": "Community Coach feature"
-      },
-      {
-        "name": "Mohamed Sabry",
-        "q": "I worked hand to hand alongside Mostafa. He’s a great person to learn from and he was the reason I joined the workforce in the first place.",
-        "tag": "LinkedIn recommendation"
-      },
-      {
-        "name": "Ahmed Abdin",
-        "q": "Mostafa was one of the best team members I’ve worked with, with an analytical mindset, critical thinking and communication skills",
-        "tag": "LinkedIn recommendation"
-      },
-      {
-        "name": "ALX Egypt Alumni Network",
-        "q": "From learners, to volunteers, to coaches, to role models, Ahmed and Mostafa show us exactly what it means to pay it forward.",
-        "tag": "Success Story Highlight"
+        "src": "assets/images/certs/alx-award-cert.jpg?v=20261121",
+        "alt": "Outstanding Coaching Award certificate presented to Mostafa Alaa by the Pay It Forward Club",
+        "name": "Outstanding Coaching Award, Pay It Forward 2025",
+        "tag": "ALX Arabia"
       }
     ],
-    "sub": "What my manager, teammates and trainees say, and the recognition my coaching work earned.",
-    "title": "Don’t take my word for it."
+    "chipsLabel": "More training",
+    "chips": [
+      {
+        "t": "Lead Coach",
+        "org": "ALX Arabia",
+        "y": "2025"
+      },
+      {
+        "t": "AICE (AI Career Essentials)",
+        "org": "ALX Arabia",
+        "y": "2024"
+      }
+    ]
   },
-  "work": {
-    "eyebrow": "Selected work",
-    "sub": "Real campaigns, told as short stories: the goal, what I did, and exactly what came back. Client names are hidden where they must be; every number is from Ads Manager. The full breakdown sits under each story.",
-    "title": "Case studies."
-  }
+  "experience": {
+    "eyebrow": "Experience",
+    "items": [
+      {
+        "time": "08/2024 – now",
+        "role": "Marketing Mentor",
+        "org": "ALX Arabia"
+      },
+      {
+        "time": "01/2024 – now",
+        "role": "Media Buyer Lead",
+        "org": "Freelance"
+      },
+      {
+        "time": "11/2024 – 02/2025",
+        "role": "Media Buyer",
+        "org": "Aqar Masr"
+      },
+      {
+        "time": "09/2024 – 03/2025",
+        "role": "Social Media Manager",
+        "org": "Kapri Cafe"
+      },
+      {
+        "time": "12/2019 – 11/2023",
+        "role": "Social Media Manager",
+        "org": "Kemet"
+      },
+      {
+        "time": "2017 – 2021",
+        "role": "Media buying and social media roles",
+        "org": "7ENNA, Jamilah Accessories, Venus, Fitness Garage, Tuhfajyh Gallery and others"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let’s talk",
+    "call": "Book a free intro call",
+    "wa": "WhatsApp",
+    "li": "LinkedIn",
+    "mail": "mostafalaadiab@gmail.com",
+    "cv": "Download CV",
+    "pdf": "Download portfolio (PDF)"
+  },
+  "footer": {
+    "text": "© 2026 Mostafa Alaa ·",
+    "linkedin": "LinkedIn"
+  },
+  "gate": {
+    "title": "Choose your language",
+    "sub": "اختار لغتك",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "lb": {
+    "prev": "← Prev",
+    "close": "Close (Esc)",
+    "next": "Next →"
+  },
+  "shared": {
+    "guideHtml": "\u003cb>Quick guide.\u003c/b> A \u003cb>chat\u003c/b> is someone messaging the business after seeing the ad. \u003cb>Reached\u003c/b> is how many people saw it. \u003cb>CPC\u003c/b> is what one click cost. Lower is better. Tap a card to see the original screenshot.",
+    "runsSummary": "The numbers and proof",
+    "caseLabel": "Case",
+    "storyGoal": "The goal",
+    "storyDid": "What I did",
+    "storyResult": "The result",
+    "viewShot": "View the original screenshot",
+    "reportLink": "See it in the campaign report ↗"
+  },
+  "order": [
+    "hero",
+    "metrics",
+    "brands",
+    "explore",
+    "how",
+    "work",
+    "services",
+    "testimonials",
+    "certs",
+    "compare",
+    "posts",
+    "calc",
+    "reportsec",
+    "mentor",
+    "music",
+    "skills",
+    "about"
+  ]
 };

@@ -133,7 +133,7 @@
 
   /* ---------- projects ---------- */
   const projWrap = $("#projects");
-  const adsImg = (id) => ROOT + "assets/images/ads-" + id.replace("i-mb", "") + ".jpg?v=20261122";
+  const adsImg = (id) => ROOT + (id.startsWith("assets/images/published-") ? id : "assets/images/ads-" + id.replace("i-mb", "") + ".jpg?v=20261122");
   const usedProof = {};
   if (projWrap)
     C.projects.forEach((p, pi) => {
