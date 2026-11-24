@@ -1,2 +1,5 @@
-:root{--gold:#c9a24b!important;--accent:#c9a24b!important;--text:#f2eee3!important;--muted:#b3ac97!important;--font-body:Inter,sans-serif!important}body{background:#0b0b0c!important;font-size:16px!important}main{max-width:1440px;margin:auto}main>section{padding-block:80px}button,.btn,.card,.proj{border-radius:16px!important}html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3{font-family:Fraunces,serif!important}
+:root{--gold:#c9a24b!important;--accent:#c9a24b!important;--text:#f2eee3!important;--muted:#b3ac97!important;--font-body:Inter,sans-serif!important}body{background:#0b0b0c!important;font-size:16px!important}main{max-width:none;margin:0}main>section{padding-block:80px}button,.btn,.card,.proj{border-radius:16px!important}html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3{font-family:Fraunces,serif!important}
 @media(max-width:600px){main>section{padding-block:40px!important}h1{font-size:clamp(32px,10vw,50px)!important}}@media(max-width:360px){.run{min-width:0!important;width:100%!important}.run-grid,.runs{min-width:0!important}html,body{overflow-x:clip}}
+/* keep the layout full width even if Portfolio Studio regenerates published.css (higher specificity than its main{} and .studio-extra{} rules) */
+html body main{max-width:none;margin:0}
+html body main .studio-extra{max-width:none;padding-inline:var(--edge,24px)}

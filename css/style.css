@@ -10,7 +10,9 @@
   --radius: 14px; /* corner roundness */
   --font-head: "Fraunces", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  --max: 1180px; /* content width */
+  --max: none; /* content fills the screen */
+  --edge: clamp(24px, 3.2vw, 96px); /* side padding */
+  --edge-end: var(--edge); /* end side; leaves room for the floating buttons on larger screens */
 }
 * {
   box-sizing: border-box;
@@ -42,7 +44,10 @@ a:hover {
 .wrap {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--edge-end) 0 var(--edge);
+}
+[dir="rtl"] .wrap {
+  padding: 0 var(--edge) 0 var(--edge-end);
 }
 .skip {
   position: absolute;
@@ -210,9 +215,14 @@ header.nav {
 }
 .metrics .wrap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
   padding-block: 44px;
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+  .metrics .wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .m b {
   display: block;
@@ -1493,9 +1503,9 @@ body.go .ha {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 14px;
-  max-width: 1180px;
+  max-width: var(--max);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--edge);
 }
 .wi {
   position: relative;
@@ -1823,6 +1833,9 @@ body.go .musicbtn {
   overflow: hidden;
   border: 1px solid var(--line);
   aspect-ratio: 5/4.2;
+  width: 100%;
+  max-width: 640px;
+  margin-inline-start: auto;
   background: var(--surface);
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
 }
@@ -2293,6 +2306,15 @@ html[lang="ar"] .mqg {
   }
 }
 
+@media (min-width: 769px) {
+  :root {
+    --edge-end: max(var(--edge), 88px);
+  }
+}
+.nav .wrap,
+[dir="rtl"] .nav .wrap {
+  padding-inline: var(--edge);
+}
 /* floating action stack: music, download, WhatsApp */
 .fab {
   position: fixed;
@@ -2480,3 +2502,49 @@ html[lang="ar"] .mqg {
   display: none;
 }
 
+
+/* phones and small tablets: the floating buttons become a bottom bar so they never sit on top of text */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+  .fab {
+    inset-inline: 0;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: rgba(11, 11, 12, 0.96);
+    border-top: 1px solid var(--line);
+    backdrop-filter: blur(8px);
+  }
+  .fab .musicbtn,
+  .fab .wafloat,
+  .fab .dlbtn {
+    width: 46px;
+    height: 46px;
+  }
+  .fab .dld .dmenu {
+    top: auto;
+    bottom: calc(100% + 14px);
+    inset-inline-end: auto;
+    inset-inline-start: 50%;
+    transform: translateX(-50%) translateY(6px) scale(0.96);
+    transform-origin: bottom center;
+  }
+  [dir="rtl"] .fab .dld .dmenu {
+    transform-origin: bottom center;
+  }
+  .fab .dld:hover .dmenu,
+  .fab .dld:focus-within .dmenu {
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+  [dir="rtl"] .fab .dld .dmenu {
+    transform: translateX(50%) translateY(6px) scale(0.96);
+  }
+  [dir="rtl"] .fab .dld:hover .dmenu,
+  [dir="rtl"] .fab .dld:focus-within .dmenu {
+    transform: translateX(50%) translateY(0) scale(1);
+  }
+}
