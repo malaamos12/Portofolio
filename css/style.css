@@ -2540,4 +2540,11 @@ html[lang="ar"] .mqg {
   .fab .dld:focus-within .dmenu {
     transform: translateX(-50%) translateY(0) scale(1);
   }
+  [dir="rtl"] .fab .dld .dmenu {
+    transform: translateX(50%) translateY(6px) scale(0.96);
+  }
+  [dir="rtl"] .fab .dld:hover .dmenu,
+  [dir="rtl"] .fab .dld:focus-within .dmenu {
+    transform: translateX(50%) translateY(0) scale(1);
+  }
 }
