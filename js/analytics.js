@@ -59,7 +59,14 @@
     try { fetch(HOST, { method: "POST", body: body, keepalive: true, headers: { "Content-Type": "text/plain" } }); } catch (e) {}
   }
 
-  send("$pageview", {});
+  /* One pageview per page per tab within 30s: a quick reload, a back/forward restore
+     or a prerender must not count as a second visit. */
+  var dup = false;
+  try {
+    var pk = "ph_pv:" + location.pathname, last = +sessionStorage.getItem(pk) || 0;
+    if (Date.now() - last < 30000) dup = true; else sessionStorage.setItem(pk, String(Date.now()));
+  } catch (e) {}
+  if (!dup) send("$pageview", {});
 
   /* Button clicks: same names GoatCounter uses (data-goatcounter-click). Kept apart from pageviews. */
   document.addEventListener("click", function (e) {
