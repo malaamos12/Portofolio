@@ -83,6 +83,22 @@
       howSteps.append(d);
     });
 
+  /* ---------- top results strip ---------- */
+  const trGrid = $("#trGrid");
+  if (trGrid && C.topresults)
+    C.topresults.items.forEach((r) => {
+      const a = el("a", "trcard");
+      a.href = r.href;
+      a.append(
+        el("span", "trtag", esc(r.tag)),
+        el("b", null, esc(r.big)),
+        el("span", "trfor", esc(r.for)),
+        el("span", "trout", esc(r.out)),
+        el("span", "trdid", esc(r.did))
+      );
+      trGrid.append(a);
+    });
+
   /* ---------- metrics ---------- */
   const mRow = $("#metricsRow");
   if (mRow)

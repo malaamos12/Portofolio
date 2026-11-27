@@ -49,6 +49,36 @@ window.SITE_CONTENT = {
       }
     ]
   },
+  "topresults": {
+    "eyebrow": "Results in 10 seconds",
+    "note": "Ad numbers are from Meta Ads Manager. Sales and commission are client-reported. Tap a result for the full story.",
+    "items": [
+      {
+        "big": "644 chats",
+        "for": "for 1,392 EGP",
+        "out": "110K EGP commission on a 1.1M EGP apartment (client-reported)",
+        "did": "What I did: ran the message campaigns and tested photos against video.",
+        "tag": "Real estate",
+        "href": "#work"
+      },
+      {
+        "big": "19,156 interactions",
+        "for": "for 707 EGP",
+        "out": "360K EGP commission on 18M EGP of land (client-reported)",
+        "did": "What I did: ran the interaction campaigns and compared Mansoura with all of Egypt.",
+        "tag": "Real estate, land",
+        "href": "#work"
+      },
+      {
+        "big": "67 chats",
+        "for": "for 165 EGP",
+        "out": "The café reports about 30% more income that month",
+        "did": "What I did: ran the December chat campaigns and the content calendar.",
+        "tag": "Kapri Café",
+        "href": "#work"
+      }
+    ]
+  },
   "metrics": {
     "note": "Ad numbers come straight from Meta Ads Manager. Sales and commission are client-reported. The case studies below show what they mean in practice.",
     "items": [

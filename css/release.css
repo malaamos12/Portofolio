@@ -3,3 +3,15 @@
 /* keep the layout full width even if Portfolio Studio regenerates published.css (higher specificity than its main{} and .studio-extra{} rules) */
 html body main{max-width:none;margin:0}
 html body main .studio-extra{max-width:none;padding-inline:var(--edge,24px)}
+
+/* top results strip */
+.topresults{padding:0}
+.trgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:16px 0 12px}
+.trcard{display:flex;flex-direction:column;gap:6px;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--text);text-decoration:none}
+.trcard:hover,.trcard:focus-visible{border-color:var(--gold)}
+.trcard b{font:700 clamp(1.5rem,3.2vw,2.1rem)/1.1 var(--font-head);color:var(--gold)}
+.trtag{color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.trfor{font-weight:600}
+.trout{font-size:.95rem}
+.trdid{color:var(--muted);font-size:.88rem;margin-top:4px}
+.hero .wrap.trwrap{display:block;margin-top:48px}
