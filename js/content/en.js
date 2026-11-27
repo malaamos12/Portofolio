@@ -930,19 +930,19 @@ window.SITE_CONTENT = {
       },
       {
         "name": "Chat campaign (name hidden)",
-        "small": "106 chats · 952 EGP",
+        "small": "106 chats · 952 EGP · sales about 18,000 EGP (approx., client-reported)",
         "w": 29.9,
         "v": "8.98 EGP",
         "src": "i-mb1",
-        "cap": "Chat campaign: 8.98 EGP per chat, 106 conversations · 952 EGP"
+        "cap": "Chat campaign: 8.98 EGP per chat, 106 conversations · 952 EGP · sales about 18,000 EGP (approx., client-reported)"
       },
       {
         "name": "Chat campaign (name hidden)",
-        "small": "62 chats · 589 EGP",
+        "small": "62 chats · 589 EGP · sales about 15,000 EGP (approx., client-reported)",
         "w": 31.6,
         "v": "9.51 EGP",
         "src": "i-mb12",
-        "cap": "Chat campaign: 9.51 EGP per chat, 62 conversations · 589 EGP"
+        "cap": "Chat campaign: 9.51 EGP per chat, 62 conversations · 589 EGP · sales about 15,000 EGP (approx., client-reported)"
       },
       {
         "name": "Fitness · yoga retreat",
@@ -954,27 +954,27 @@ window.SITE_CONTENT = {
       },
       {
         "name": "Chat campaign (name hidden)",
-        "small": "17 chats · 362 EGP",
+        "small": "17 chats · 362 EGP · sales about 8,000 EGP (approx., client-reported)",
         "w": 70.8,
         "v": "21.28 EGP",
         "src": "i-mb6",
-        "cap": "Chat campaign: 21.28 EGP per chat, 17 conversations · 362 EGP"
+        "cap": "Chat campaign: 21.28 EGP per chat, 17 conversations · 362 EGP · sales about 8,000 EGP (approx., client-reported)"
       },
       {
         "name": "Chat campaign (name hidden)",
-        "small": "56 chats · 1,203 EGP",
+        "small": "56 chats · 1,203 EGP · sales about 13,000 EGP (approx., client-reported)",
         "w": 71.4,
         "v": "21.47 EGP",
         "src": "i-mb17",
-        "cap": "Chat campaign: 21.47 EGP per chat, 56 conversations · 1,203 EGP"
+        "cap": "Chat campaign: 21.47 EGP per chat, 56 conversations · 1,203 EGP · sales about 13,000 EGP (approx., client-reported)"
       },
       {
         "name": "Chat campaign (name hidden)",
-        "small": "33 chats · 763 EGP",
+        "small": "33 chats · 763 EGP · sales about 5,500 EGP (approx., client-reported)",
         "w": 76.9,
         "v": "23.11 EGP",
         "src": "i-mb4",
-        "cap": "Chat campaign: 23.11 EGP per chat, 33 conversations · 763 EGP"
+        "cap": "Chat campaign: 23.11 EGP per chat, 33 conversations · 763 EGP · sales about 5,500 EGP (approx., client-reported)"
       },
       {
         "name": "Fitness · trainer offer",
