@@ -618,10 +618,29 @@
     const ROOT = document.documentElement.dataset.root || "";
     const iv = $("video", introGate);
     const ivClose = $(".ivclose", introGate);
-    iv.src = ROOT + "assets/video/intro.mp4?v=20261128";
+    iv.src = ROOT + "assets/video/intro.mp4?v=20261128b";
     iv.poster = ROOT + "assets/images/intro-poster.jpg?v=20261128";
     let ivMusic = false;
     let ivAudio = [];
+    /* Start buffering in the background once the page is idle, so the
+       pop-up does not begin downloading from zero on click. */
+    function armIntroPreload() {
+      iv.preload = "auto";
+      iv.load();
+    }
+    if ("requestIdleCallback" in window)
+      requestIdleCallback(armIntroPreload, { timeout: 4000 });
+    else setTimeout(armIntroPreload, 2500);
+    function ivBufferedAhead() {
+      try {
+        const t = iv.currentTime;
+        for (let i = 0; i < iv.buffered.length; i++) {
+          if (iv.buffered.start(i) <= t && t <= iv.buffered.end(i))
+            return iv.buffered.end(i) - t;
+        }
+      } catch (e) {}
+      return 0;
+    }
     function openIntro() {
       ivMusic =
         typeof Jazz !== "undefined" && Jazz.videoHold ? Jazz.videoHold() : false;
@@ -630,7 +649,30 @@
       introGate.hidden = false;
       lock(true);
       iv.currentTime = 0;
+      /* Synchronous play() inside the tap/click gesture: starts playback when
+         buffered enough and, on mobile browsers, unlocks the element so the
+         buffered retry below is allowed. */
       iv.play().catch(() => {});
+      if (iv.readyState < 3 || ivBufferedAhead() < 3) {
+        iv.pause();
+        introGate.classList.add("ivloading");
+        const t0 = Date.now();
+        (function poll() {
+          if (introGate.hidden) {
+            introGate.classList.remove("ivloading");
+            return;
+          }
+          if (
+            (iv.readyState >= 3 && ivBufferedAhead() >= 3) ||
+            Date.now() - t0 > 4000
+          ) {
+            introGate.classList.remove("ivloading");
+            iv.play().catch(() => {});
+            return;
+          }
+          setTimeout(poll, 100);
+        })();
+      }
       ivClose.focus();
     }
     function closeIntro() {

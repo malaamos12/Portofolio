@@ -27,3 +27,7 @@ html body main .studio-extra{max-width:none;padding-inline:var(--edge,24px)}
 .ivbox h2{font-size:1rem;font-family:var(--font-body);font-weight:400;color:var(--muted);margin:0 0 10px}
 .ivbox video{display:block;max-width:calc(100vw - 76px);max-height:76vh;width:auto;height:auto;border-radius:12px;background:#000}
 .ivclose{position:absolute;top:8px;inset-inline-end:8px;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--gold);background:rgba(11,11,12,.85);color:var(--gold);font-size:1rem;cursor:pointer;display:grid;place-items:center;z-index:1}
+
+/* intro pop-up buffering spinner */
+#introgate.ivloading .ivbox::after{content:"";position:absolute;top:50%;left:50%;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;border:3px solid rgba(201,162,75,.25);border-top-color:var(--gold);animation:ivspin 1s linear infinite;pointer-events:none}
+@keyframes ivspin{to{transform:rotate(360deg)}}
