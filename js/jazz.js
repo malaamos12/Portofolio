@@ -540,6 +540,22 @@ const Jazz = (function () {
   return {
     start,
     ui,
+    videoHold: () => {
+      const was = on;
+      if (on) {
+        on = false;
+        pauseQuiet();
+        ui();
+      }
+      return was;
+    },
+    videoRelease: (was) => {
+      if (was && wantOn && !on) {
+        on = true;
+        resumeQuiet();
+        ui();
+      }
+    },
     init: () => start(false),
     dbg: () => ({
       mode,
