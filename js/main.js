@@ -647,7 +647,7 @@
        the 720x1280 800kbps file. Served from the jsDelivr CDN (pinned to an
        immutable commit), falling back to the Pages copy if the CDN errors. */
     const IV_CDN =
-      "https://cdn.jsdelivr.net/gh/malaamos12/Portofolio@ab60a3a7480dfab180afe652ebc7c4bf31d4de4c/assets/video/";
+      "https://cdn.jsdelivr.net/gh/malaamos12/Portofolio@8219f442602956e0453ee164c6101edaec61dc40/assets/video/";
     const ivConn = navigator.connection || {};
     const ivSlow =
       !!ivConn.saveData ||
@@ -657,7 +657,7 @@
     const ivSmall = Math.min(screen.width, screen.height) < 500;
     const ivRend = ivSlow || ivSmall ? "intro-mobile.mp4" : "intro.mp4";
     iv.src = IV_CDN + ivRend;
-    iv.dataset.localSrc = ROOT + "assets/video/" + ivRend + "?v=20261128c";
+    iv.dataset.localSrc = ROOT + "assets/video/" + ivRend + "?v=20261128d";
     iv.addEventListener(
       "error",
       () => {
@@ -674,7 +674,7 @@
       },
       true,
     );
-    iv.poster = ROOT + "assets/images/intro-poster.jpg?v=20261128";
+    iv.poster = ROOT + "assets/images/intro-poster.jpg?v=20261128d";
     let ivMusic = false;
     let ivAudio = [];
     /* Start buffering in the background once the page is idle, so the
