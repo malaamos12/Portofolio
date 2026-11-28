@@ -611,4 +611,61 @@
     });
   }
 
+  /* ---------- intro video pop-up (hero portrait play button) ---------- */
+  const introOpen = $("#introOpen");
+  const introGate = $("#introgate");
+  if (introOpen && introGate) {
+    const ROOT = document.documentElement.dataset.root || "";
+    const iv = $("video", introGate);
+    const ivClose = $(".ivclose", introGate);
+    iv.src = ROOT + "assets/video/intro.mp4?v=20261128";
+    iv.poster = ROOT + "assets/images/intro-poster.jpg?v=20261128";
+    let ivMusic = false;
+    let ivAudio = [];
+    function openIntro() {
+      ivMusic =
+        typeof Jazz !== "undefined" && Jazz.videoHold ? Jazz.videoHold() : false;
+      ivAudio = $$("audio").filter((a) => !a.paused);
+      ivAudio.forEach((a) => a.pause());
+      introGate.hidden = false;
+      lock(true);
+      iv.currentTime = 0;
+      iv.play().catch(() => {});
+      ivClose.focus();
+    }
+    function closeIntro() {
+      iv.pause();
+      introGate.hidden = true;
+      lock(false);
+      if (typeof Jazz !== "undefined" && Jazz.videoRelease)
+        Jazz.videoRelease(ivMusic);
+      ivAudio.forEach((a) => a.play().catch(() => {}));
+      ivAudio = [];
+      introOpen.focus();
+    }
+    introOpen.addEventListener("click", openIntro);
+    ivClose.addEventListener("click", closeIntro);
+    iv.addEventListener("ended", closeIntro);
+    introGate.addEventListener("click", (e) => {
+      if (e.target === introGate) closeIntro();
+    });
+    introGate.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeIntro();
+        return;
+      }
+      if (e.key !== "Tab") return;
+      const f = [iv, ivClose];
+      const i = f.indexOf(document.activeElement);
+      if (e.shiftKey && i <= 0) {
+        e.preventDefault();
+        f[f.length - 1].focus();
+      } else if (!e.shiftKey && i === f.length - 1) {
+        e.preventDefault();
+        f[0].focus();
+      }
+    });
+  }
+
 })();

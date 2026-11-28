@@ -166,7 +166,14 @@
               height="300"
               src="assets/images/mostafa.jpg"
               width="300"
-            /><span class="badge"
+            /><button
+              aria-label="Play the 45-second intro video"
+              class="introplay"
+              id="introOpen"
+              type="button"
+            >
+              <span aria-hidden="true" class="play">&#9654;</span></button
+            ><span class="badge"
               ><svg aria-hidden="true" class="sax" viewbox="0 0 140 160">
                 <use href="#sax"></use></svg
             ></span>
@@ -504,6 +511,22 @@
         </div>
       </div>
     </div>
+    <div
+      aria-labelledby="ivt"
+      aria-modal="true"
+      hidden=""
+      id="introgate"
+      role="dialog"
+    >
+      <div class="lgbox ivbox">
+        <h2 id="ivt">45-second intro</h2>
+        <button aria-label="Close video" class="ivclose" type="button">
+          &#10005;
+        </button>
+        <video controls playsinline preload="none" id="introVideo"></video>
+      </div>
+    </div>
+
     <dialog aria-label="Image viewer" id="lb">
       <div class="lbbar">
         <button id="pv"><span data-k="lb.prev">← Prev</span></button
