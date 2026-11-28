@@ -25,6 +25,7 @@ const Jazz = (function () {
     on = false,
     wantOn = true,
     held = false,
+    vheld = false,
     booting = false,
     hid = false,
     pend = null,
@@ -361,12 +362,12 @@ const Jazz = (function () {
     clearInterval(timer);
     timer = setInterval(pump, 300);
     ctx.onstatechange = () => {
-      on = ctx.state === "running" && !held && wantOn;
+      on = ctx.state === "running" && !held && wantOn && !vheld;
       ui();
     };
     if (ctx.state === "suspended") {
       armGesture(() => {
-        ctx.resume();
+        if (!vheld) ctx.resume();
       });
     } else {
       on = true;
@@ -408,6 +409,15 @@ const Jazz = (function () {
         } catch (e) {}
         ctx = null;
       }
+      if (vheld) {
+        try {
+          a.pause();
+        } catch (e) {}
+        a.volume = 0;
+        ui();
+        save();
+        return;
+      }
       on = true;
       fadeA(FVOL, 3000);
       say("take");
@@ -424,7 +434,7 @@ const Jazz = (function () {
     });
   }
   function start(user) {
-    if (on || booting) return;
+    if (on || booting || vheld) return;
     const st = load();
     wantOn = st ? st.on !== false : true;
     if (!wantOn) {
@@ -439,6 +449,19 @@ const Jazz = (function () {
       } catch (e) {}
     }
     begin(st && st.on ? st.pos + (Date.now() - st.at) / 1000 : 0, user);
+  }
+  function pauseNow() {
+    clearInterval(fadeT);
+    if (mode === "file" && audio) {
+      try {
+        audio.pause();
+      } catch (e) {}
+    } else if (ctx && out) {
+      fadeG(0, 0.03);
+      try {
+        ctx.suspend();
+      } catch (e) {}
+    }
   }
   function pauseQuiet() {
     if (mode === "file" && audio) {
@@ -497,7 +520,7 @@ const Jazz = (function () {
         held = true;
         pauseQuiet();
         ui();
-      } else if (m.t === "release" && held && wantOn) {
+      } else if (m.t === "release" && held && wantOn && !vheld) {
         held = false;
         on = true;
         resumeQuiet();
@@ -516,7 +539,7 @@ const Jazz = (function () {
       }
     } else if (hid) {
       hid = false;
-      if (wantOn && !held) {
+      if (wantOn && !held && !vheld) {
         on = true;
         resumeQuiet();
         ui();
@@ -541,20 +564,39 @@ const Jazz = (function () {
     start,
     ui,
     videoHold: () => {
-      const was = on;
+      const was = on || booting || !!pend;
+      vheld = true;
+      if (pend) {
+        ["pointerdown", "keydown", "touchend"].forEach((e) =>
+          removeEventListener(e, pend, true),
+        );
+        pend = null;
+      }
       if (on) {
         on = false;
-        pauseQuiet();
-        ui();
+        pauseNow();
       }
+      ui();
       return was;
     },
     videoRelease: (was) => {
+      vheld = false;
       if (was && wantOn && !on) {
-        on = true;
-        resumeQuiet();
-        ui();
+        if (mode === "file" && audio) {
+          on = true;
+          audio.play().catch(() => {
+            on = false;
+          });
+          fadeA(FVOL, 800);
+        } else if (ctx && out) {
+          on = true;
+          ctx.resume();
+          fadeG(VOL, 0.6);
+        } else if (!booting) {
+          start(false);
+        }
       }
+      ui();
     },
     init: () => start(false),
     dbg: () => ({
@@ -566,6 +608,8 @@ const Jazz = (function () {
       ct: ctx ? +ctx.currentTime.toFixed(2) : null,
       state: ctx ? ctx.state : null,
       hasAudio: !!audio,
+      aPaused: audio ? audio.paused : null,
+      vheld,
     }),
     _render: (sec) => {
       const c = new OfflineAudioContext(2, Math.floor(44100 * sec), 44100),
