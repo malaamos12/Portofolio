@@ -642,13 +642,46 @@
     const ROOT = document.documentElement.dataset.root || "";
     const iv = $("video", introGate);
     const ivClose = $(".ivclose", introGate);
-    iv.src = ROOT + "assets/video/intro.mp4?v=20261128b";
+    /* Pick one rendition once (no double download): small screens or slow /
+       data-saver connections get the 480x854 450kbps file, everything else
+       the 720x1280 800kbps file. Served from the jsDelivr CDN (pinned to an
+       immutable commit), falling back to the Pages copy if the CDN errors. */
+    const IV_CDN =
+      "https://cdn.jsdelivr.net/gh/malaamos12/Portofolio@ab60a3a7480dfab180afe652ebc7c4bf31d4de4c/assets/video/";
+    const ivConn = navigator.connection || {};
+    const ivSlow =
+      !!ivConn.saveData ||
+      ivConn.effectiveType === "slow-2g" ||
+      ivConn.effectiveType === "2g" ||
+      ivConn.effectiveType === "3g";
+    const ivSmall = Math.min(screen.width, screen.height) < 500;
+    const ivRend = ivSlow || ivSmall ? "intro-mobile.mp4" : "intro.mp4";
+    iv.src = IV_CDN + ivRend;
+    iv.dataset.localSrc = ROOT + "assets/video/" + ivRend + "?v=20261128c";
+    iv.addEventListener(
+      "error",
+      () => {
+        if (iv.dataset.localSrc && iv.src !== iv.dataset.localSrc) {
+          const t = iv.currentTime;
+          iv.src = iv.dataset.localSrc;
+          iv.dataset.localSrc = "";
+          iv.load();
+          try {
+            iv.currentTime = t;
+          } catch (e) {}
+          if (!introGate.hidden) iv.play().catch(() => {});
+        }
+      },
+      true,
+    );
     iv.poster = ROOT + "assets/images/intro-poster.jpg?v=20261128";
     let ivMusic = false;
     let ivAudio = [];
     /* Start buffering in the background once the page is idle, so the
-       pop-up does not begin downloading from zero on click. */
+       pop-up does not begin downloading from zero on click. Skipped when
+       the user asked their browser to save data. */
     function armIntroPreload() {
+      if (ivConn.saveData) return;
       iv.preload = "auto";
       iv.load();
     }
