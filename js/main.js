@@ -595,6 +595,21 @@
   const vid = $("#vid");
   if (vid) {
     vid.addEventListener("click", function () {
+      const holder = this;
+      if (holder.dataset.vheld !== "1") {
+        /* Hard-stop the background music synchronously on the first tap,
+           before the video starts; release it when the video ends. */
+        holder.dataset.vheld = "1";
+        holder.dataset.vmusic =
+          typeof Jazz !== "undefined" && Jazz.videoHold
+            ? Jazz.videoHold()
+              ? "1"
+              : ""
+            : "";
+        $$("audio")
+          .filter((a) => !a.paused)
+          .forEach((a) => a.pause());
+      }
       const ROOT = document.documentElement.dataset.root || "";
       const v = document.createElement("video");
       v.src = ROOT + "assets/video/alx-interview.mp4?v=20261121";
@@ -604,6 +619,15 @@
       v.autoplay = true;
       v.playsInline = true;
       v.setAttribute("playsinline", "");
+      v.addEventListener("ended", () => {
+        if (holder.dataset.vheld === "1") {
+          holder.dataset.vheld = "";
+          const was = holder.dataset.vmusic === "1";
+          holder.dataset.vmusic = "";
+          if (typeof Jazz !== "undefined" && Jazz.videoRelease)
+            Jazz.videoRelease(was);
+        }
+      });
       this.replaceChildren(v);
       this.style.cursor = "default";
       if (window.innerWidth < 768) this.style.aspectRatio = "9 / 16";
